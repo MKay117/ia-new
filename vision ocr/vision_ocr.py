@@ -306,32 +306,48 @@ def encode_image_base64(image_path):
 
 
 def run_llm_grouping(image_path, mime_type, minified_data):
-    """Step 4: Ask LLM ONLY for the grouping logic (IDs), not the text generation."""
+    """Step 4: Execute Typology-Aware Grouping and Domain Correction."""
     base64_image = encode_image_base64(image_path)
 
-    # Strip the payload to save tokens; the LLM only needs ID, Text, and Polygon
     llm_payload = [{"id": item["id"], "text": item["text"], "polygon": item["polygon"]} for item in minified_data["items"]]
 
     prompt = f"""
-    You are an expert cloud architecture diagram OCR post-processor.
-    I am providing you with an image of an architecture diagram and its extracted OCR text. 
-    Each text line has a unique integer "id", the "text" itself, and a "polygon" (bounding box coordinates).
+    You are a Principal Enterprise Architect and Computer Vision post-processor operating in a BFSI environment.
+    Your task is to take raw, disjointed OCR bounding boxes from a cloud architecture diagram and logically group them into coherent semantic entities.
 
-    Your ONLY job is to identify which IDs should be visually merged together into a single text label, and output an array of those grouped IDs.
+    CRITICAL VISUAL GRAMMAR RULES FOR ARCHITECTURE DIAGRAMS:
 
-    CRITICAL ANTI-OVER-GROUPING RULES:
-    1. ONLY group text if it forms a SINGLE logical label broken across multiple lines (e.g., "Azure" directly above "Firewall").
-    2. DO NOT group distinct nodes or components just because they are inside the same boundary box, container, or network zone. 
-    3. DO NOT group separate steps in a flowchart or flow diagram. Keep them separate.
-    4. DO NOT group a container's title with the items inside it. 
-    5. DO NOT group unrelated standalone words (like "User" and "Internet").
-    6. DO NOT rewrite the text. Just output the integer IDs.
+    1. DOMAIN VOCABULARY CORRECTION (Strict):
+       - Correct common OCR typos. Change "Al" to "AI" (e.g., "Al Foundry" -> "AI Foundry").
+       - Fix casing: "DDos" -> "DDoS", "Vnet" -> "VNet", "Entra ld" -> "Entra ID".
 
-    Output strictly in JSON format matching this schema:
+    2. MULTI-LINE COMPONENT LABELS (Merge):
+       - Group text that forms a single logical node broken across multiple lines due to tight spatial stacking (e.g., "Azure DNS" directly above "Private Resolver").
+       
+    3. BOUNDARIES & CONTAINER TITLES (Do NOT Merge with Contents):
+       - A title at the top, bottom, or corner of a boundary box, subnet, VPC, or trust zone (e.g., "AI Services Virtual Network", "Corporate VNET") must NEVER be merged with the nodes/icons floating inside that box. 
+
+    4. FLOW AND ARROW LABELS (Isolate):
+       - Text floating next to lines, arrows, or transit paths (e.g., "Feedback Loop", "Replication", "HTTPS", "Port 443", "JSON") are atomic flow descriptors. DO NOT merge them with the source or destination boxes.
+
+    5. SEQUENCE MARKERS (Isolate):
+       - Floating numbers or letters inside circles/badges (e.g., "1", "2", "a", "b", "Step 1") represent operational stages. Isolate them.
+
+    6. NETWORK METADATA (Isolate):
+       - Standalone IP addresses, CIDR blocks (e.g., "10.0.0.0/24"), or ports (e.g., ":8080") must be isolated as metadata.
+
+    OUTPUT SCHEMA:
+    Provide a JSON object grouping the IDs, providing the corrected string, and classifying the architectural type.
+    Valid types are: "Component_Node", "Boundary_Title", "Flow_Label", "Stage_Marker", "Network_Metadata", "Unknown".
+    
     {{
-        "groups": [[id1, id2], [id3, id4, id5]]
+      "blocks": [
+        {{"ids": [1, 2], "label": "Azure DNS Private Resolver", "type": "Component_Node"}},
+        {{"ids": [15, 16], "label": "AI Services Virtual Network", "type": "Boundary_Title"}},
+        {{"ids": [22], "label": "HTTPS", "type": "Flow_Label"}},
+        {{"ids": [5], "label": "1", "type": "Stage_Marker"}}
+      ]
     }}
-    If no text needs merging, return: {{"groups": []}}
 
     OCR Data:
     {json.dumps(llm_payload)}
@@ -339,8 +355,8 @@ def run_llm_grouping(image_path, mime_type, minified_data):
 
     response = llm_client.chat.completions.create(
         model=AZURE_OPENAI_DEPLOYMENT,
-        temperature=0.0,
-        max_tokens=2000,
+        temperature=0.0, 
+        max_tokens=4000,
         response_format={"type": "json_object"},
         messages=[
             {
@@ -363,27 +379,35 @@ def merge_polygons(polygons):
     """Calculates a new outer bounding box that encompasses all provided 8-point polygons."""
     xs = [x for poly in polygons for x in poly[0::2]]
     ys = [y for poly in polygons for y in poly[1::2]]
+    
+    # If no valid coordinates, return a default empty box
+    if not xs or not ys:
+        return [0, 0, 0, 0, 0, 0, 0, 0]
+        
     min_x, max_x = min(xs), max(xs)
     min_y, max_y = min(ys), max(ys)
     # Return standard 8-point polygon: Top-Left, Top-Right, Bottom-Right, Bottom-Left
     return [min_x, min_y, max_x, min_y, max_x, max_y, min_x, max_y]
 
 
-def reconstruct_text_blocks(minified_data, llm_groups):
-    """Step 5 (Failsafe): Reassembles the final JSON, ensuring zero data loss."""
+def reconstruct_text_blocks(minified_data, llm_data):
+    """Step 5: Reassemble data with Failsafe mapping and new Typology fields."""
     final_blocks = []
     processed_ids = set()
     
-    # Create a lookup dictionary for fast O(1) access
     item_lookup = {item["id"]: item for item in minified_data["items"]}
     
-    # Process the LLM's merged groups
-    for group in llm_groups.get("groups", []):
-        if not group or not isinstance(group, list):
+    # 1. Process the LLM's typologically sorted blocks
+    for block in llm_data.get("blocks", []):
+        group_ids = block.get("ids", [])
+        corrected_label = block.get("label", "")
+        block_type = block.get("type", "Unknown")
+        
+        if not group_ids or not isinstance(group_ids, list):
             continue
             
         group_items = []
-        for item_id in group:
+        for item_id in group_ids:
             if item_id in item_lookup and item_id not in processed_ids:
                 group_items.append(item_lookup[item_id])
                 processed_ids.add(item_id)
@@ -391,36 +415,33 @@ def reconstruct_text_blocks(minified_data, llm_groups):
         if not group_items:
             continue
             
-        # Sort vertically, then horizontally to ensure logical reading order when merged
-        group_items.sort(key=lambda item: (item["polygon"][1], item["polygon"][0]))
-        
-        # Merge text with spaces
-        merged_text = " ".join([item["text"] for item in group_items])
-        
-        # Calculate new encompassing bounding box
         merged_polygon = merge_polygons([item["polygon"] for item in group_items])
-        
-        # Average the confidence scores
         avg_confidence = sum([item["confidence"] for item in group_items]) / len(group_items)
         
         final_blocks.append({
-            "text": merged_text,
+            "text": corrected_label,
+            "type": block_type,
             "confidence": round(avg_confidence, 4),
             "polygon": merged_polygon,
-            "merged_ids": group
+            "merged_ids": group_ids
         })
         
-    # FAILSAFE: Add all remaining items that the LLM ignored or didn't group
+    # 2. FAILSAFE: Catch anything the LLM skipped to prevent data loss
     for item in minified_data["items"]:
         if item["id"] not in processed_ids:
+            # Programmatic fallback for the AI typo on skipped items
+            safe_text = item["text"].replace("Al ", "AI ").replace(" Al", " AI")
+            if item["text"] == "Al": safe_text = "AI"
+            
             final_blocks.append({
-                "text": item["text"],
+                "text": safe_text,
+                "type": "Ungrouped_Raw",
                 "confidence": item["confidence"],
                 "polygon": item["polygon"],
                 "merged_ids": [item["id"]]
             })
             
-    # Sort final output blocks logically by Y-axis (top to bottom), then X-axis
+    # Sort top to bottom, left to right
     final_blocks.sort(key=lambda block: (block["polygon"][1], block["polygon"][0]))
     
     return {"text_blocks": final_blocks}
@@ -455,7 +476,8 @@ def main():
         print("2. Running GPT-4o Grouping Decision...")
         try:
             llm_groups = run_llm_grouping(file_path, mime_type, minified_data)
-            print(f"   LLM suggested groupings: {llm_groups.get('groups', [])}")
+            # BUG FIX: Ensure we print the 'blocks' key correctly
+            print(f"   LLM suggested groupings: {llm_groups.get('blocks', [])}")
             
             # Step 3: Failsafe Assembly
             print("3. Executing Failsafe Assembly (Zero Data Loss)...")
@@ -473,7 +495,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
