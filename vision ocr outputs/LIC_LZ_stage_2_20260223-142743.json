@@ -1,0 +1,2850 @@
+{
+    "text_blocks": [
+        {
+            "text": "Azure AI Landing Zone",
+            "type": "Boundary_Title",
+            "confidence": 0.929,
+            "polygon": [
+                29,
+                25,
+                246,
+                25,
+                246,
+                46,
+                29,
+                46
+            ],
+            "merged_ids": [
+                1
+            ]
+        },
+        {
+            "text": "DMZ Subscription",
+            "type": "Boundary_Title",
+            "confidence": 0.9935,
+            "polygon": [
+                304,
+                41,
+                447,
+                41,
+                447,
+                60,
+                304,
+                60
+            ],
+            "merged_ids": [
+                2
+            ]
+        },
+        {
+            "text": "AI Landing Zone Prod Subscription",
+            "type": "Boundary_Title",
+            "confidence": 0.9234,
+            "polygon": [
+                623,
+                53,
+                910,
+                53,
+                910,
+                72,
+                623,
+                72
+            ],
+            "merged_ids": [
+                3
+            ]
+        },
+        {
+            "text": "Egress VNET",
+            "type": "Component_Node",
+            "confidence": 0.9915,
+            "polygon": [
+                331,
+                74,
+                441,
+                74,
+                441,
+                93,
+                331,
+                93
+            ],
+            "merged_ids": [
+                5
+            ]
+        },
+        {
+            "text": "AI App Resource Group",
+            "type": "Boundary_Title",
+            "confidence": 0.9485,
+            "polygon": [
+                1474,
+                78,
+                1670,
+                78,
+                1670,
+                99,
+                1474,
+                99
+            ],
+            "merged_ids": [
+                6
+            ]
+        },
+        {
+            "text": "Ext Systems",
+            "type": "Boundary_Title",
+            "confidence": 0.9955,
+            "polygon": [
+                34,
+                83,
+                138,
+                83,
+                138,
+                101,
+                34,
+                101
+            ],
+            "merged_ids": [
+                4
+            ]
+        },
+        {
+            "text": "Payment GW",
+            "type": "Component_Node",
+            "confidence": 0.997,
+            "polygon": [
+                33,
+                104,
+                138,
+                104,
+                138,
+                123,
+                33,
+                123
+            ],
+            "merged_ids": [
+                7
+            ]
+        },
+        {
+            "text": "AI Foundry Agent Service standard setup",
+            "type": "Component_Node",
+            "confidence": 0.9698,
+            "polygon": [
+                1158,
+                123,
+                1495,
+                123,
+                1495,
+                144,
+                1158,
+                144
+            ],
+            "merged_ids": [
+                10
+            ]
+        },
+        {
+            "text": "Moengage",
+            "type": "Component_Node",
+            "confidence": 0.996,
+            "polygon": [
+                43,
+                126,
+                130,
+                126,
+                130,
+                146,
+                43,
+                146
+            ],
+            "merged_ids": [
+                8
+            ]
+        },
+        {
+            "text": "Proxy Firewall",
+            "type": "Component_Node",
+            "confidence": 0.9945,
+            "polygon": [
+                381,
+                126,
+                500,
+                126,
+                500,
+                147,
+                381,
+                147
+            ],
+            "merged_ids": [
+                9
+            ]
+        },
+        {
+            "text": "Diagnostics",
+            "type": "Component_Node",
+            "confidence": 0.986,
+            "polygon": [
+                1772,
+                127,
+                1837,
+                127,
+                1837,
+                140,
+                1772,
+                140
+            ],
+            "merged_ids": [
+                11
+            ]
+        },
+        {
+            "text": "Settings",
+            "type": "Component_Node",
+            "confidence": 0.996,
+            "polygon": [
+                1782,
+                141,
+                1827,
+                141,
+                1827,
+                154,
+                1782,
+                154
+            ],
+            "merged_ids": [
+                14
+            ]
+        },
+        {
+            "text": "UIDAI",
+            "type": "Component_Node",
+            "confidence": 0.974,
+            "polygon": [
+                61,
+                148,
+                108,
+                148,
+                108,
+                164,
+                61,
+                164
+            ],
+            "merged_ids": [
+                12
+            ]
+        },
+        {
+            "text": "Managed Identities",
+            "type": "Component_Node",
+            "confidence": 0.9875,
+            "polygon": [
+                1634,
+                153,
+                1737,
+                153,
+                1737,
+                165,
+                1634,
+                165
+            ],
+            "merged_ids": [
+                13
+            ]
+        },
+        {
+            "text": "Role assignments",
+            "type": "Component_Node",
+            "confidence": 0.9905,
+            "polygon": [
+                724,
+                165,
+                793,
+                165,
+                793,
+                191,
+                724,
+                191
+            ],
+            "merged_ids": [
+                16,
+                17
+            ]
+        },
+        {
+            "text": "NSDL",
+            "type": "Component_Node",
+            "confidence": 0.991,
+            "polygon": [
+                62,
+                170,
+                109,
+                170,
+                109,
+                186,
+                62,
+                186
+            ],
+            "merged_ids": [
+                15
+            ]
+        },
+        {
+            "text": "AI Foundry Agent Service dependencies",
+            "type": "Component_Node",
+            "confidence": 0.9564,
+            "polygon": [
+                894,
+                172,
+                1221,
+                172,
+                1221,
+                191,
+                894,
+                191
+            ],
+            "merged_ids": [
+                18
+            ]
+        },
+        {
+            "text": "Azure AI Foundry Services",
+            "type": "Component_Node",
+            "confidence": 0.943,
+            "polygon": [
+                1410,
+                172,
+                1625,
+                172,
+                1625,
+                190,
+                1410,
+                190
+            ],
+            "merged_ids": [
+                19
+            ]
+        },
+        {
+            "text": "-",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.676,
+            "polygon": [
+                601,
+                186,
+                603,
+                207,
+                598,
+                208,
+                596,
+                187
+            ],
+            "merged_ids": [
+                20
+            ]
+        },
+        {
+            "text": "NPCHI",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                59,
+                191,
+                113,
+                191,
+                113,
+                207,
+                59,
+                207
+            ],
+            "merged_ids": [
+                21
+            ]
+        },
+        {
+            "text": "User",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.985,
+            "polygon": [
+                193,
+                203,
+                219,
+                204,
+                219,
+                215,
+                193,
+                214
+            ],
+            "merged_ids": [
+                23
+            ]
+        },
+        {
+            "text": "AI Foundry Project",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.8757,
+            "polygon": [
+                1468,
+                204,
+                1572,
+                204,
+                1572,
+                217,
+                1468,
+                217
+            ],
+            "merged_ids": [
+                24
+            ]
+        },
+        {
+            "text": "Log Analytics",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9925,
+            "polygon": [
+                1767,
+                208,
+                1842,
+                207,
+                1842,
+                220,
+                1767,
+                221
+            ],
+            "merged_ids": [
+                26
+            ]
+        },
+        {
+            "text": "NSEIT",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                61,
+                213,
+                111,
+                213,
+                111,
+                229,
+                61,
+                229
+            ],
+            "merged_ids": [
+                22
+            ]
+        },
+        {
+            "text": "Inspection VNET",
+            "type": "Component_Node",
+            "confidence": 0.9845,
+            "polygon": [
+                329,
+                218,
+                468,
+                218,
+                468,
+                240,
+                329,
+                240
+            ],
+            "merged_ids": [
+                25
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.712,
+            "polygon": [
+                603,
+                221,
+                605,
+                276,
+                597,
+                276,
+                596,
+                222
+            ],
+            "merged_ids": [
+                27
+            ]
+        },
+        {
+            "text": "Workspace",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1774,
+                222,
+                1834,
+                222,
+                1834,
+                234,
+                1774,
+                234
+            ],
+            "merged_ids": [
+                28
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.723,
+            "polygon": [
+                619,
+                224,
+                620,
+                269,
+                614,
+                269,
+                613,
+                224
+            ],
+            "merged_ids": [
+                29
+            ]
+        },
+        {
+            "text": "497",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.585,
+            "polygon": [
+                1333,
+                237,
+                1356,
+                237,
+                1356,
+                255,
+                1333,
+                255
+            ],
+            "merged_ids": [
+                32
+            ]
+        },
+        {
+            "text": "O",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.554,
+            "polygon": [
+                1318,
+                246,
+                1331,
+                247,
+                1330,
+                263,
+                1317,
+                263
+            ],
+            "merged_ids": [
+                31
+            ]
+        },
+        {
+            "text": "Workload policy",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                713,
+                248,
+                800,
+                249,
+                800,
+                261,
+                713,
+                260
+            ],
+            "merged_ids": [
+                30
+            ]
+        },
+        {
+            "text": "assignments",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.982,
+            "polygon": [
+                722,
+                263,
+                791,
+                263,
+                791,
+                275,
+                722,
+                275
+            ],
+            "merged_ids": [
+                33
+            ]
+        },
+        {
+            "text": "Azure Firewall",
+            "type": "Component_Node",
+            "confidence": 0.996,
+            "polygon": [
+                402,
+                276,
+                523,
+                276,
+                523,
+                294,
+                402,
+                294
+            ],
+            "merged_ids": [
+                34
+            ]
+        },
+        {
+            "text": "AI Services",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9,
+            "polygon": [
+                1313,
+                277,
+                1375,
+                277,
+                1375,
+                288,
+                1313,
+                287
+            ],
+            "merged_ids": [
+                36
+            ]
+        },
+        {
+            "text": "Foundry",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1436,
+                279,
+                1482,
+                279,
+                1482,
+                290,
+                1436,
+                290
+            ],
+            "merged_ids": [
+                39
+            ]
+        },
+        {
+            "text": "Connections",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1537,
+                279,
+                1605,
+                279,
+                1605,
+                291,
+                1537,
+                291
+            ],
+            "merged_ids": [
+                45
+            ]
+        },
+        {
+            "text": "Foundry Agent",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                1622,
+                281,
+                1705,
+                281,
+                1704,
+                293,
+                1622,
+                293
+            ],
+            "merged_ids": [
+                46
+            ]
+        },
+        {
+            "text": "O",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.629,
+            "polygon": [
+                754,
+                284,
+                770,
+                285,
+                770,
+                295,
+                754,
+                295
+            ],
+            "merged_ids": [
+                35
+            ]
+        },
+        {
+            "text": "-----",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.717,
+            "polygon": [
+                605,
+                289,
+                604,
+                377,
+                595,
+                377,
+                595,
+                289
+            ],
+            "merged_ids": [
+                40
+            ]
+        },
+        {
+            "text": "O",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.46,
+            "polygon": [
+                764,
+                290,
+                781,
+                292,
+                781,
+                304,
+                764,
+                302
+            ],
+            "merged_ids": [
+                41
+            ]
+        },
+        {
+            "text": "AI Search",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.8305,
+            "polygon": [
+                1014,
+                290,
+                1070,
+                291,
+                1070,
+                303,
+                1014,
+                302
+            ],
+            "merged_ids": [
+                38
+            ]
+        },
+        {
+            "text": "Storage Account",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9955,
+            "polygon": [
+                905,
+                291,
+                1000,
+                290,
+                1000,
+                303,
+                905,
+                303
+            ],
+            "merged_ids": [
+                37
+            ]
+        },
+        {
+            "text": "Key Vault",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9945,
+            "polygon": [
+                1173,
+                291,
+                1229,
+                291,
+                1229,
+                302,
+                1173,
+                303
+            ],
+            "merged_ids": [
+                43
+            ]
+        },
+        {
+            "text": "endpoints",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.992,
+            "polygon": [
+                1318,
+                291,
+                1372,
+                291,
+                1372,
+                303,
+                1318,
+                303
+            ],
+            "merged_ids": [
+                44
+            ]
+        },
+        {
+            "text": "Cosmos DB",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9975,
+            "polygon": [
+                1094,
+                293,
+                1157,
+                293,
+                1157,
+                302,
+                1094,
+                303
+            ],
+            "merged_ids": [
+                42
+            ]
+        },
+        {
+            "text": "Models",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1439,
+                293,
+                1479,
+                293,
+                1478,
+                304,
+                1439,
+                304
+            ],
+            "merged_ids": [
+                47
+            ]
+        },
+        {
+            "text": "Service",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1643,
+                295,
+                1684,
+                295,
+                1684,
+                306,
+                1643,
+                305
+            ],
+            "merged_ids": [
+                48
+            ]
+        },
+        {
+            "text": "Monitor",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                1784,
+                296,
+                1830,
+                296,
+                1830,
+                308,
+                1784,
+                307
+            ],
+            "merged_ids": [
+                49
+            ]
+        },
+        {
+            "text": "Internet",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.941,
+            "polygon": [
+                134,
+                338,
+                185,
+                340,
+                184,
+                351,
+                134,
+                349
+            ],
+            "merged_ids": [
+                50
+            ]
+        },
+        {
+            "text": "Tags",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.987,
+            "polygon": [
+                746,
+                342,
+                773,
+                343,
+                773,
+                354,
+                746,
+                353
+            ],
+            "merged_ids": [
+                51
+            ]
+        },
+        {
+            "text": "AI Services Virtual Network",
+            "type": "Boundary_Title",
+            "confidence": 0.9822,
+            "polygon": [
+                664,
+                368,
+                889,
+                368,
+                889,
+                385,
+                664,
+                385
+            ],
+            "merged_ids": [
+                52
+            ]
+        },
+        {
+            "text": "Application",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.992,
+            "polygon": [
+                1775,
+                375,
+                1839,
+                375,
+                1839,
+                386,
+                1775,
+                387
+            ],
+            "merged_ids": [
+                53
+            ]
+        },
+        {
+            "text": "Ingress VNET",
+            "type": "Component_Node",
+            "confidence": 0.99,
+            "polygon": [
+                328,
+                384,
+                436,
+                384,
+                436,
+                404,
+                328,
+                404
+            ],
+            "merged_ids": [
+                55
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.71,
+            "polygon": [
+                603,
+                384,
+                603,
+                434,
+                597,
+                434,
+                597,
+                384
+            ],
+            "merged_ids": [
+                54
+            ]
+        },
+        {
+            "text": "Insights",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.993,
+            "polygon": [
+                1786,
+                388,
+                1829,
+                388,
+                1829,
+                400,
+                1786,
+                400
+            ],
+            "merged_ids": [
+                56
+            ]
+        },
+        {
+            "text": "Private Endpoints Subnet",
+            "type": "Component_Node",
+            "confidence": 0.9943,
+            "polygon": [
+                1058,
+                409,
+                1199,
+                409,
+                1199,
+                424,
+                1058,
+                424
+            ],
+            "merged_ids": [
+                59
+            ]
+        },
+        {
+            "text": "AI Foundry Agent Subnet",
+            "type": "Component_Node",
+            "confidence": 0.8623,
+            "polygon": [
+                1613,
+                410,
+                1711,
+                410,
+                1711,
+                423,
+                1613,
+                423
+            ],
+            "merged_ids": [
+                61
+            ]
+        },
+        {
+            "text": "API Management",
+            "type": "Component_Node",
+            "confidence": 0.9945,
+            "polygon": [
+                1457,
+                412,
+                1551,
+                412,
+                1551,
+                423,
+                1457,
+                423
+            ],
+            "merged_ids": [
+                60
+            ]
+        },
+        {
+            "text": "Jump box Subnet",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9947,
+            "polygon": [
+                686,
+                414,
+                782,
+                413,
+                783,
+                426,
+                686,
+                427
+            ],
+            "merged_ids": [
+                58
+            ]
+        },
+        {
+            "text": "Application Gateway Subnet",
+            "type": "Component_Node",
+            "confidence": 0.9947,
+            "polygon": [
+                342,
+                419,
+                498,
+                419,
+                498,
+                434,
+                342,
+                434
+            ],
+            "merged_ids": [
+                57
+            ]
+        },
+        {
+            "text": "Subnet",
+            "type": "Component_Node",
+            "confidence": 0.871,
+            "polygon": [
+                1642,
+                425,
+                1682,
+                425,
+                1682,
+                435,
+                1642,
+                435
+            ],
+            "merged_ids": [
+                63
+            ]
+        },
+        {
+            "text": "Subnet",
+            "type": "Component_Node",
+            "confidence": 0.997,
+            "polygon": [
+                1484,
+                426,
+                1524,
+                426,
+                1524,
+                437,
+                1484,
+                437
+            ],
+            "merged_ids": [
+                62
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.808,
+            "polygon": [
+                603,
+                462,
+                604,
+                543,
+                597,
+                543,
+                595,
+                462
+            ],
+            "merged_ids": [
+                64
+            ]
+        },
+        {
+            "text": "Network",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                1781,
+                472,
+                1829,
+                472,
+                1829,
+                482,
+                1781,
+                482
+            ],
+            "merged_ids": [
+                65
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                935,
+                486,
+                977,
+                487,
+                977,
+                497,
+                935,
+                497
+            ],
+            "merged_ids": [
+                68
+            ]
+        },
+        {
+            "text": "Watcher",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1781,
+                486,
+                1827,
+                486,
+                1827,
+                498,
+                1781,
+                497
+            ],
+            "merged_ids": [
+                77
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1356,
+                487,
+                1397,
+                488,
+                1397,
+                499,
+                1356,
+                498
+            ],
+            "merged_ids": [
+                72
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1023,
+                488,
+                1064,
+                488,
+                1064,
+                498,
+                1023,
+                498
+            ],
+            "merged_ids": [
+                69
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1283,
+                488,
+                1324,
+                488,
+                1323,
+                500,
+                1283,
+                500
+            ],
+            "merged_ids": [
+                76
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1100,
+                489,
+                1141,
+                489,
+                1141,
+                499,
+                1100,
+                498
+            ],
+            "merged_ids": [
+                70
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1183,
+                489,
+                1224,
+                489,
+                1224,
+                500,
+                1183,
+                499
+            ],
+            "merged_ids": [
+                71
+            ]
+        },
+        {
+            "text": "Jump Box VM",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9947,
+            "polygon": [
+                697,
+                493,
+                777,
+                493,
+                777,
+                507,
+                697,
+                507
+            ],
+            "merged_ids": [
+                67
+            ]
+        },
+        {
+            "text": "Application",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                376,
+                496,
+                438,
+                496,
+                438,
+                508,
+                376,
+                508
+            ],
+            "merged_ids": [
+                66
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                933,
+                500,
+                981,
+                500,
+                981,
+                513,
+                933,
+                512
+            ],
+            "merged_ids": [
+                75
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1021,
+                501,
+                1070,
+                501,
+                1070,
+                514,
+                1021,
+                514
+            ],
+            "merged_ids": [
+                78
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1352,
+                501,
+                1401,
+                501,
+                1401,
+                514,
+                1352,
+                514
+            ],
+            "merged_ids": [
+                82
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1097,
+                502,
+                1145,
+                503,
+                1145,
+                515,
+                1097,
+                515
+            ],
+            "merged_ids": [
+                79
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1278,
+                502,
+                1329,
+                502,
+                1329,
+                515,
+                1278,
+                515
+            ],
+            "merged_ids": [
+                81
+            ]
+        },
+        {
+            "text": "API Management",
+            "type": "Component_Node",
+            "confidence": 0.9875,
+            "polygon": [
+                1458,
+                502,
+                1554,
+                502,
+                1554,
+                517,
+                1458,
+                517
+            ],
+            "merged_ids": [
+                83
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1179,
+                503,
+                1229,
+                503,
+                1229,
+                515,
+                1179,
+                515
+            ],
+            "merged_ids": [
+                80
+            ]
+        },
+        {
+            "text": "WAF",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                470,
+                504,
+                496,
+                504,
+                495,
+                514,
+                470,
+                514
+            ],
+            "merged_ids": [
+                74
+            ]
+        },
+        {
+            "text": "Gateway",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                383,
+                510,
+                432,
+                511,
+                432,
+                522,
+                383,
+                521
+            ],
+            "merged_ids": [
+                73
+            ]
+        },
+        {
+            "text": "Azure DDoS",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.989,
+            "polygon": [
+                346,
+                532,
+                444,
+                532,
+                444,
+                548,
+                346,
+                548
+            ],
+            "merged_ids": [
+                85
+            ]
+        },
+        {
+            "text": "On-premises",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                116,
+                544,
+                222,
+                544,
+                222,
+                562,
+                116,
+                562
+            ],
+            "merged_ids": [
+                84
+            ]
+        },
+        {
+            "text": "Container App",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9965,
+            "polygon": [
+                1467,
+                561,
+                1545,
+                561,
+                1545,
+                573,
+                1467,
+                572
+            ],
+            "merged_ids": [
+                87
+            ]
+        },
+        {
+            "text": "Build Agent Subnet",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9977,
+            "polygon": [
+                1613,
+                561,
+                1717,
+                561,
+                1717,
+                574,
+                1613,
+                574
+            ],
+            "merged_ids": [
+                88
+            ]
+        },
+        {
+            "text": "network",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                134,
+                567,
+                203,
+                567,
+                203,
+                582,
+                134,
+                583
+            ],
+            "merged_ids": [
+                86
+            ]
+        },
+        {
+            "text": "Environment Subnet",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1450,
+                575,
+                1563,
+                575,
+                1563,
+                586,
+                1450,
+                586
+            ],
+            "merged_ids": [
+                89
+            ]
+        },
+        {
+            "text": "Redis Cache",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9925,
+            "polygon": [
+                1759,
+                580,
+                1861,
+                581,
+                1861,
+                598,
+                1759,
+                598
+            ],
+            "merged_ids": [
+                90
+            ]
+        },
+        {
+            "text": "Corporate Subscription",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9925,
+            "polygon": [
+                300,
+                603,
+                490,
+                603,
+                491,
+                622,
+                300,
+                622
+            ],
+            "merged_ids": [
+                91
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1002,
+                619,
+                1043,
+                619,
+                1044,
+                629,
+                1002,
+                629
+            ],
+            "merged_ids": [
+                94
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1084,
+                619,
+                1124,
+                619,
+                1124,
+                631,
+                1084,
+                631
+            ],
+            "merged_ids": [
+                95
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1170,
+                620,
+                1211,
+                620,
+                1211,
+                631,
+                1170,
+                630
+            ],
+            "merged_ids": [
+                96
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1353,
+                620,
+                1394,
+                620,
+                1394,
+                631,
+                1353,
+                631
+            ],
+            "merged_ids": [
+                98
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                856,
+                621,
+                896,
+                621,
+                896,
+                632,
+                856,
+                631
+            ],
+            "merged_ids": [
+                92
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                927,
+                621,
+                968,
+                622,
+                968,
+                633,
+                927,
+                632
+            ],
+            "merged_ids": [
+                93
+            ]
+        },
+        {
+            "text": "Private",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1257,
+                621,
+                1298,
+                621,
+                1298,
+                632,
+                1257,
+                632
+            ],
+            "merged_ids": [
+                97
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                997,
+                633,
+                1048,
+                633,
+                1048,
+                644,
+                997,
+                644
+            ],
+            "merged_ids": [
+                102
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1165,
+                633,
+                1216,
+                634,
+                1216,
+                646,
+                1165,
+                645
+            ],
+            "merged_ids": [
+                104
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1079,
+                634,
+                1129,
+                633,
+                1129,
+                645,
+                1079,
+                646
+            ],
+            "merged_ids": [
+                103
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.991,
+            "polygon": [
+                1251,
+                634,
+                1303,
+                634,
+                1303,
+                646,
+                1251,
+                647
+            ],
+            "merged_ids": [
+                105
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1349,
+                634,
+                1398,
+                633,
+                1398,
+                645,
+                1349,
+                646
+            ],
+            "merged_ids": [
+                106
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                852,
+                635,
+                901,
+                634,
+                902,
+                646,
+                852,
+                647
+            ],
+            "merged_ids": [
+                100
+            ]
+        },
+        {
+            "text": "Endpoint",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                923,
+                635,
+                973,
+                635,
+                973,
+                648,
+                923,
+                648
+            ],
+            "merged_ids": [
+                101
+            ]
+        },
+        {
+            "text": "Build Agent VM",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9967,
+            "polygon": [
+                1626,
+                640,
+                1712,
+                640,
+                1712,
+                654,
+                1626,
+                654
+            ],
+            "merged_ids": [
+                107
+            ]
+        },
+        {
+            "text": "Corporate VNET",
+            "type": "Boundary_Title",
+            "confidence": 0.992,
+            "polygon": [
+                316,
+                641,
+                451,
+                641,
+                451,
+                661,
+                316,
+                661
+            ],
+            "merged_ids": [
+                99
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.371,
+            "polygon": [
+                1024,
+                653,
+                1025,
+                673,
+                1021,
+                673,
+                1020,
+                653
+            ],
+            "merged_ids": [
+                108
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.722,
+            "polygon": [
+                878,
+                658,
+                879,
+                685,
+                874,
+                685,
+                873,
+                658
+            ],
+            "merged_ids": [
+                109
+            ]
+        },
+        {
+            "text": "Stack",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1792,
+                658,
+                1828,
+                659,
+                1828,
+                673,
+                1792,
+                673
+            ],
+            "merged_ids": [
+                110
+            ]
+        },
+        {
+            "text": "Azure DNS Private Resolver",
+            "type": "Component_Node",
+            "confidence": 0.9965,
+            "polygon": [
+                386,
+                677,
+                524,
+                677,
+                524,
+                715,
+                386,
+                715
+            ],
+            "merged_ids": [
+                111,
+                112
+            ]
+        },
+        {
+            "text": "Enterprise and public",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9953,
+            "polygon": [
+                683,
+                734,
+                856,
+                734,
+                855,
+                753,
+                683,
+                753
+            ],
+            "merged_ids": [
+                114
+            ]
+        },
+        {
+            "text": "GenAI app microservices",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                1584,
+                737,
+                1788,
+                737,
+                1788,
+                755,
+                1584,
+                755
+            ],
+            "merged_ids": [
+                115
+            ]
+        },
+        {
+            "text": "VPN/ExpressRoute",
+            "type": "Flow_Label",
+            "confidence": 0.993,
+            "polygon": [
+                375,
+                746,
+                533,
+                746,
+                533,
+                764,
+                375,
+                764
+            ],
+            "merged_ids": [
+                113
+            ]
+        },
+        {
+            "text": "knowledge sources",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                691,
+                757,
+                849,
+                758,
+                849,
+                775,
+                691,
+                775
+            ],
+            "merged_ids": [
+                117
+            ]
+        },
+        {
+            "text": "GenAI app dependencies",
+            "type": "Component_Node",
+            "confidence": 0.9667,
+            "polygon": [
+                1017,
+                764,
+                1217,
+                764,
+                1217,
+                785,
+                1017,
+                785
+            ],
+            "merged_ids": [
+                118
+            ]
+        },
+        {
+            "text": "Managed Identities",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9765,
+            "polygon": [
+                1386,
+                768,
+                1491,
+                768,
+                1492,
+                781,
+                1386,
+                781
+            ],
+            "merged_ids": [
+                119
+            ]
+        },
+        {
+            "text": "Gateways",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                415,
+                769,
+                495,
+                771,
+                494,
+                788,
+                415,
+                785
+            ],
+            "merged_ids": [
+                116
+            ]
+        },
+        {
+            "text": "--.",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.089,
+            "polygon": [
+                602,
+                776,
+                604,
+                826,
+                597,
+                827,
+                595,
+                776
+            ],
+            "merged_ids": [
+                120
+            ]
+        },
+        {
+            "text": "ExpressRoute",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.991,
+            "polygon": [
+                110,
+                795,
+                224,
+                794,
+                224,
+                811,
+                110,
+                811
+            ],
+            "merged_ids": [
+                121
+            ]
+        },
+        {
+            "text": "Container App Environment",
+            "type": "Component_Node",
+            "confidence": 0.9953,
+            "polygon": [
+                1432,
+                799,
+                1658,
+                799,
+                1658,
+                818,
+                1432,
+                818
+            ],
+            "merged_ids": [
+                122
+            ]
+        },
+        {
+            "text": "--",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.701,
+            "polygon": [
+                602,
+                812,
+                604,
+                857,
+                596,
+                858,
+                595,
+                812
+            ],
+            "merged_ids": [
+                123
+            ]
+        },
+        {
+            "text": "Q",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.621,
+            "polygon": [
+                1348,
+                838,
+                1368,
+                851,
+                1360,
+                868,
+                1340,
+                855
+            ],
+            "merged_ids": [
+                124
+            ]
+        },
+        {
+            "text": "lapr",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.941,
+            "polygon": [
+                1407,
+                845,
+                1440,
+                845,
+                1440,
+                870,
+                1407,
+                870
+            ],
+            "merged_ids": [
+                126
+            ]
+        },
+        {
+            "text": "Azure Firewall",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                397,
+                858,
+                514,
+                858,
+                514,
+                876,
+                397,
+                876
+            ],
+            "merged_ids": [
+                125
+            ]
+        },
+        {
+            "text": "Storage",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                1081,
+                863,
+                1125,
+                864,
+                1125,
+                875,
+                1081,
+                874
+            ],
+            "merged_ids": [
+                131
+            ]
+        },
+        {
+            "text": "App",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                1259,
+                863,
+                1281,
+                864,
+                1281,
+                874,
+                1259,
+                873
+            ],
+            "merged_ids": [
+                133
+            ]
+        },
+        {
+            "text": "Container",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1162,
+                864,
+                1216,
+                864,
+                1216,
+                875,
+                1162,
+                875
+            ],
+            "merged_ids": [
+                132
+            ]
+        },
+        {
+            "text": "Cosmos DB",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9975,
+            "polygon": [
+                917,
+                868,
+                979,
+                868,
+                979,
+                881,
+                917,
+                881
+            ],
+            "merged_ids": [
+                129
+            ]
+        },
+        {
+            "text": "Key Vault",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                994,
+                868,
+                1051,
+                868,
+                1051,
+                882,
+                994,
+                882
+            ],
+            "merged_ids": [
+                130
+            ]
+        },
+        {
+            "text": "Grounding",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                692,
+                870,
+                749,
+                870,
+                749,
+                882,
+                691,
+                881
+            ],
+            "merged_ids": [
+                127
+            ]
+        },
+        {
+            "text": "AI Search",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9185,
+            "polygon": [
+                781,
+                870,
+                834,
+                871,
+                834,
+                884,
+                780,
+                883
+            ],
+            "merged_ids": [
+                128
+            ]
+        },
+        {
+            "text": "Ingestion",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.991,
+            "polygon": [
+                1716,
+                870,
+                1768,
+                869,
+                1768,
+                882,
+                1716,
+                882
+            ],
+            "merged_ids": [
+                142
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.658,
+            "polygon": [
+                604,
+                872,
+                603,
+                926,
+                597,
+                926,
+                597,
+                872
+            ],
+            "merged_ids": [
+                134
+            ]
+        },
+        {
+            "text": "MCP",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                1662,
+                872,
+                1689,
+                871,
+                1689,
+                882,
+                1662,
+                883
+            ],
+            "merged_ids": [
+                141
+            ]
+        },
+        {
+            "text": "Configuration",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.993,
+            "polygon": [
+                1233,
+                875,
+                1309,
+                875,
+                1309,
+                889,
+                1233,
+                888
+            ],
+            "merged_ids": [
+                138
+            ]
+        },
+        {
+            "text": "SK",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                1607,
+                876,
+                1625,
+                876,
+                1625,
+                886,
+                1607,
+                887
+            ],
+            "merged_ids": [
+                140
+            ]
+        },
+        {
+            "text": "Account",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1079,
+                877,
+                1126,
+                878,
+                1126,
+                889,
+                1079,
+                889
+            ],
+            "merged_ids": [
+                136
+            ]
+        },
+        {
+            "text": "Registry",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                1166,
+                877,
+                1212,
+                878,
+                1212,
+                891,
+                1166,
+                890
+            ],
+            "merged_ids": [
+                137
+            ]
+        },
+        {
+            "text": "Frontend Orchestrator",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9945,
+            "polygon": [
+                1442,
+                879,
+                1572,
+                877,
+                1573,
+                889,
+                1442,
+                892
+            ],
+            "merged_ids": [
+                139
+            ]
+        },
+        {
+            "text": "with Bing",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.99,
+            "polygon": [
+                694,
+                884,
+                746,
+                884,
+                746,
+                896,
+                694,
+                896
+            ],
+            "merged_ids": [
+                135
+            ]
+        },
+        {
+            "text": "Egress Traffic",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9955,
+            "polygon": [
+                87,
+                903,
+                201,
+                902,
+                202,
+                920,
+                88,
+                922
+            ],
+            "merged_ids": [
+                143
+            ]
+        },
+        {
+            "text": "Security and Governance",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                763,
+                928,
+                972,
+                929,
+                972,
+                947,
+                763,
+                947
+            ],
+            "merged_ids": [
+                145
+            ]
+        },
+        {
+            "text": "Azure Bastion",
+            "type": "Component_Node",
+            "confidence": 0.9965,
+            "polygon": [
+                398,
+                929,
+                516,
+                929,
+                516,
+                948,
+                398,
+                948
+            ],
+            "merged_ids": [
+                144
+            ]
+        },
+        {
+            "text": "Ingress Traffic",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                89,
+                954,
+                206,
+                953,
+                206,
+                971,
+                89,
+                973
+            ],
+            "merged_ids": [
+                146
+            ]
+        },
+        {
+            "text": "ID",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.666,
+            "polygon": [
+                805,
+                982,
+                805,
+                957,
+                818,
+                956,
+                818,
+                981
+            ],
+            "merged_ids": [
+                147
+            ]
+        },
+        {
+            "text": "Azure AD",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                1419,
+                982,
+                1496,
+                982,
+                1496,
+                998,
+                1419,
+                998
+            ],
+            "merged_ids": [
+                149
+            ]
+        },
+        {
+            "text": "Azure",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.995,
+            "polygon": [
+                1306,
+                985,
+                1356,
+                987,
+                1355,
+                1000,
+                1305,
+                998
+            ],
+            "merged_ids": [
+                148
+            ]
+        },
+        {
+            "text": "Prometheus",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.993,
+            "polygon": [
+                1538,
+                993,
+                1642,
+                993,
+                1642,
+                1010,
+                1538,
+                1010
+            ],
+            "merged_ids": [
+                152
+            ]
+        },
+        {
+            "text": "Defender",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                792,
+                999,
+                843,
+                999,
+                843,
+                1010,
+                792,
+                1010
+            ],
+            "merged_ids": [
+                151
+            ]
+        },
+        {
+            "text": "P2",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.998,
+            "polygon": [
+                1444,
+                1000,
+                1470,
+                1000,
+                1471,
+                1016,
+                1444,
+                1016
+            ],
+            "merged_ids": [
+                156
+            ]
+        },
+        {
+            "text": "DevOps",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.994,
+            "polygon": [
+                1298,
+                1002,
+                1361,
+                1004,
+                1361,
+                1020,
+                1298,
+                1018
+            ],
+            "merged_ids": [
+                155
+            ]
+        },
+        {
+            "text": "Subscription policy",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9945,
+            "polygon": [
+                674,
+                1003,
+                777,
+                1003,
+                777,
+                1016,
+                674,
+                1016
+            ],
+            "merged_ids": [
+                154
+            ]
+        },
+        {
+            "text": "Azure DDoS",
+            "type": "Component_Node",
+            "confidence": 0.988,
+            "polygon": [
+                338,
+                1007,
+                439,
+                1007,
+                439,
+                1027,
+                338,
+                1027
+            ],
+            "merged_ids": [
+                150
+            ]
+        },
+        {
+            "text": "Entra ID",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                900,
+                1012,
+                945,
+                1012,
+                945,
+                1024,
+                900,
+                1024
+            ],
+            "merged_ids": [
+                159
+            ]
+        },
+        {
+            "text": "DNS",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.981,
+            "polygon": [
+                548,
+                1014,
+                578,
+                1013,
+                577,
+                1028,
+                547,
+                1028
+            ],
+            "merged_ids": [
+                153
+            ]
+        },
+        {
+            "text": "for Cloud",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.9945,
+            "polygon": [
+                792,
+                1014,
+                843,
+                1014,
+                843,
+                1025,
+                792,
+                1025
+            ],
+            "merged_ids": [
+                158
+            ]
+        },
+        {
+            "text": "Purview",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.997,
+            "polygon": [
+                979,
+                1014,
+                1023,
+                1015,
+                1023,
+                1025,
+                979,
+                1024
+            ],
+            "merged_ids": [
+                160
+            ]
+        },
+        {
+            "text": "assignments",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.982,
+            "polygon": [
+                691,
+                1018,
+                760,
+                1018,
+                760,
+                1029,
+                691,
+                1029
+            ],
+            "merged_ids": [
+                157
+            ]
+        }
+    ]
+}

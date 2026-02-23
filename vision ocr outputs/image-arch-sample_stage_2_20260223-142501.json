@@ -1,0 +1,1805 @@
+{
+    "text_blocks": [
+        {
+            "text": "BRAIN",
+            "type": "Boundary_Title",
+            "confidence": 0.995,
+            "polygon": [
+                487,
+                17,
+                526,
+                17,
+                526,
+                28,
+                487,
+                28
+            ],
+            "merged_ids": [
+                2
+            ]
+        },
+        {
+            "text": "PERCEPTION",
+            "type": "Boundary_Title",
+            "confidence": 0.992,
+            "polygon": [
+                80,
+                18,
+                158,
+                18,
+                158,
+                30,
+                80,
+                30
+            ],
+            "merged_ids": [
+                1
+            ]
+        },
+        {
+            "text": "Feedback Loop",
+            "type": "Flow_Label",
+            "confidence": 0.991,
+            "polygon": [
+                690,
+                30,
+                760,
+                30,
+                760,
+                40,
+                690,
+                40
+            ],
+            "merged_ids": [
+                3
+            ]
+        },
+        {
+            "text": "New Insights",
+            "type": "Ungrouped_Raw",
+            "confidence": 0.996,
+            "polygon": [
+                431,
+                65,
+                490,
+                66,
+                490,
+                75,
+                431,
+                74
+            ],
+            "merged_ids": [
+                5
+            ]
+        },
+        {
+            "text": "SENSORS (INPUT)",
+            "type": "Component_Node",
+            "confidence": 0.897,
+            "polygon": [
+                103,
+                70,
+                145,
+                70,
+                145,
+                90,
+                103,
+                90
+            ],
+            "merged_ids": [
+                4,
+                6
+            ]
+        },
+        {
+            "text": "1",
+            "type": "Stage_Marker",
+            "confidence": 0.994,
+            "polygon": [
+                167,
+                73,
+                175,
+                73,
+                175,
+                84,
+                167,
+                84
+            ],
+            "merged_ids": [
+                7
+            ]
+        },
+        {
+            "text": "-",
+            "type": "Unknown",
+            "confidence": 0.662,
+            "polygon": [
+                775,
+                86,
+                782,
+                86,
+                782,
+                99,
+                775,
+                99
+            ],
+            "merged_ids": [
+                8
+            ]
+        },
+        {
+            "text": "5",
+            "type": "Stage_Marker",
+            "confidence": 0.998,
+            "polygon": [
+                807,
+                105,
+                815,
+                105,
+                815,
+                115,
+                807,
+                115
+            ],
+            "merged_ids": [
+                9
+            ]
+        },
+        {
+            "text": "LEARNING",
+            "type": "Boundary_Title",
+            "confidence": 0.991,
+            "polygon": [
+                843,
+                106,
+                907,
+                106,
+                907,
+                117,
+                843,
+                117
+            ],
+            "merged_ids": [
+                10
+            ]
+        },
+        {
+            "text": "ACTUATORS",
+            "type": "Boundary_Title",
+            "confidence": 0.994,
+            "polygon": [
+                966,
+                106,
+                1039,
+                106,
+                1039,
+                118,
+                966,
+                118
+            ],
+            "merged_ids": [
+                11
+            ]
+        },
+        {
+            "text": "4",
+            "type": "Stage_Marker",
+            "confidence": 0.981,
+            "polygon": [
+                637,
+                119,
+                644,
+                119,
+                644,
+                127,
+                637,
+                127
+            ],
+            "merged_ids": [
+                16
+            ]
+        },
+        {
+            "text": "KNOWLEDGE",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                282,
+                122,
+                340,
+                122,
+                340,
+                131,
+                282,
+                131
+            ],
+            "merged_ids": [
+                13
+            ]
+        },
+        {
+            "text": "REASONING",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                475,
+                122,
+                529,
+                122,
+                529,
+                131,
+                475,
+                131
+            ],
+            "merged_ids": [
+                15
+            ]
+        },
+        {
+            "text": "GOALS & UTILITY",
+            "type": "Component_Node",
+            "confidence": 0.9647,
+            "polygon": [
+                656,
+                122,
+                727,
+                122,
+                727,
+                131,
+                656,
+                131
+            ],
+            "merged_ids": [
+                17
+            ]
+        },
+        {
+            "text": "ELEMENT",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                847,
+                122,
+                904,
+                122,
+                904,
+                134,
+                847,
+                134
+            ],
+            "merged_ids": [
+                18
+            ]
+        },
+        {
+            "text": "3",
+            "type": "Stage_Marker",
+            "confidence": 0.996,
+            "polygon": [
+                448,
+                124,
+                458,
+                124,
+                458,
+                136,
+                448,
+                136
+            ],
+            "merged_ids": [
+                14
+            ]
+        },
+        {
+            "text": "2",
+            "type": "Stage_Marker",
+            "confidence": 0.993,
+            "polygon": [
+                260,
+                125,
+                269,
+                125,
+                269,
+                134,
+                260,
+                134
+            ],
+            "merged_ids": [
+                12
+            ]
+        },
+        {
+            "text": "FUNCTION",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                668,
+                133,
+                715,
+                133,
+                715,
+                142,
+                668,
+                142
+            ],
+            "merged_ids": [
+                22
+            ]
+        },
+        {
+            "text": "BASE",
+            "type": "Component_Node",
+            "confidence": 0.989,
+            "polygon": [
+                301,
+                134,
+                322,
+                134,
+                322,
+                141,
+                301,
+                141
+            ],
+            "merged_ids": [
+                20
+            ]
+        },
+        {
+            "text": "ENGINE",
+            "type": "Component_Node",
+            "confidence": 0.993,
+            "polygon": [
+                485,
+                134,
+                519,
+                134,
+                519,
+                141,
+                485,
+                141
+            ],
+            "merged_ids": [
+                21
+            ]
+        },
+        {
+            "text": "Microphone",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                108,
+                138,
+                169,
+                138,
+                169,
+                150,
+                108,
+                150
+            ],
+            "merged_ids": [
+                19
+            ]
+        },
+        {
+            "text": "INTER-AGENTIC EXECUTION",
+            "type": "Boundary_Title",
+            "confidence": 0.991,
+            "polygon": [
+                9,
+                148,
+                23,
+                148,
+                23,
+                298,
+                9,
+                298
+            ],
+            "merged_ids": [
+                57
+            ]
+        },
+        {
+            "text": "GOALS",
+            "type": "Component_Node",
+            "confidence": 0.955,
+            "polygon": [
+                657,
+                155,
+                687,
+                155,
+                687,
+                163,
+                657,
+                163
+            ],
+            "merged_ids": [
+                24
+            ]
+        },
+        {
+            "text": "Data Acquisition",
+            "type": "Component_Node",
+            "confidence": 0.948,
+            "polygon": [
+                839,
+                157,
+                904,
+                157,
+                904,
+                167,
+                839,
+                167
+            ],
+            "merged_ids": [
+                25
+            ]
+        },
+        {
+            "text": "LLMs, Elastic Search; OpenSearch",
+            "type": "Component_Node",
+            "confidence": 0.9452,
+            "polygon": [
+                403,
+                158,
+                413,
+                158,
+                413,
+                313,
+                403,
+                313
+            ],
+            "merged_ids": [
+                59
+            ]
+        },
+        {
+            "text": "Camera",
+            "type": "Component_Node",
+            "confidence": 0.997,
+            "polygon": [
+                110,
+                162,
+                152,
+                162,
+                152,
+                172,
+                110,
+                172
+            ],
+            "merged_ids": [
+                23
+            ]
+        },
+        {
+            "text": "PLAN",
+            "type": "Component_Node",
+            "confidence": 0.989,
+            "polygon": [
+                458,
+                167,
+                484,
+                167,
+                484,
+                176,
+                458,
+                176
+            ],
+            "merged_ids": [
+                26
+            ]
+        },
+        {
+            "text": "0/1 [Binary]",
+            "type": "Component_Node",
+            "confidence": 0.957,
+            "polygon": [
+                670,
+                171,
+                721,
+                171,
+                721,
+                182,
+                670,
+                182
+            ],
+            "merged_ids": [
+                27
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Unknown",
+            "confidence": 0.67,
+            "polygon": [
+                238,
+                174,
+                242,
+                174,
+                242,
+                194,
+                238,
+                194
+            ],
+            "merged_ids": [
+                28
+            ]
+        },
+        {
+            "text": "IoT sensors",
+            "type": "Component_Node",
+            "confidence": 0.8665,
+            "polygon": [
+                114,
+                182,
+                172,
+                182,
+                172,
+                192,
+                114,
+                192
+            ],
+            "merged_ids": [
+                29
+            ]
+        },
+        {
+            "text": "Feature Extraction",
+            "type": "Component_Node",
+            "confidence": 0.9875,
+            "polygon": [
+                833,
+                189,
+                909,
+                189,
+                909,
+                199,
+                833,
+                199
+            ],
+            "merged_ids": [
+                31
+            ]
+        },
+        {
+            "text": "Rule-based",
+            "type": "Component_Node",
+            "confidence": 0.99,
+            "polygon": [
+                674,
+                191,
+                727,
+                191,
+                727,
+                201,
+                674,
+                201
+            ],
+            "merged_ids": [
+                30
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Unknown",
+            "confidence": 0.196,
+            "polygon": [
+                238,
+                199,
+                242,
+                199,
+                242,
+                217,
+                238,
+                217
+            ],
+            "merged_ids": [
+                32
+            ]
+        },
+        {
+            "text": "RETRIEVE",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                510,
+                206,
+                555,
+                206,
+                555,
+                215,
+                510,
+                215
+            ],
+            "merged_ids": [
+                33
+            ]
+        },
+        {
+            "text": "Adaptive",
+            "type": "Component_Node",
+            "confidence": 0.996,
+            "polygon": [
+                679,
+                206,
+                719,
+                206,
+                719,
+                216,
+                679,
+                216
+            ],
+            "merged_ids": [
+                34
+            ]
+        },
+        {
+            "text": "Model Training",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                842,
+                220,
+                903,
+                220,
+                903,
+                229,
+                842,
+                229
+            ],
+            "merged_ids": [
+                38
+            ]
+        },
+        {
+            "text": "Knowledge Graph",
+            "type": "Component_Node",
+            "confidence": 0.92,
+            "polygon": [
+                305,
+                222,
+                375,
+                222,
+                375,
+                231,
+                305,
+                231
+            ],
+            "merged_ids": [
+                36
+            ]
+        },
+        {
+            "text": "Forward Chaining",
+            "type": "Component_Node",
+            "confidence": 0.992,
+            "polygon": [
+                438,
+                225,
+                508,
+                225,
+                508,
+                235,
+                438,
+                235
+            ],
+            "merged_ids": [
+                37
+            ]
+        },
+        {
+            "text": "Database",
+            "type": "Component_Node",
+            "confidence": 0.991,
+            "polygon": [
+                248,
+                227,
+                286,
+                227,
+                286,
+                235,
+                248,
+                235
+            ],
+            "merged_ids": [
+                35
+            ]
+        },
+        {
+            "text": "C",
+            "type": "Unknown",
+            "confidence": 0.909,
+            "polygon": [
+                607,
+                231,
+                617,
+                231,
+                617,
+                238,
+                607,
+                238
+            ],
+            "merged_ids": [
+                41
+            ]
+        },
+        {
+            "text": "Backward Chaining",
+            "type": "Component_Node",
+            "confidence": 0.992,
+            "polygon": [
+                433,
+                235,
+                512,
+                235,
+                512,
+                246,
+                433,
+                246
+            ],
+            "merged_ids": [
+                40
+            ]
+        },
+        {
+            "text": "INPUT FORMATTER",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                84,
+                237,
+                165,
+                237,
+                165,
+                246,
+                84,
+                246
+            ],
+            "merged_ids": [
+                39
+            ]
+        },
+        {
+            "text": "Decision",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                576,
+                241,
+                617,
+                241,
+                617,
+                250,
+                576,
+                250
+            ],
+            "merged_ids": [
+                42
+            ]
+        },
+        {
+            "text": "Physical Actuators",
+            "type": "Component_Node",
+            "confidence": 0.809,
+            "polygon": [
+                960,
+                245,
+                1036,
+                245,
+                1036,
+                255,
+                960,
+                255
+            ],
+            "merged_ids": [
+                48
+            ]
+        },
+        {
+            "text": "Bayesian Inference",
+            "type": "Component_Node",
+            "confidence": 0.7067,
+            "polygon": [
+                435,
+                246,
+                512,
+                246,
+                512,
+                257,
+                435,
+                257
+            ],
+            "merged_ids": [
+                44
+            ]
+        },
+        {
+            "text": "Feedback",
+            "type": "Component_Node",
+            "confidence": 0.769,
+            "polygon": [
+                851,
+                248,
+                891,
+                248,
+                891,
+                258,
+                851,
+                258
+            ],
+            "merged_ids": [
+                47
+            ]
+        },
+        {
+            "text": "UTILITY f(x)",
+            "type": "Component_Node",
+            "confidence": 0.881,
+            "polygon": [
+                691,
+                249,
+                737,
+                249,
+                737,
+                261,
+                691,
+                261
+            ],
+            "merged_ids": [
+                46
+            ]
+        },
+        {
+            "text": "-------------",
+            "type": "Unknown",
+            "confidence": 0.784,
+            "polygon": [
+                83,
+                252,
+                172,
+                252,
+                172,
+                258,
+                83,
+                258
+            ],
+            "merged_ids": [
+                43
+            ]
+        },
+        {
+            "text": "Score",
+            "type": "Component_Node",
+            "confidence": 0.997,
+            "polygon": [
+                584,
+                254,
+                611,
+                254,
+                611,
+                262,
+                584,
+                262
+            ],
+            "merged_ids": [
+                45
+            ]
+        },
+        {
+            "text": "INFERENCE",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                451,
+                266,
+                507,
+                266,
+                507,
+                277,
+                451,
+                277
+            ],
+            "merged_ids": [
+                50
+            ]
+        },
+        {
+            "text": "abc",
+            "type": "Unknown",
+            "confidence": 0.677,
+            "polygon": [
+                87,
+                267,
+                124,
+                267,
+                124,
+                277,
+                87,
+                277
+            ],
+            "merged_ids": [
+                49
+            ]
+        },
+        {
+            "text": "Utility Models",
+            "type": "Component_Node",
+            "confidence": 0.9955,
+            "polygon": [
+                687,
+                276,
+                743,
+                276,
+                743,
+                286,
+                687,
+                286
+            ],
+            "merged_ids": [
+                52
+            ]
+        },
+        {
+            "text": "Adapt, Update &",
+            "type": "Component_Node",
+            "confidence": 0.8463,
+            "polygon": [
+                838,
+                276,
+                905,
+                276,
+                905,
+                286,
+                838,
+                286
+            ],
+            "merged_ids": [
+                53
+            ]
+        },
+        {
+            "text": "Inference",
+            "type": "Component_Node",
+            "confidence": 0.948,
+            "polygon": [
+                577,
+                282,
+                614,
+                282,
+                614,
+                290,
+                577,
+                290
+            ],
+            "merged_ids": [
+                51
+            ]
+        },
+        {
+            "text": "Retrain",
+            "type": "Component_Node",
+            "confidence": 0.944,
+            "polygon": [
+                857,
+                288,
+                887,
+                288,
+                887,
+                296,
+                857,
+                296
+            ],
+            "merged_ids": [
+                56
+            ]
+        },
+        {
+            "text": "Decision",
+            "type": "Component_Node",
+            "confidence": 0.912,
+            "polygon": [
+                578,
+                293,
+                613,
+                293,
+                613,
+                301,
+                578,
+                301
+            ],
+            "merged_ids": [
+                55
+            ]
+        },
+        {
+            "text": "Vector Database",
+            "type": "Component_Node",
+            "confidence": 0.9935,
+            "polygon": [
+                242,
+                295,
+                311,
+                295,
+                311,
+                304,
+                242,
+                304
+            ],
+            "merged_ids": [
+                54
+            ]
+        },
+        {
+            "text": "Data Lake",
+            "type": "Component_Node",
+            "confidence": 0.8275,
+            "polygon": [
+                328,
+                305,
+                368,
+                305,
+                368,
+                315,
+                328,
+                315
+            ],
+            "merged_ids": [
+                58
+            ]
+        },
+        {
+            "text": "Online",
+            "type": "Component_Node",
+            "confidence": 0.774,
+            "polygon": [
+                837,
+                316,
+                863,
+                316,
+                863,
+                324,
+                837,
+                324
+            ],
+            "merged_ids": [
+                61
+            ]
+        },
+        {
+            "text": "AUTOMATION",
+            "type": "Component_Node",
+            "confidence": 0.642,
+            "polygon": [
+                952,
+                318,
+                998,
+                318,
+                998,
+                325,
+                952,
+                325
+            ],
+            "merged_ids": [
+                62
+            ]
+        },
+        {
+            "text": "INPUT PROCESSING",
+            "type": "Component_Node",
+            "confidence": 0.9955,
+            "polygon": [
+                82,
+                319,
+                166,
+                319,
+                166,
+                329,
+                82,
+                329
+            ],
+            "merged_ids": [
+                60
+            ]
+        },
+        {
+            "text": "Learning",
+            "type": "Component_Node",
+            "confidence": 0.991,
+            "polygon": [
+                835,
+                326,
+                867,
+                326,
+                867,
+                334,
+                835,
+                334
+            ],
+            "merged_ids": [
+                65
+            ]
+        },
+        {
+            "text": "Reward",
+            "type": "Component_Node",
+            "confidence": 0.996,
+            "polygon": [
+                634,
+                328,
+                666,
+                328,
+                666,
+                335,
+                634,
+                335
+            ],
+            "merged_ids": [
+                64
+            ]
+        },
+        {
+            "text": "GENERATE",
+            "type": "Component_Node",
+            "confidence": 0.994,
+            "polygon": [
+                476,
+                331,
+                526,
+                331,
+                526,
+                342,
+                476,
+                342
+            ],
+            "merged_ids": [
+                63
+            ]
+        },
+        {
+            "text": "Trade-",
+            "type": "Component_Node",
+            "confidence": 0.902,
+            "polygon": [
+                720,
+                335,
+                748,
+                335,
+                748,
+                343,
+                720,
+                343
+            ],
+            "merged_ids": [
+                67
+            ]
+        },
+        {
+            "text": "Metrics",
+            "type": "Component_Node",
+            "confidence": 0.937,
+            "polygon": [
+                635,
+                339,
+                666,
+                339,
+                666,
+                346,
+                635,
+                346
+            ],
+            "merged_ids": [
+                66
+            ]
+        },
+        {
+            "text": "Offs",
+            "type": "Component_Node",
+            "confidence": 0.886,
+            "polygon": [
+                725,
+                346,
+                743,
+                346,
+                743,
+                354,
+                725,
+                354
+            ],
+            "merged_ids": [
+                70
+            ]
+        },
+        {
+            "text": "Transfer",
+            "type": "Component_Node",
+            "confidence": 0.579,
+            "polygon": [
+                877,
+                348,
+                906,
+                348,
+                906,
+                356,
+                877,
+                356
+            ],
+            "merged_ids": [
+                71
+            ]
+        },
+        {
+            "text": "Documents",
+            "type": "Component_Node",
+            "confidence": 0.945,
+            "polygon": [
+                305,
+                351,
+                353,
+                351,
+                353,
+                359,
+                305,
+                359
+            ],
+            "merged_ids": [
+                68
+            ]
+        },
+        {
+            "text": "MOO",
+            "type": "Component_Node",
+            "confidence": 0.981,
+            "polygon": [
+                679,
+                353,
+                702,
+                353,
+                702,
+                360,
+                679,
+                360
+            ],
+            "merged_ids": [
+                69
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Unknown",
+            "confidence": 0.673,
+            "polygon": [
+                60,
+                356,
+                63,
+                356,
+                63,
+                385,
+                60,
+                385
+            ],
+            "merged_ids": [
+                72
+            ]
+        },
+        {
+            "text": "Learning",
+            "type": "Component_Node",
+            "confidence": 0.953,
+            "polygon": [
+                876,
+                357,
+                908,
+                357,
+                908,
+                366,
+                876,
+                366
+            ],
+            "merged_ids": [
+                73
+            ]
+        },
+        {
+            "text": "-",
+            "type": "Unknown",
+            "confidence": 0.669,
+            "polygon": [
+                226,
+                369,
+                234,
+                369,
+                234,
+                385,
+                226,
+                385
+            ],
+            "merged_ids": [
+                74
+            ]
+        },
+        {
+            "text": "h",
+            "type": "Unknown",
+            "confidence": 0.664,
+            "polygon": [
+                657,
+                381,
+                667,
+                381,
+                667,
+                390,
+                657,
+                390
+            ],
+            "merged_ids": [
+                75
+            ]
+        },
+        {
+            "text": "Meta",
+            "type": "Component_Node",
+            "confidence": 0.608,
+            "polygon": [
+                840,
+                381,
+                858,
+                381,
+                858,
+                388,
+                840,
+                388
+            ],
+            "merged_ids": [
+                77
+            ]
+        },
+        {
+            "text": "19",
+            "type": "Unknown",
+            "confidence": 0.201,
+            "polygon": [
+                708,
+                384,
+                719,
+                384,
+                719,
+                394,
+                708,
+                394
+            ],
+            "merged_ids": [
+                76
+            ]
+        },
+        {
+            "text": "----",
+            "type": "Unknown",
+            "confidence": 0.885,
+            "polygon": [
+                133,
+                390,
+                160,
+                390,
+                160,
+                394,
+                133,
+                394
+            ],
+            "merged_ids": [
+                78
+            ]
+        },
+        {
+            "text": "Learning",
+            "type": "Component_Node",
+            "confidence": 0.806,
+            "polygon": [
+                833,
+                391,
+                866,
+                391,
+                866,
+                399,
+                833,
+                399
+            ],
+            "merged_ids": [
+                80
+            ]
+        },
+        {
+            "text": "Digital Actuators",
+            "type": "Component_Node",
+            "confidence": 0.9925,
+            "polygon": [
+                960,
+                393,
+                1028,
+                393,
+                1028,
+                403,
+                960,
+                403
+            ],
+            "merged_ids": [
+                83
+            ]
+        },
+        {
+            "text": "Tokenization; Word Embeddings;",
+            "type": "Component_Node",
+            "confidence": 0.882,
+            "polygon": [
+                42,
+                397,
+                195,
+                397,
+                195,
+                409,
+                42,
+                409
+            ],
+            "merged_ids": [
+                79
+            ]
+        },
+        {
+            "text": "Performance Element",
+            "type": "Component_Node",
+            "confidence": 0.9945,
+            "polygon": [
+                522,
+                400,
+                622,
+                400,
+                622,
+                410,
+                522,
+                410
+            ],
+            "merged_ids": [
+                81
+            ]
+        },
+        {
+            "text": "Critic",
+            "type": "Component_Node",
+            "confidence": 0.995,
+            "polygon": [
+                665,
+                400,
+                690,
+                400,
+                690,
+                409,
+                665,
+                409
+            ],
+            "merged_ids": [
+                82
+            ]
+        },
+        {
+            "text": "h",
+            "type": "Unknown",
+            "confidence": 0.941,
+            "polygon": [
+                765,
+                403,
+                772,
+                403,
+                772,
+                411,
+                765,
+                411
+            ],
+            "merged_ids": [
+                84
+            ]
+        },
+        {
+            "text": "Contextual Analysis",
+            "type": "Component_Node",
+            "confidence": 0.9835,
+            "polygon": [
+                74,
+                411,
+                164,
+                411,
+                164,
+                420,
+                74,
+                420
+            ],
+            "merged_ids": [
+                85
+            ]
+        },
+        {
+            "text": "8",
+            "type": "Stage_Marker",
+            "confidence": 0.607,
+            "polygon": [
+                520,
+                419,
+                528,
+                419,
+                528,
+                429,
+                520,
+                429
+            ],
+            "merged_ids": [
+                86
+            ]
+        },
+        {
+            "text": "Final Decision",
+            "type": "Component_Node",
+            "confidence": 0.9965,
+            "polygon": [
+                815,
+                423,
+                881,
+                423,
+                881,
+                432,
+                815,
+                432
+            ],
+            "merged_ids": [
+                87
+            ]
+        },
+        {
+            "text": "---",
+            "type": "Unknown",
+            "confidence": 0.8,
+            "polygon": [
+                888,
+                433,
+                917,
+                433,
+                917,
+                440,
+                888,
+                440
+            ],
+            "merged_ids": [
+                88
+            ]
+        },
+        {
+            "text": "7",
+            "type": "Stage_Marker",
+            "confidence": 0.998,
+            "polygon": [
+                873,
+                452,
+                882,
+                452,
+                882,
+                463,
+                873,
+                463
+            ],
+            "merged_ids": [
+                92
+            ]
+        },
+        {
+            "text": "NETWORK PROTOCOLS",
+            "type": "Flow_Label",
+            "confidence": 0.9925,
+            "polygon": [
+                758,
+                454,
+                868,
+                454,
+                868,
+                465,
+                758,
+                465
+            ],
+            "merged_ids": [
+                91
+            ]
+        },
+        {
+            "text": "API CALLS",
+            "type": "Flow_Label",
+            "confidence": 0.9965,
+            "polygon": [
+                536,
+                455,
+                584,
+                455,
+                584,
+                465,
+                536,
+                465
+            ],
+            "merged_ids": [
+                89
+            ]
+        },
+        {
+            "text": "7",
+            "type": "Stage_Marker",
+            "confidence": 0.995,
+            "polygon": [
+                593,
+                455,
+                602,
+                455,
+                602,
+                468,
+                593,
+                468
+            ],
+            "merged_ids": [
+                90
+            ]
+        },
+        {
+            "text": "INTERACTION",
+            "type": "Boundary_Title",
+            "confidence": 0.994,
+            "polygon": [
+                9,
+                481,
+                22,
+                481,
+                22,
+                554,
+                9,
+                554
+            ],
+            "merged_ids": [
+                101
+            ]
+        },
+        {
+            "text": "EXTERNAL KNOWLEDGE",
+            "type": "Boundary_Title",
+            "confidence": 0.9955,
+            "polygon": [
+                160,
+                504,
+                290,
+                504,
+                290,
+                515,
+                160,
+                515
+            ],
+            "merged_ids": [
+                93
+            ]
+        },
+        {
+            "text": "AI AGENTS",
+            "type": "Boundary_Title",
+            "confidence": 0.959,
+            "polygon": [
+                410,
+                504,
+                467,
+                504,
+                467,
+                515,
+                410,
+                515
+            ],
+            "merged_ids": [
+                95
+            ]
+        },
+        {
+            "text": "MEMORY",
+            "type": "Boundary_Title",
+            "confidence": 0.993,
+            "polygon": [
+                665,
+                504,
+                715,
+                504,
+                715,
+                515,
+                665,
+                515
+            ],
+            "merged_ids": [
+                96
+            ]
+        },
+        {
+            "text": "ENVIRONMENT",
+            "type": "Boundary_Title",
+            "confidence": 0.991,
+            "polygon": [
+                900,
+                504,
+                982,
+                504,
+                982,
+                515,
+                900,
+                515
+            ],
+            "merged_ids": [
+                97
+            ]
+        },
+        {
+            "text": "0",
+            "type": "Stage_Marker",
+            "confidence": 0.885,
+            "polygon": [
+                362,
+                505,
+                373,
+                505,
+                373,
+                513,
+                362,
+                513
+            ],
+            "merged_ids": [
+                94
+            ]
+        },
+        {
+            "text": "SOURCES",
+            "type": "Component_Node",
+            "confidence": 0.997,
+            "polygon": [
+                159,
+                518,
+                212,
+                518,
+                212,
+                529,
+                159,
+                529
+            ],
+            "merged_ids": [
+                98
+            ]
+        },
+        {
+            "text": "MULTI-AGENT ARCHITECTURE",
+            "type": "Boundary_Title",
+            "confidence": 0.961,
+            "polygon": [
+                411,
+                539,
+                549,
+                539,
+                549,
+                549,
+                411,
+                549
+            ],
+            "merged_ids": [
+                100
+            ]
+        },
+        {
+            "text": "MULTI-AGENT ARCHITECTURE",
+            "type": "Boundary_Title",
+            "confidence": 0.9915,
+            "polygon": [
+                166,
+                541,
+                305,
+                541,
+                305,
+                551,
+                166,
+                551
+            ],
+            "merged_ids": [
+                99
+            ]
+        }
+    ]
+}
