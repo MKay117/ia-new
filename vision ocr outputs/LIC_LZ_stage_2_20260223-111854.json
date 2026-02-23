@@ -1,0 +1,322 @@
+{
+    "text_blocks": [
+        {
+            "text": "Azure AI Landing Zone",
+            "confidence": 0.929,
+            "polygon": [
+                29,
+                26,
+                246,
+                25,
+                246,
+                46,
+                29,
+                46
+            ]
+        },
+        {
+            "text": "DMZ Subscription",
+            "confidence": 0.9935,
+            "polygon": [
+                304,
+                41,
+                447,
+                41,
+                447,
+                60,
+                304,
+                59
+            ]
+        },
+        {
+            "text": "AI Landing Zone Prod Subscription",
+            "confidence": 0.9234,
+            "polygon": [
+                623,
+                53,
+                910,
+                53,
+                910,
+                72,
+                623,
+                71
+            ]
+        },
+        {
+            "text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "confidence": 0.991,
+            "polygon": [
+                34,
+                83,
+                138,
+                122
+            ]
+        },
+        {
+            "text": "Egress VNET",
+            "confidence": 0.9915,
+            "polygon": [
+                331,
+                75,
+                441,
+                74,
+                441,
+                92,
+                331,
+                93
+            ]
+        },
+        {
+            "text": "AI App Resource Group",
+            "confidence": 0.9485,
+            "polygon": [
+                1474,
+                78,
+                1670,
+                80,
+                1669,
+                99,
+                1474,
+                97
+            ]
+        },
+        {
+            "text": "Proxy Firewall",
+            "confidence": 0.9945,
+            "polygon": [
+                381,
+                127,
+                500,
+                126,
+                500,
+                147,
+                381,
+                147
+            ]
+        },
+        {
+            "text": "AI Foundry Agent Service standard setup",
+            "confidence": 0.9698,
+            "polygon": [
+                1158,
+                123,
+                1495,
+                124,
+                1495,
+                144,
+                1158,
+                143
+            ]
+        },
+        {
+            "text": "Diagnostics Settings",
+            "confidence": 0.9915,
+            "polygon": [
+                1772,
+                127,
+                1837,
+                154
+            ]
+        },
+        {
+            "text": "Managed Identities",
+            "confidence": 0.9875,
+            "polygon": [
+                1634,
+                153,
+                1737,
+                165
+            ]
+        },
+        {
+            "text": "Role assignments",
+            "confidence": 0.9905,
+            "polygon": [
+                724,
+                165,
+                793,
+                191
+            ]
+        },
+        {
+            "text": "AI Foundry Agent Service dependencies",
+            "confidence": 0.9564,
+            "polygon": [
+                894,
+                172,
+                1221,
+                191
+            ]
+        },
+        {
+            "text": "Azure AI Foundry Services",
+            "confidence": 0.943,
+            "polygon": [
+                1410,
+                172,
+                1625,
+                190
+            ]
+        },
+        {
+            "text": "AI Services endpoints Foundry Models Connections Foundry Agent Service",
+            "confidence": 0.982,
+            "polygon": [
+                1410,
+                172,
+                1705,
+                305
+            ]
+        },
+        {
+            "text": "AI Services Virtual Network",
+            "confidence": 0.9822,
+            "polygon": [
+                664,
+                368,
+                889,
+                385
+            ]
+        },
+        {
+            "text": "Jump box Subnet Jump Box VM",
+            "confidence": 0.9947,
+            "polygon": [
+                686,
+                414,
+                782,
+                507
+            ]
+        },
+        {
+            "text": "Private Endpoints Subnet",
+            "confidence": 0.9943,
+            "polygon": [
+                1058,
+                409,
+                1199,
+                424
+            ]
+        },
+        {
+            "text": "API Management Subnet API Management",
+            "confidence": 0.991,
+            "polygon": [
+                1457,
+                412,
+                1554,
+                517
+            ]
+        },
+        {
+            "text": "Build Agent Subnet Build Agent VM",
+            "confidence": 0.9972,
+            "polygon": [
+                1613,
+                561,
+                1717,
+                654
+            ]
+        },
+        {
+            "text": "Corporate Subscription",
+            "confidence": 0.9925,
+            "polygon": [
+                300,
+                603,
+                490,
+                622
+            ]
+        },
+        {
+            "text": "Corporate VNET",
+            "confidence": 0.992,
+            "polygon": [
+                316,
+                642,
+                451,
+                661
+            ]
+        },
+        {
+            "text": "Azure DNS Private Resolver",
+            "confidence": 0.9965,
+            "polygon": [
+                386,
+                699,
+                524,
+                715
+            ]
+        },
+        {
+            "text": "VPN/ExpressRoute Gateways",
+            "confidence": 0.993,
+            "polygon": [
+                375,
+                746,
+                533,
+                764
+            ]
+        },
+        {
+            "text": "Enterprise and public knowledge sources Grounding with Bing AI Search",
+            "confidence": 0.993,
+            "polygon": [
+                683,
+                734,
+                849,
+                896
+            ]
+        },
+        {
+            "text": "GenAI app dependencies Cosmos DB Key Vault Storage Account Container Registry App Configuration",
+            "confidence": 0.9667,
+            "polygon": [
+                1017,
+                764,
+                1309,
+                889
+            ]
+        },
+        {
+            "text": "Container App Environment",
+            "confidence": 0.9953,
+            "polygon": [
+                1432,
+                799,
+                1658,
+                818
+            ]
+        },
+        {
+            "text": "GenAI app microservices Frontend Orchestrator SK MCP Ingestion",
+            "confidence": 0.994,
+            "polygon": [
+                1584,
+                737,
+                1788,
+                882
+            ]
+        },
+        {
+            "text": "Security and Governance Subscription policy assignments Defender for Cloud Entra ID Purview",
+            "confidence": 0.994,
+            "polygon": [
+                763,
+                928,
+                1023,
+                1029
+            ]
+        },
+        {
+            "text": "Azure DevOps Azure AD P2 Prometheus",
+            "confidence": 0.995,
+            "polygon": [
+                1298,
+                1002,
+                1642,
+                1010
+            ]
+        }
+    ]
+}

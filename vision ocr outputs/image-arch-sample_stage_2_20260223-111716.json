@@ -1,0 +1,314 @@
+{
+    "text_blocks": [
+        {
+            "text": "PERCEPTION",
+            "confidence": 0.992,
+            "polygon": [
+                80,
+                18,
+                158,
+                30
+            ]
+        },
+        {
+            "text": "BRAIN",
+            "confidence": 0.995,
+            "polygon": [
+                487,
+                17,
+                526,
+                28
+            ]
+        },
+        {
+            "text": "Feedback Loop",
+            "confidence": 0.991,
+            "polygon": [
+                690,
+                30,
+                760,
+                40
+            ]
+        },
+        {
+            "text": "SENSORS (INPUT)",
+            "confidence": 0.897,
+            "polygon": [
+                103,
+                70,
+                145,
+                90
+            ]
+        },
+        {
+            "text": "New Insights",
+            "confidence": 0.996,
+            "polygon": [
+                431,
+                65,
+                490,
+                75
+            ]
+        },
+        {
+            "text": "1 - 5",
+            "confidence": 0.884,
+            "polygon": [
+                167,
+                73,
+                815,
+                115
+            ]
+        },
+        {
+            "text": "LEARNING",
+            "confidence": 0.991,
+            "polygon": [
+                844,
+                106,
+                907,
+                117
+            ]
+        },
+        {
+            "text": "ACTUATORS",
+            "confidence": 0.994,
+            "polygon": [
+                966,
+                107,
+                1039,
+                118
+            ]
+        },
+        {
+            "text": "KNOWLEDGE BASE",
+            "confidence": 0.9935,
+            "polygon": [
+                282,
+                122,
+                340,
+                131
+            ]
+        },
+        {
+            "text": "REASONING ENGINE",
+            "confidence": 0.995,
+            "polygon": [
+                475,
+                122,
+                529,
+                131
+            ]
+        },
+        {
+            "text": "GOALS & UTILITY FUNCTION",
+            "confidence": 0.9647,
+            "polygon": [
+                656,
+                122,
+                727,
+                130
+            ]
+        },
+        {
+            "text": "ELEMENT",
+            "confidence": 0.994,
+            "polygon": [
+                847,
+                122,
+                904,
+                134
+            ]
+        },
+        {
+            "text": "Microphone, Camera, IoT sensors",
+            "confidence": 0.9525,
+            "polygon": [
+                108,
+                138,
+                172,
+                192
+            ]
+        },
+        {
+            "text": "INPUT FORMATTER",
+            "confidence": 0.994,
+            "polygon": [
+                84,
+                237,
+                165,
+                246
+            ]
+        },
+        {
+            "text": "INPUT PROCESSING",
+            "confidence": 0.9955,
+            "polygon": [
+                82,
+                319,
+                166,
+                329
+            ]
+        },
+        {
+            "text": "Tokenization; Word Embeddings; Contextual Analysis",
+            "confidence": 0.882,
+            "polygon": [
+                42,
+                397,
+                195,
+                409
+            ]
+        },
+        {
+            "text": "Database, Knowledge Graph, Vector Database, Data Lake, Documents",
+            "confidence": 0.945,
+            "polygon": [
+                249,
+                227,
+                375,
+                315
+            ]
+        },
+        {
+            "text": "LLMs, Elastic Search; OpenSearch",
+            "confidence": 0.9452,
+            "polygon": [
+                403,
+                158,
+                413,
+                313
+            ]
+        },
+        {
+            "text": "Forward Chaining, Backward Chaining, Bayesian Inference",
+            "confidence": 0.866,
+            "polygon": [
+                433,
+                225,
+                512,
+                257
+            ]
+        },
+        {
+            "text": "PLAN, RETRIEVE, INFERENCE, GENERATE",
+            "confidence": 0.992,
+            "polygon": [
+                458,
+                167,
+                526,
+                342
+            ]
+        },
+        {
+            "text": "GOALS: 0/1 [Binary], Rule-based, Adaptive",
+            "confidence": 0.957,
+            "polygon": [
+                657,
+                155,
+                727,
+                201
+            ]
+        },
+        {
+            "text": "UTILITY f(x): Utility Models, Reward Metrics, Trade-Offs, MOO",
+            "confidence": 0.905,
+            "polygon": [
+                670,
+                171,
+                743,
+                360
+            ]
+        },
+        {
+            "text": "Performance Element, Critic",
+            "confidence": 0.9945,
+            "polygon": [
+                522,
+                400,
+                690,
+                410
+            ]
+        },
+        {
+            "text": "Data Acquisition, Feature Extraction, Model Training, Feedback, Adapt, Update & Retrain",
+            "confidence": 0.948,
+            "polygon": [
+                839,
+                157,
+                905,
+                286
+            ]
+        },
+        {
+            "text": "Physical Actuators, Digital Actuators",
+            "confidence": 0.9008,
+            "polygon": [
+                960,
+                245,
+                1036,
+                403
+            ]
+        },
+        {
+            "text": "EXTERNAL KNOWLEDGE SOURCES",
+            "confidence": 0.9955,
+            "polygon": [
+                160,
+                504,
+                290,
+                515
+            ]
+        },
+        {
+            "text": "AI AGENTS",
+            "confidence": 0.959,
+            "polygon": [
+                410,
+                505,
+                467,
+                514
+            ]
+        },
+        {
+            "text": "MEMORY",
+            "confidence": 0.993,
+            "polygon": [
+                665,
+                504,
+                715,
+                515
+            ]
+        },
+        {
+            "text": "ENVIRONMENT",
+            "confidence": 0.991,
+            "polygon": [
+                900,
+                504,
+                982,
+                515
+            ]
+        },
+        {
+            "text": "MULTI-AGENT ARCHITECTURE",
+            "confidence": 0.9915,
+            "polygon": [
+                166,
+                541,
+                305,
+                551
+            ]
+        },
+        {
+            "text": "INTER-AGENTIC EXECUTION",
+            "confidence": 0.991,
+            "polygon": [
+                9,
+                148,
+                23,
+                298
+            ]
+        }
+    ]
+}
