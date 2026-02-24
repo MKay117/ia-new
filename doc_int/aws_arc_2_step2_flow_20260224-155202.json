@@ -1,0 +1,163 @@
+{
+    "architectural_hierarchy": [
+        {
+            "boundary_name": "AWS Region",
+            "boundary_type": "Region",
+            "components": [
+                {
+                    "boundary_name": "Spoke VPC A",
+                    "boundary_type": "VPC",
+                    "cidr": "10.0.0.0/16",
+                    "ipv6_cidr": "2001:db8:1234:1a00::/56",
+                    "components": [
+                        {
+                            "boundary_name": "Availability Zone A",
+                            "boundary_type": "Availability Zone",
+                            "components": [
+                                {
+                                    "boundary_name": "workload subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "EC2 instance",
+                                            "type": "Compute"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "boundary_name": "TGW subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "Network Interface"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "boundary_name": "Spoke VPC B",
+                    "boundary_type": "VPC",
+                    "cidr": "10.1.0.0/16",
+                    "ipv6_cidr": "2001:db8:1234:2b00::/56",
+                    "components": [
+                        {
+                            "boundary_name": "Availability Zone A",
+                            "boundary_type": "Availability Zone",
+                            "components": [
+                                {
+                                    "boundary_name": "workload subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "EC2 instance",
+                                            "type": "Compute"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "boundary_name": "TGW subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "Network Interface"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "boundary_name": "Appliance VPC",
+                    "boundary_type": "VPC",
+                    "cidr": "10.2.0.0/16",
+                    "ipv6_cidr": "2001:db8:1234:3c00::/56",
+                    "components": [
+                        {
+                            "boundary_name": "Availability Zone A",
+                            "boundary_type": "Availability Zone",
+                            "components": [
+                                {
+                                    "boundary_name": "TGW subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "Network Interface"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "boundary_name": "public subnet",
+                                    "boundary_type": "Subnet",
+                                    "components": [
+                                        {
+                                            "name": "third-party virtual appliance",
+                                            "type": "Virtual Appliance"
+                                        },
+                                        {
+                                            "name": "internet gateway",
+                                            "type": "Gateway"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AWS Transit Gateway",
+                    "type": "Transit Gateway"
+                },
+                {
+                    "name": "AWS Direct Connect",
+                    "type": "Direct Connect"
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "flow_name": "Traffic from Spoke VPC A to Appliance VPC",
+            "sequence": [
+                "EC2 instance (Spoke VPC A)",
+                "workload subnet (Spoke VPC A)",
+                "TGW subnet (Spoke VPC A)",
+                "TGW ENI (Spoke VPC A)",
+                "AWS Transit Gateway",
+                "TGW ENI (Appliance VPC)",
+                "TGW subnet (Appliance VPC)",
+                "third-party virtual appliance (Appliance VPC)"
+            ],
+            "direction": "Bidirectional",
+            "traffic_type": "Internal"
+        },
+        {
+            "flow_name": "Traffic from Appliance VPC to Internet",
+            "sequence": [
+                "third-party virtual appliance (Appliance VPC)",
+                "public subnet (Appliance VPC)",
+                "internet gateway (Appliance VPC)",
+                "Internet"
+            ],
+            "direction": "Outbound",
+            "traffic_type": "Internet"
+        },
+        {
+            "flow_name": "Corporate to AWS Direct Connect",
+            "sequence": [
+                "Corporate Network",
+                "AWS Direct Connect",
+                "AWS Transit Gateway",
+                "Spoke VPC A or Spoke VPC B"
+            ],
+            "direction": "Inbound",
+            "traffic_type": "Private"
+        }
+    ]
+}

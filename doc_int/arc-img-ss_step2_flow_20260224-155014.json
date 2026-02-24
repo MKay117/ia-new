@@ -1,0 +1,179 @@
+{
+    "architectural_hierarchy": [
+        {
+            "boundary_name": "ALPHA DC",
+            "boundary_type": "Data Center",
+            "components": [
+                {
+                    "name": "FAI Couchbase Cluster",
+                    "type": "Database",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, Tomcat 10x, JDK 17",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "FAI Nodes",
+                    "type": "Application Cluster",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, Tomcat 10x, JDK 17",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "Intranet Load Balancer",
+                    "type": "Load Balancer"
+                },
+                {
+                    "name": "Batch Processing",
+                    "type": "Processing Unit",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, JDK 11",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "NAS Drive",
+                    "type": "Storage"
+                },
+                {
+                    "name": "Web UI",
+                    "type": "Frontend Application",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, JDK 11",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "CES Components",
+                    "type": "Application Cluster",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 9.7",
+                            "type": "Operating System"
+                        }
+                    ]
+                },
+                {
+                    "name": "DB Zone",
+                    "type": "Database Zone",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 9.7, Oracle 19c (RAC)",
+                            "type": "Database Server"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "boundary_name": "BRAVO DC",
+            "boundary_type": "Data Center",
+            "components": [
+                {
+                    "name": "FAI Couchbase Cluster",
+                    "type": "Database",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, Tomcat 10x, JDK 17",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "FAI Nodes",
+                    "type": "Application Cluster",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, Tomcat 10x, JDK 17",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "Intranet Load Balancer",
+                    "type": "Load Balancer"
+                },
+                {
+                    "name": "Batch Processing",
+                    "type": "Processing Unit",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, JDK 11",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "NAS Drive",
+                    "type": "Storage"
+                },
+                {
+                    "name": "Web UI",
+                    "type": "Frontend Application",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 8.10, JDK 11",
+                            "type": "Application Server"
+                        }
+                    ]
+                },
+                {
+                    "name": "CES Components",
+                    "type": "Application Cluster",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 9.7",
+                            "type": "Operating System"
+                        }
+                    ]
+                },
+                {
+                    "name": "DB Zone",
+                    "type": "Database Zone",
+                    "subcomponents": [
+                        {
+                            "name": "RHEL 9.7, Oracle 19c (RAC)",
+                            "type": "Database Server"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "flow_name": "Internal Application Communication",
+            "sequence": [
+                "Intranet Load Balancer",
+                "Interfacing Applications (Internal)",
+                "Batch Processing",
+                "NAS Drive",
+                "Web UI",
+                "CES Components",
+                "DB Zone"
+            ],
+            "direction": "Bidirectional",
+            "traffic_type": "TCP/IP"
+        },
+        {
+            "flow_name": "External Data Exchange",
+            "sequence": [
+                "Interfacing Applications (External)",
+                "FICO Data Center",
+                "Go Anywhere SFTP",
+                "DB Zone"
+            ],
+            "direction": "Outbound",
+            "traffic_type": "SFTP"
+        }
+    ]
+}

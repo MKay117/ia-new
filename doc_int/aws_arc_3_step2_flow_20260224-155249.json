@@ -1,0 +1,114 @@
+{
+    "architectural_hierarchy": [
+        {
+            "boundary_name": "AWS Cloud",
+            "boundary_type": "Cloud",
+            "components": [
+                {
+                    "boundary_name": "Region A",
+                    "boundary_type": "Region",
+                    "components": [
+                        {
+                            "boundary_name": "VPC",
+                            "boundary_type": "VPC",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "Compute"
+                                }
+                            ]
+                        },
+                        {
+                            "boundary_name": "VPC",
+                            "boundary_type": "VPC",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "Compute"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "boundary_name": "Region B",
+                    "boundary_type": "Region",
+                    "components": [
+                        {
+                            "boundary_name": "VPC",
+                            "boundary_type": "VPC",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "Compute"
+                                }
+                            ]
+                        },
+                        {
+                            "boundary_name": "VPC",
+                            "boundary_type": "VPC",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "Compute"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "boundary_name": "Core Network",
+                    "boundary_type": "Network",
+                    "components": [
+                        {
+                            "name": "Core network edge (CNE)",
+                            "type": "Network Edge"
+                        },
+                        {
+                            "boundary_name": "Appliance VPC",
+                            "boundary_type": "VPC",
+                            "components": [
+                                {
+                                    "name": "Third-party virtual appliance",
+                                    "type": "Appliance"
+                                },
+                                {
+                                    "name": "Internet gateway",
+                                    "type": "Gateway"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "flow_name": "Branch to Corporate",
+            "sequence": [
+                "Branch",
+                "Internet",
+                "Internet Gateway",
+                "Third-party Virtual Appliance",
+                "Core Network Edge (CNE)",
+                "Core Network",
+                "Corporate"
+            ],
+            "direction": "Bidirectional",
+            "traffic_type": "SD-WAN Overlay"
+        },
+        {
+            "flow_name": "Corporate to AWS Direct Connect",
+            "sequence": [
+                "Corporate",
+                "Core Network",
+                "Core Network Edge (CNE)",
+                "AWS Direct Connect",
+                "BGP Peering"
+            ],
+            "direction": "Bidirectional",
+            "traffic_type": "BGP Peering"
+        }
+    ]
+}

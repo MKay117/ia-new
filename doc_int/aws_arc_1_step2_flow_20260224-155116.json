@@ -1,0 +1,149 @@
+{
+    "architectural_hierarchy": [
+        {
+            "boundary_name": "Shop floor, device tier",
+            "boundary_type": "Tier",
+            "components": [
+                {
+                    "name": "X-ray machines",
+                    "type": "Device"
+                },
+                {
+                    "name": "Cameras",
+                    "type": "Device"
+                },
+                {
+                    "name": "Devices",
+                    "type": "Device"
+                },
+                {
+                    "name": "MES system",
+                    "type": "System"
+                }
+            ]
+        },
+        {
+            "boundary_name": "Edge tier",
+            "boundary_type": "Tier",
+            "components": [
+                {
+                    "name": "AWS Transfer Family",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS DataSync",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS IoT Greengrass",
+                    "type": "Service"
+                }
+            ]
+        },
+        {
+            "boundary_name": "AWS Cloud",
+            "boundary_type": "Cloud",
+            "components": [
+                {
+                    "name": "Amazon S3 images dataset",
+                    "type": "Storage"
+                },
+                {
+                    "name": "Amazon Lookout for Vision",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Lambda manage model",
+                    "type": "Function"
+                },
+                {
+                    "name": "Amazon API Gateway",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Step Functions workflow",
+                    "type": "Workflow"
+                },
+                {
+                    "name": "AWS Lambda inference function",
+                    "type": "Function"
+                },
+                {
+                    "name": "AWS Lambda publish to SNS",
+                    "type": "Function"
+                },
+                {
+                    "name": "Amazon SNS",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Lambda publish to S3",
+                    "type": "Function"
+                },
+                {
+                    "name": "Amazon QuickSight",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Lambda start state machine, submit batch job",
+                    "type": "Function"
+                },
+                {
+                    "name": "AWS Batch",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Fargate",
+                    "type": "Service"
+                },
+                {
+                    "name": "AWS Lambda write back to MES",
+                    "type": "Function"
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "flow_name": "Training Pipeline",
+            "sequence": [
+                "Amazon S3 images dataset",
+                "Amazon Lookout for Vision",
+                "Train",
+                "Model",
+                "AWS Lambda manage model",
+                "Amazon API Gateway",
+                "Admins, data scientists"
+            ],
+            "direction": "Inbound",
+            "traffic_type": "Data Processing"
+        },
+        {
+            "flow_name": "Testing/Inference Pipeline",
+            "sequence": [
+                "AWS Step Functions workflow",
+                "AWS Lambda inference function",
+                "AWS Lambda publish to SNS",
+                "Amazon SNS",
+                "AWS Lambda publish to S3",
+                "Amazon S3",
+                "Amazon QuickSight",
+                "Business users"
+            ],
+            "direction": "Inbound",
+            "traffic_type": "Data Processing"
+        },
+        {
+            "flow_name": "Batch Processing Pipeline",
+            "sequence": [
+                "AWS Lambda start state machine, submit batch job",
+                "AWS Batch",
+                "AWS Fargate",
+                "AWS Lambda write back to MES",
+                "MES system"
+            ],
+            "direction": "Bidirectional",
+            "traffic_type": "Batch Processing"
+        }
+    ]
+}
