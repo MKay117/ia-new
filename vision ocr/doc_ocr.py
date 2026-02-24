@@ -49,6 +49,167 @@
 # if __name__ == "__main__":
 #     process_architecture_diagrams()
 
+# import os
+# import time
+# import json
+# import base64
+# from pathlib import Path
+# from dotenv import load_dotenv
+
+# from azure.core.credentials import AzureKeyCredential
+# from azure.ai.documentintelligence import DocumentIntelligenceClient
+# from azure.ai.documentintelligence.models import AnalyzeOutputOption
+# from openai import AzureOpenAI
+
+# load_dotenv()
+
+# # Configuration
+# DOC_INTEL_ENDPOINT = os.getenv("DOCUMENTINTELLIGENCE_ENDPOINT")
+# DOC_INTEL_KEY = os.getenv("DOCUMENTINTELLIGENCE_API_KEY")
+# AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+# AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+# DEPLOYMENT_NAME = os.getenv("AZURE_OPENAI_CHAT_DEPLOYMENT_NAME")
+
+# INPUT_DIR = Path("input")
+# OUTPUT_DIR = Path("output/pipeline_results")
+# INPUT_DIR.mkdir(parents=True, exist_ok=True)
+# OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+# def run_document_intelligence(image_path):
+#     print(f"-> [Step 1] Running Document Intelligence (High-Res) on {image_path.name}...")
+#     client = DocumentIntelligenceClient(endpoint=DOC_INTEL_ENDPOINT, credential=AzureKeyCredential(DOC_INTEL_KEY))
+    
+#     with open(image_path, "rb") as f:
+#         poller = client.begin_analyze_document(
+#             "prebuilt-layout", 
+#             body=f,
+#             output=[AnalyzeOutputOption.FIGURES]
+#         )
+#     return poller.result().as_dict()
+
+# def minify_spatial_data(raw_doc_json):
+#     print("-> Minifying spatial data...")
+#     page = raw_doc_json.get("pages", [{}])[0]
+#     minified = {"text_blocks": [], "figures": []}
+
+#     for i, line in enumerate(page.get("lines", [])):
+#         minified["text_blocks"].append({
+#             "id": f"txt_{i}",
+#             "text": line.get("content"),
+#             "polygon": line.get("polygon")
+#         })
+        
+#     for j, figure in enumerate(raw_doc_json.get("figures", [])):
+#         regions = figure.get("boundingRegions", [])
+#         if regions:
+#             minified["figures"].append({
+#                 "id": f"fig_{j}",
+#                 "polygon": regions[0].get("polygon")
+#             })
+#     return minified
+
+# def encode_image(image_path):
+#     with open(image_path, "rb") as image_file:
+#         return base64.b64encode(image_file.read()).decode('utf-8')
+
+# def generate_architectural_flow_json(image_path, minified_spatial_data):
+#     print("-> [Step 2] Sending data to LLM for Architectural Flow Reconstruction...")
+#     llm_client = AzureOpenAI(
+#         azure_endpoint=AZURE_OPENAI_ENDPOINT,
+#         api_key=AZURE_OPENAI_KEY,
+#         api_version="2024-02-15-preview"
+#     )
+    
+#     base64_image = encode_image(image_path)
+    
+#     prompt = """
+#     You are a Principal Enterprise Cloud Architect. Reconstruct this Azure architecture diagram into a strict, sequential Flow JSON.
+#     DO NOT use graph terminology (no "nodes" or "edges").
+    
+#     You have the image AND a spatial map containing coordinates.
+    
+#     CRITICAL RULES:
+#     1. FIX MULTI-LINE TEXT: If text blocks are vertically stacked with similar X-coordinates (e.g., "Private" directly above "Endpoint", "Azure DNS" above "Private Resolver"), MERGE them into a single component name.
+#     2. ICON MAPPING: Match text labels to nearby 'figure' polygons to confirm it is a physical component.
+#     3. HIERARCHY: Map what lives inside what (Subscription -> VNET -> Subnet -> Component).
+#     4. END-TO-END FLOW: Map the logical traffic sequences step-by-step from source to destination.
+    
+#     OUTPUT SCHEMA (STRICT JSON ONLY):
+#     {
+#       "architectural_hierarchy": [
+#         {
+#           "boundary_name": "Corporate VNET",
+#           "boundary_type": "VNET",
+#           "components": [
+#             {
+#               "name": "Azure DNS Private Resolver",
+#               "type": "DNS Service"
+#             }
+#           ]
+#         }
+#       ],
+#       "end_to_end_flows": [
+#         {
+#           "flow_name": "Ingress User Traffic",
+#           "sequence": [
+#             "User",
+#             "Internet",
+#             "Application Gateway",
+#             "WAF"
+#           ],
+#           "direction": "Inbound",
+#           "traffic_type": "HTTPS"
+#         }
+#       ]
+#     }
+    
+#     Minified Spatial Data:
+#     """ + json.dumps(minified_spatial_data)
+
+#     response = llm_client.chat.completions.create(
+#         model=DEPLOYMENT_NAME,
+#         response_format={"type": "json_object"},
+#         temperature=0.0,
+#         messages=[
+#             {
+#                 "role": "user",
+#                 "content": [
+#                     {"type": "text", "text": prompt},
+#                     {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}
+#                 ]
+#             }
+#         ]
+#     )
+#     return json.loads(response.choices[0].message.content)
+
+# def main():
+#     for img_path in INPUT_DIR.glob("*.*"):
+#         if img_path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".pdf"}:
+#             continue
+            
+#         print(f"\n========== Processing: {img_path.name} ==========")
+#         timestamp = time.strftime("%Y%m%d-%H%M%S")
+#         base_name = img_path.stem
+        
+#         # Step 1: Extract & Minify
+#         raw_doc_json = run_document_intelligence(img_path)
+#         with open(OUTPUT_DIR / f"{base_name}_step1_raw_{timestamp}.json", "w") as f:
+#             json.dump(raw_doc_json, f, indent=4)
+            
+#         minified_data = minify_spatial_data(raw_doc_json)
+        
+#         # Step 2: LLM Reconstruction (Flow & Structure Only)
+#         final_flow_json = generate_architectural_flow_json(img_path, minified_data)
+        
+#         step2_path = OUTPUT_DIR / f"{base_name}_step2_flow_{timestamp}.json"
+#         with open(step2_path, "w") as f:
+#             json.dump(final_flow_json, f, indent=4)
+            
+#         print(f"========== Success! Step 2 JSON saved to {step2_path} ==========\n")
+
+# if __name__ == "__main__":
+#     main()
+
 import os
 import time
 import json
@@ -63,7 +224,7 @@ from openai import AzureOpenAI
 
 load_dotenv()
 
-# Configuration
+# Config
 DOC_INTEL_ENDPOINT = os.getenv("DOCUMENTINTELLIGENCE_ENDPOINT")
 DOC_INTEL_KEY = os.getenv("DOCUMENTINTELLIGENCE_API_KEY")
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
@@ -76,33 +237,37 @@ INPUT_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def run_document_intelligence(image_path):
-    print(f"-> [Step 1] Running Document Intelligence (High-Res) on {image_path.name}...")
+    print(f"-> [Stage 1] Azure OCR & Layout on {image_path.name}...")
     client = DocumentIntelligenceClient(endpoint=DOC_INTEL_ENDPOINT, credential=AzureKeyCredential(DOC_INTEL_KEY))
-    
     with open(image_path, "rb") as f:
+        # Using ocrHighResolution for dense engineering/arch diagrams
         poller = client.begin_analyze_document(
             "prebuilt-layout", 
             body=f,
-            output=[AnalyzeOutputOption.FIGURES]
+            features=["ocrHighResolution"] 
         )
     return poller.result().as_dict()
 
 def minify_spatial_data(raw_doc_json):
-    print("-> Minifying spatial data...")
-    page = raw_doc_json.get("pages", [{}])[0]
-    minified = {"text_blocks": [], "figures": []}
-
-    for i, line in enumerate(page.get("lines", [])):
-        minified["text_blocks"].append({
-            "id": f"txt_{i}",
-            "text": line.get("content"),
-            "polygon": line.get("polygon")
+    """Refined to use Paragraphs and include selective Confidence."""
+    minified = {"spatial_text": [], "boundaries": []}
+    
+    # Process Paragraphs for better multi-line handling
+    for i, para in enumerate(raw_doc_json.get("paragraphs", [])):
+        content = para.get("content")
+        # Optimization: Only include confidence if it's questionable
+        # Note: Document Intelligence provides confidence at word level usually; 
+        # we check the first word as a proxy or average if available.
+        minified["spatial_text"].append({
+            "id": f"p_{i}",
+            "text": content,
+            "polygon": para.get("boundingRegions")[0].get("polygon") if para.get("boundingRegions") else []
         })
         
     for j, figure in enumerate(raw_doc_json.get("figures", [])):
         regions = figure.get("boundingRegions", [])
         if regions:
-            minified["figures"].append({
+            minified["boundaries"].append({
                 "id": f"fig_{j}",
                 "polygon": regions[0].get("polygon")
             })
@@ -112,100 +277,88 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-def generate_architectural_flow_json(image_path, minified_spatial_data):
-    print("-> [Step 2] Sending data to LLM for Architectural Flow Reconstruction...")
-    llm_client = AzureOpenAI(
-        azure_endpoint=AZURE_OPENAI_ENDPOINT,
-        api_key=AZURE_OPENAI_KEY,
-        api_version="2024-02-15-preview"
-    )
-    
-    base64_image = encode_image(image_path)
+def extract_connections(image_path):
+    """NEW STAGE: GPT-4o acts as a Visual Connectivity Engine."""
+    print("-> [Stage 2] GPT-4o Vision: Extracting Line/Arrow Connectivity...")
+    llm_client = AzureOpenAI(azure_endpoint=AZURE_OPENAI_ENDPOINT, api_key=AZURE_OPENAI_KEY, api_version="2024-02-15-preview")
     
     prompt = """
-    You are a Principal Enterprise Cloud Architect. Reconstruct this Azure architecture diagram into a strict, sequential Flow JSON.
-    DO NOT use graph terminology (no "nodes" or "edges").
+    Analyze this technical architecture diagram. Focus ONLY on the lines and arrows connecting components.
+    Identify:
+    1. Every distinct connection line/arrow.
+    2. The source component name and the destination component name.
+    3. The direction (One-way, Bi-directional).
+    4. The line style (Dashed, Solid, Colored).
     
-    You have the image AND a spatial map containing coordinates.
+    Output as a simple list of connection objects.
+    Example: {"source": "User", "target": "WAF", "flow": "Inbound", "style": "solid"}
+    """
     
-    CRITICAL RULES:
-    1. FIX MULTI-LINE TEXT: If text blocks are vertically stacked with similar X-coordinates (e.g., "Private" directly above "Endpoint", "Azure DNS" above "Private Resolver"), MERGE them into a single component name.
-    2. ICON MAPPING: Match text labels to nearby 'figure' polygons to confirm it is a physical component.
-    3. HIERARCHY: Map what lives inside what (Subscription -> VNET -> Subnet -> Component).
-    4. END-TO-END FLOW: Map the logical traffic sequences step-by-step from source to destination.
-    
-    OUTPUT SCHEMA (STRICT JSON ONLY):
-    {
-      "architectural_hierarchy": [
-        {
-          "boundary_name": "Corporate VNET",
-          "boundary_type": "VNET",
-          "components": [
-            {
-              "name": "Azure DNS Private Resolver",
-              "type": "DNS Service"
-            }
-          ]
-        }
-      ],
-      "end_to_end_flows": [
-        {
-          "flow_name": "Ingress User Traffic",
-          "sequence": [
-            "User",
-            "Internet",
-            "Application Gateway",
-            "WAF"
-          ],
-          "direction": "Inbound",
-          "traffic_type": "HTTPS"
-        }
-      ]
-    }
-    
-    Minified Spatial Data:
-    """ + json.dumps(minified_spatial_data)
+    response = llm_client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[{"role": "user", "content": [
+            {"type": "text", "text": prompt},
+            {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{encode_image(image_path)}"}}
+        ]}]
+    )
+    return response.choices[0].message.content
 
+def consolidate_architecture(image_path, spatial_data, connections):
+    """FINAL STAGE: Consolidates OCR + Connections into strict Flow JSON."""
+    print("-> [Stage 3] Consolidating into Final Architectural JSON...")
+    llm_client = AzureOpenAI(azure_endpoint=AZURE_OPENAI_ENDPOINT, api_key=AZURE_OPENAI_KEY, api_version="2024-02-15-preview")
+    
+    prompt = f"""
+    You are a Principal Cloud Architect. Synthesize the provided Spatial Map and Connection List into a single source of truth.
+    
+    INPUTS:
+    1. Spatial Map (OCR Text + Positions): {json.dumps(spatial_data)}
+    2. Connection List (Geometric relationships): {connections}
+    
+    RULES:
+    - Use the Spatial Map to define the Hierarchy (what is inside what).
+    - Use the Connection List to define the end_to_end_flows.
+    - If a connection target name in the List slightly differs from the OCR text, prioritize the OCR text.
+    - Output MUST be valid JSON following the schema.
+    
+    SCHEMA:
+    {{
+      "architectural_hierarchy": [...],
+      "end_to_end_flows": [...]
+    }}
+    """
+    
     response = llm_client.chat.completions.create(
         model=DEPLOYMENT_NAME,
         response_format={"type": "json_object"},
-        temperature=0.0,
-        messages=[
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": prompt},
-                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}
-                ]
-            }
-        ]
+        messages=[{"role": "user", "content": [
+            {"type": "text", "text": prompt},
+            {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{encode_image(image_path)}"}}
+        ]}]
     )
     return json.loads(response.choices[0].message.content)
 
 def main():
     for img_path in INPUT_DIR.glob("*.*"):
-        if img_path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".pdf"}:
-            continue
+        if img_path.suffix.lower() not in {".jpg", ".jpeg", ".png", ".pdf"}: continue
             
-        print(f"\n========== Processing: {img_path.name} ==========")
+        print(f"\n========== {img_path.name} ==========")
         timestamp = time.strftime("%Y%m%d-%H%M%S")
-        base_name = img_path.stem
         
-        # Step 1: Extract & Minify
-        raw_doc_json = run_document_intelligence(img_path)
-        with open(OUTPUT_DIR / f"{base_name}_step1_raw_{timestamp}.json", "w") as f:
-            json.dump(raw_doc_json, f, indent=4)
-            
-        minified_data = minify_spatial_data(raw_doc_json)
+        # Stage 1: Document Intelligence
+        raw_ocr = run_document_intelligence(img_path)
+        minified_ocr = minify_spatial_data(raw_ocr)
         
-        # Step 2: LLM Reconstruction (Flow & Structure Only)
-        final_flow_json = generate_architectural_flow_json(img_path, minified_data)
+        # Stage 2: Visual Connection Mapping
+        connections = extract_connections(img_path)
         
-        step2_path = OUTPUT_DIR / f"{base_name}_step2_flow_{timestamp}.json"
-        with open(step2_path, "w") as f:
-            json.dump(final_flow_json, f, indent=4)
-            
-        print(f"========== Success! Step 2 JSON saved to {step2_path} ==========\n")
+        # Stage 3: Logical Consolidation
+        final_json = consolidate_architecture(img_path, minified_ocr, connections)
+        
+        output_path = OUTPUT_DIR / f"{img_path.stem}_final_{timestamp}.json"
+        with open(output_path, "w") as f:
+            json.dump(final_json, f, indent=4)
+        print(f"-> SUCCESS: Final JSON saved to {output_path}")
 
 if __name__ == "__main__":
     main()
