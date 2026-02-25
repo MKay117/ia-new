@@ -1,0 +1,337 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "Azure AI Landing Zone",
+            "type": "group",
+            "children": [
+                {
+                    "name": "Ext Systems",
+                    "type": "group",
+                    "children": [
+                        "Payment GW",
+                        "Moengage",
+                        "UIDAI",
+                        "NSDL",
+                        "NPCHI",
+                        "NSEIT"
+                    ]
+                },
+                {
+                    "name": "DMZ Subscription",
+                    "type": "group",
+                    "children": [
+                        {
+                            "name": "Egress VNET",
+                            "type": "component",
+                            "children": [
+                                "Proxy Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Inspection VNET",
+                            "type": "component",
+                            "children": [
+                                "Azure Firewall"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Corporate Subscription",
+                    "type": "group",
+                    "children": [
+                        {
+                            "name": "Corporate VNET",
+                            "type": "component",
+                            "children": [
+                                "Azure DNS Private Resolver",
+                                "VPN/ExpressRoute Gateways",
+                                {
+                                    "name": "Azure Firewall",
+                                    "type": "component",
+                                    "children": [
+                                        "Azure Bastion"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AI Landing Zone Prod Subscription",
+                    "type": "group",
+                    "children": [
+                        "Role assignments",
+                        "Workload policy assignments",
+                        "Tags",
+                        {
+                            "name": "AI App Resource Group",
+                            "type": "group",
+                            "children": [
+                                "Diagnostics Settings",
+                                "Log Analytics Workspace",
+                                "Monitor",
+                                "Application Insights",
+                                "Network Watcher",
+                                {
+                                    "name": "AI Foundry Agent Service Standard Setup",
+                                    "type": "group",
+                                    "children": [
+                                        "Managed Identities",
+                                        "Azure AI Foundry Services",
+                                        {
+                                            "name": "AI Foundry Project",
+                                            "type": "group",
+                                            "children": [
+                                                "AI Services Endpoints",
+                                                "Foundry Models",
+                                                "Connections",
+                                                "Foundry Agent Service"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "AI Services Virtual Network",
+                                    "type": "group",
+                                    "children": [
+                                        {
+                                            "name": "Jump Box Subnet",
+                                            "type": "component",
+                                            "children": [
+                                                "Jump Box VM"
+                                            ]
+                                        },
+                                        {
+                                            "name": "API Management Subnet",
+                                            "type": "component",
+                                            "children": [
+                                                "API Management"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Container App Environment Subnet",
+                                            "type": "component",
+                                            "children": [
+                                                {
+                                                    "name": "Container App Environment",
+                                                    "type": "group",
+                                                    "children": [
+                                                        {
+                                                            "name": "GenAI App Microservices",
+                                                            "type": "group",
+                                                            "children": [
+                                                                "Frontend",
+                                                                "Orchestrator",
+                                                                "SK",
+                                                                "MCP",
+                                                                "Ingestion"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Build Agent Subnet",
+                                            "type": "component",
+                                            "children": [
+                                                "Build Agent VM"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Private Endpoints Subnet",
+                                            "type": "component",
+                                            "children": [
+                                                "Private Endpoints",
+                                                "Cosmos DB",
+                                                "Key Vault",
+                                                "Storage Account"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "User",
+            "target": "Internet",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Internet",
+            "target": "Ext Systems",
+            "flow": "Bi-directional",
+            "style": "solid"
+        },
+        {
+            "source": "Internet",
+            "target": "Proxy Firewall",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Proxy Firewall",
+            "target": "Azure Firewall",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Azure Firewall",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "On-premises network",
+            "target": "ExpressRoute",
+            "flow": "Bi-directional",
+            "style": "solid"
+        },
+        {
+            "source": "ExpressRoute",
+            "target": "VPN/ExpressRoute Gateways",
+            "flow": "Bi-directional",
+            "style": "solid"
+        },
+        {
+            "source": "VPN/ExpressRoute Gateways",
+            "target": "Azure Firewall",
+            "flow": "Bi-directional",
+            "style": "solid"
+        },
+        {
+            "source": "Azure Firewall",
+            "target": "Azure DNS Private Resolver",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Azure Firewall",
+            "target": "Azure Bastion",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "WAF",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "WAF",
+            "target": "AI Services Virtual Network",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Jump Box Subnet",
+            "flow": "Bi-directional",
+            "style": "dashed"
+        },
+        {
+            "source": "Jump Box Subnet",
+            "target": "Jump Box VM",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "API Management Subnet",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "API Management Subnet",
+            "target": "API Management",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Container App Environment Subnet",
+            "flow": "Bi-directional",
+            "style": "dashed"
+        },
+        {
+            "source": "Container App Environment Subnet",
+            "target": "Container App Environment",
+            "flow": "Bi-directional",
+            "style": "solid"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Build Agent Subnet",
+            "flow": "Bi-directional",
+            "style": "dashed"
+        },
+        {
+            "source": "Build Agent Subnet",
+            "target": "Build Agent VM",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Private Endpoints",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "Cosmos DB",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "Key Vault",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "Storage Account",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "Container App Environment",
+            "target": "Frontend, Orchestrator, SK, MCP, Ingestion",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Cosmos DB",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Key Vault",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Storage Account",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "App Configuration",
+            "target": "Azure AI Foundry Services",
+            "flow": "Bi-directional",
+            "style": "dashed"
+        }
+    ]
+}

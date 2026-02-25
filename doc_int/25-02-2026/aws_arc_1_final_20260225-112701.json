@@ -1,0 +1,194 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "Shop floor, device tier",
+            "children": [
+                "X-ray machines",
+                "cameras",
+                "devices",
+                "MES system"
+            ]
+        },
+        {
+            "name": "Edge tier",
+            "children": [
+                "AWS Transfer Family",
+                "AWS DataSync",
+                "AWS IoT Greengrass"
+            ]
+        },
+        {
+            "name": "AWS Cloud",
+            "children": [
+                {
+                    "name": "Store",
+                    "children": [
+                        "Amazon S3 images dataset"
+                    ]
+                },
+                {
+                    "name": "Training pipeline",
+                    "children": [
+                        "Amazon Lookout for Vision",
+                        "train model",
+                        "AWS Lambda manage model",
+                        "Amazon API Gateway",
+                        "admins, data scientists"
+                    ]
+                },
+                {
+                    "name": "Testing/inference pipeline",
+                    "children": [
+                        "AWS Step Functions workflow",
+                        {
+                            "name": "inference function",
+                            "children": [
+                                "publish to SNS",
+                                "publish to S3"
+                            ]
+                        },
+                        "Amazon SNS",
+                        "Amazon S3",
+                        "Amazon QuickSight",
+                        "business users"
+                    ]
+                },
+                {
+                    "name": "Final results",
+                    "children": [
+                        "AWS Lambda write back to MES"
+                    ]
+                },
+                {
+                    "name": "AWS Lambda start state machine, submit batch job",
+                    "children": [
+                        "AWS Batch",
+                        "AWS Fargate"
+                    ]
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "Shop floor (X-ray machines, cameras, devices)",
+            "target": "AWS Transfer Family",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Shop floor (X-ray machines, cameras, devices)",
+            "target": "AWS IoT Greengrass",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Transfer Family",
+            "target": "Amazon S3",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS DataSync",
+            "target": "Amazon S3",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS IoT Greengrass",
+            "target": "MES system",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Amazon S3",
+            "target": "Amazon Lookout for Vision",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Amazon Lookout for Vision",
+            "target": "AWS Lambda manage model",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Lambda manage model",
+            "target": "Amazon API Gateway",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Amazon API Gateway",
+            "target": "admins, data scientists",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Step Functions workflow",
+            "target": "Inference Function",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Inference Function",
+            "target": "Publish to SNS",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Publish to SNS",
+            "target": "Amazon SNS",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Inference Function",
+            "target": "Publish to S3",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Publish to S3",
+            "target": "Amazon S3",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Amazon SNS",
+            "target": "Business users",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Amazon S3",
+            "target": "Amazon QuickSight",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Lambda write back to MES",
+            "target": "MES system",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Step Functions workflow",
+            "target": "AWS Lambda start state machine, submit batch job",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Lambda start state machine, submit batch job",
+            "target": "AWS Batch",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Batch",
+            "target": "AWS Fargate",
+            "flow": "One-way",
+            "style": "solid"
+        }
+    ]
+}

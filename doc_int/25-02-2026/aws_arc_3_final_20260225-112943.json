@@ -1,0 +1,175 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "AWS Cloud",
+            "type": "cloud",
+            "contains": [
+                {
+                    "name": "Region A",
+                    "type": "region",
+                    "contains": [
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "contains": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "compute"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "contains": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "compute"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Region B",
+                    "type": "region",
+                    "contains": [
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "contains": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "compute"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "contains": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "compute"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Core Network",
+                    "type": "network",
+                    "contains": [
+                        {
+                            "name": "prod (segment)",
+                            "type": "segment"
+                        },
+                        {
+                            "name": "on-prem (segment)",
+                            "type": "segment"
+                        }
+                    ]
+                },
+                {
+                    "name": "Core Network Edge (CNE)",
+                    "type": "network_edge",
+                    "contains": []
+                },
+                {
+                    "name": "Appliance VPC",
+                    "type": "vpc",
+                    "contains": [
+                        {
+                            "name": "third-party virtual appliance",
+                            "type": "appliance"
+                        }
+                    ]
+                },
+                {
+                    "name": "Internet Gateway",
+                    "type": "gateway",
+                    "contains": []
+                },
+                {
+                    "name": "Corporate Network",
+                    "type": "network",
+                    "contains": []
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "VPC (Region A)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "VPC (Region B)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "Core Network (prod segment)",
+            "target": "Core Network Edge (CNE)",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Core Network (on-prem segment)",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Appliance VPC",
+            "flow": "One-way",
+            "style": "dashed"
+        },
+        {
+            "source": "Branch (A)",
+            "target": "Third-party Virtual Appliance",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Branch (B)",
+            "target": "Third-party Virtual Appliance",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Third-party Virtual Appliance",
+            "target": "Internet Gateway",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Third-party Virtual Appliance",
+            "target": "AWS Direct Connect",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "AWS Direct Connect",
+            "target": "Corporate Network",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "Core Network (on-prem segment)",
+            "target": "GRE Tunnel",
+            "flow": "One-way",
+            "style": "solid"
+        },
+        {
+            "source": "GRE Tunnel",
+            "target": "BGP Peering",
+            "flow": "Bi-directional",
+            "style": "dashed"
+        }
+    ]
+}
