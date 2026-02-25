@@ -1,0 +1,67 @@
+{
+    "connections": [
+        {
+            "source": "Branch",
+            "target": "Third-party virtual appliance",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "A"
+        },
+        {
+            "source": "Third-party virtual appliance",
+            "target": "Core Network Edge (CNE)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Appliance VPC",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Core Network (Prod segment)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Blue (GRE tunnel)",
+            "sequence": "C"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Core Network (On-prem segment)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed Green (BGP peering)",
+            "sequence": "B"
+        },
+        {
+            "source": "Virtual Private Gateway",
+            "target": "Core Network Edge (CNE)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Purple (Connect attachment)",
+            "sequence": "2"
+        },
+        {
+            "source": "AWS Direct Connect",
+            "target": "Virtual Private Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "3"
+        },
+        {
+            "source": "VPC - Region A",
+            "target": "Core Network (Prod segment)",
+            "flow": "Dashed Bi-directional",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "1"
+        },
+        {
+            "source": "VPC - Region B",
+            "target": "Core Network (Prod segment)",
+            "flow": "Dashed Bi-directional",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "1"
+        }
+    ]
+}

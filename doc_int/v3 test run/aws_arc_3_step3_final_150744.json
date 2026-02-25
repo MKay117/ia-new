@@ -1,0 +1,158 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "AWS Cloud",
+            "contents": [
+                {
+                    "name": "Region A",
+                    "contents": [
+                        {
+                            "name": "VPC",
+                            "contents": [
+                                {
+                                    "name": "EC2 instance"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "contents": [
+                                {
+                                    "name": "EC2 instance"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Region B",
+                    "contents": [
+                        {
+                            "name": "VPC",
+                            "contents": [
+                                {
+                                    "name": "EC2 instance"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "contents": [
+                                {
+                                    "name": "EC2 instance"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Core Network",
+                    "contents": [
+                        {
+                            "name": "prod (segment)"
+                        },
+                        {
+                            "name": "on-prem (segment)"
+                        },
+                        {
+                            "name": "Core network edge (CNE)",
+                            "contents": [
+                                {
+                                    "name": "Appliance VPC",
+                                    "contents": [
+                                        {
+                                            "name": "third-party virtual appliance"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "internet gateway"
+                        },
+                        {
+                            "name": "virtual private gateway"
+                        },
+                        {
+                            "name": "AWS Direct Connect"
+                        },
+                        {
+                            "name": "branch"
+                        },
+                        {
+                            "name": "branch"
+                        },
+                        {
+                            "name": "corporate"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "branch",
+            "target": "third-party virtual appliance",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "A"
+        },
+        {
+            "source": "third-party virtual appliance",
+            "target": "Core network edge (CNE)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core network edge (CNE)",
+            "target": "Appliance VPC",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core network edge (CNE)",
+            "target": "Core Network (Prod segment)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Blue (GRE tunnel)",
+            "sequence": "C"
+        },
+        {
+            "source": "Core network edge (CNE)",
+            "target": "Core Network (On-prem segment)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed Green (BGP peering)",
+            "sequence": "B"
+        },
+        {
+            "source": "virtual private gateway",
+            "target": "Core network edge (CNE)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Purple (Connect attachment)",
+            "sequence": "2"
+        },
+        {
+            "source": "AWS Direct Connect",
+            "target": "virtual private gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (SD-WAN overlay)",
+            "sequence": "3"
+        },
+        {
+            "source": "VPC - Region A",
+            "target": "Core Network (Prod segment)",
+            "flow": "Dashed Bi-directional",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "1"
+        },
+        {
+            "source": "VPC - Region B",
+            "target": "Core Network (Prod segment)",
+            "flow": "Dashed Bi-directional",
+            "style_and_meaning": "Dashed Purple (VPC attachment)",
+            "sequence": "1"
+        }
+    ]
+}

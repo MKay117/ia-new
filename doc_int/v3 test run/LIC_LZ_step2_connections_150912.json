@@ -1,0 +1,95 @@
+{
+    "connections": [
+        {
+            "source": "Internet",
+            "target": "WAF",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Green (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "WAF",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Green (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "On-premises network",
+            "target": "Azure DNS Private Resolver",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Gray (Direct connection via ExpressRoute)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Azure Firewall (DMZ)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange (Egress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall (DMZ)",
+            "target": "AI Services Virtual Network (Ingress)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Green (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "ExpressRoute",
+            "target": "Corporate VNET",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Gray (Direct connection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure Firewall (Corporate)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue (Traffic Filtering/Protection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall (Corporate)",
+            "target": "AI Services Virtual Network (Ingress)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Green (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network (Ingress)",
+            "target": "Private Endpoints",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue (Logical connection to Private Endpoints)",
+            "sequence": "None"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "AI Foundry Agent Subnet",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue (Logical connection within AI Services Virtual Network)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Foundry Agent Subnet",
+            "target": "API Management Subnet",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue (Logical connection for API Management)",
+            "sequence": "None"
+        },
+        {
+            "source": "API Management Subnet",
+            "target": "Container App Environment Subnet",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue (Logical connection to GenAI App Microservices)",
+            "sequence": "None"
+        },
+        {
+            "source": "Container App Environment Subnet",
+            "target": "GenAI app dependencies (e.g., Cosmos DB, Storage Account, etc.)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue (Logical connection for external app dependencies)",
+            "sequence": "None"
+        }
+    ]
+}
