@@ -1,0 +1,102 @@
+{
+    "connections": [
+        {
+            "source": "User",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Ext Systems (e.g., Payment GW, UIDAI, etc.)",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Ingress VNET > Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Ingress VNET > Application Gateway",
+            "target": "Azure Firewall (in Inspection VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic Inspection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall (Inspection VNET)",
+            "target": "Egress VNET > Proxy Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic Inspection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Egress VNET > Proxy Firewall",
+            "target": "AI Services Virtual Network / AI Landing Zone Prod Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "VPN/ExpressRoute Gateways",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "VPN/ExpressRoute Gateways",
+            "target": "On-premises network",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Network Interconnect)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > Jump Box Subnet",
+            "target": "Jump Box VM",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Isolated Management Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Private Endpoints",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Service-Bound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "AI Foundry Agent Service Dependencies (e.g., Storage Account, AI Search, Cosmos DB, and Key Vault)",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Dashed Blue Line (AI Service Data Exchange)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > API Management Subnet",
+            "target": "API Management",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Service Management Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > Build Agent Subnet",
+            "target": "Build Agent VM",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Build Automation Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Container App Environment Subnet",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Microservices Traffic)",
+            "sequence": "None"
+        }
+    ]
+}

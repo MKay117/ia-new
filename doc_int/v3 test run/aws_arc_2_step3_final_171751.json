@@ -1,0 +1,207 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "AWS Region",
+            "type": "Region",
+            "children": [
+                {
+                    "name": "Spoke VPC A",
+                    "type": "VPC",
+                    "children": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "Availability Zone",
+                            "children": [
+                                {
+                                    "name": "workload subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "EC2 instance"
+                                    ]
+                                },
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "TGW ENI"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Spoke VPC A route table",
+                            "type": "Route Table"
+                        }
+                    ]
+                },
+                {
+                    "name": "Spoke VPC B",
+                    "type": "VPC",
+                    "children": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "Availability Zone",
+                            "children": [
+                                {
+                                    "name": "workload subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "EC2 instance"
+                                    ]
+                                },
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "TGW ENI"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Spoke VPC B route table",
+                            "type": "Route Table"
+                        }
+                    ]
+                },
+                {
+                    "name": "AWS Transit Gateway",
+                    "type": "Transit Gateway",
+                    "children": [
+                        {
+                            "name": "Spoke VPC route table",
+                            "type": "Route Table"
+                        },
+                        {
+                            "name": "Appliance VPC route table",
+                            "type": "Route Table"
+                        }
+                    ]
+                },
+                {
+                    "name": "Appliance VPC",
+                    "type": "VPC",
+                    "children": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "Availability Zone",
+                            "children": [
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "TGW ENI"
+                                    ]
+                                },
+                                {
+                                    "name": "public subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        {
+                                            "name": "third-party virtual appliance",
+                                            "type": "Appliance",
+                                            "children": [
+                                                "internet gateway"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Appliance VPC public route table",
+                            "type": "Route Table"
+                        },
+                        {
+                            "name": "Appliance VPC TGW route table",
+                            "type": "Route Table"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "external_and_unbound_entities": [
+        "corporate 192.168.0.0/24 2001:db8:1234:4d00/58",
+        "branch 192.168.1.0/24 2001:db8:1234:4d40/58",
+        "branch 192.168.2.0/24 2001:db8:1234:4d80/58",
+        "AWS Direct Connect",
+        "internet",
+        "virtual private gateway",
+        "SD-WAN overlay",
+        "GRE tunnel",
+        "BGP peering"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "Spoke VPC A - TGW ENI",
+            "target": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 2"
+        },
+        {
+            "source": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "target": "TGW ENI (Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 3"
+        },
+        {
+            "source": "TGW ENI (Appliance VPC)",
+            "target": "Third-party virtual appliance",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step B"
+        },
+        {
+            "source": "Third-party virtual appliance",
+            "target": "Internet Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step B"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Corporate (192.168.0.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 4"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Branch (192.168.1.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step A"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Branch (2001:db8:1234:4d40::/58)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step A"
+        },
+        {
+            "source": "Corporate (192.168.0.0/24)",
+            "target": "Branch (192.168.1.0/24)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed green (BGP peering)",
+            "sequence": "None"
+        },
+        {
+            "source": "Spoke VPC B - TGW ENI",
+            "target": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step D"
+        },
+        {
+            "source": "TGW ENI (Appliance VPC)",
+            "target": "Corporate (192.168.0.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 4"
+        }
+    ]
+}

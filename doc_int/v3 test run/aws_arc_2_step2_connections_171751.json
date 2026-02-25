@@ -1,0 +1,74 @@
+{
+    "connections": [
+        {
+            "source": "Spoke VPC A - TGW ENI",
+            "target": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 2"
+        },
+        {
+            "source": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "target": "TGW ENI (Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 3"
+        },
+        {
+            "source": "TGW ENI (Appliance VPC)",
+            "target": "Third-party virtual appliance",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step B"
+        },
+        {
+            "source": "Third-party virtual appliance",
+            "target": "Internet Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step B"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Corporate (192.168.0.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 4"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Branch (192.168.1.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step A"
+        },
+        {
+            "source": "Internet Gateway",
+            "target": "Branch (2001:db8:1234:4d40::/58)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step A"
+        },
+        {
+            "source": "Corporate (192.168.0.0/24)",
+            "target": "Branch (192.168.1.0/24)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed green (BGP peering)",
+            "sequence": "None"
+        },
+        {
+            "source": "Spoke VPC B - TGW ENI",
+            "target": "TGW subnet (Availability Zone A - Appliance VPC)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step D"
+        },
+        {
+            "source": "TGW ENI (Appliance VPC)",
+            "target": "Corporate (192.168.0.0/24)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "Step 4"
+        }
+    ]
+}

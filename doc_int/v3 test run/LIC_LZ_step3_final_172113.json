@@ -1,0 +1,301 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "Azure AI Landing Zone",
+            "type": "Primary Boundary",
+            "children": [
+                {
+                    "name": "DMZ Subscription",
+                    "type": "Boundary",
+                    "children": [
+                        {
+                            "name": "Egress VNET",
+                            "type": "VNET",
+                            "children": [
+                                "Proxy Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Inspection VNET",
+                            "type": "VNET",
+                            "children": [
+                                "Azure Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Ingress VNET",
+                            "type": "VNET",
+                            "children": [
+                                {
+                                    "name": "Application Gateway Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "Application Gateway",
+                                        "WAF"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Corporate Subscription",
+                    "type": "Boundary",
+                    "children": [
+                        {
+                            "name": "Corporate VNET",
+                            "type": "VNET",
+                            "children": [
+                                "Azure DNS Private Resolver",
+                                {
+                                    "name": "VPN/ExpressRoute Gateways",
+                                    "type": "Service",
+                                    "children": []
+                                },
+                                "Azure Firewall",
+                                "Azure Bastion",
+                                "Azure DDOS"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AI Landing Zone Prod Subscription",
+                    "type": "Boundary",
+                    "children": [
+                        {
+                            "name": "AI App Resource Group",
+                            "type": "Resource Group",
+                            "children": [
+                                "Diagnostics Settings",
+                                "Log Analytics Workspace",
+                                "Monitor",
+                                "Application Insights",
+                                "Network Watcher",
+                                "Redis Cache",
+                                "Stack",
+                                {
+                                    "name": "AI Foundry Agent Service standard setup",
+                                    "type": "Service Cluster",
+                                    "children": [
+                                        "Azure AI Foundry Services",
+                                        {
+                                            "name": "AI Foundry Agent Service dependencies",
+                                            "type": "Service Cluster",
+                                            "children": [
+                                                "Storage Account",
+                                                "AI Search",
+                                                "Cosmos DB",
+                                                "Key Vault"
+                                            ]
+                                        },
+                                        {
+                                            "name": "AI Foundry Project",
+                                            "type": "Project Resources",
+                                            "children": [
+                                                "AI Services endpoints",
+                                                "Foundry Models",
+                                                "Connections",
+                                                "Foundry Agent Service"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "AI Services Virtual Network",
+                                    "type": "VNET",
+                                    "children": [
+                                        {
+                                            "name": "Jump Box Subnet",
+                                            "type": "Subnet",
+                                            "children": [
+                                                "Jump Box VM"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Private Endpoints Subnet",
+                                            "type": "Subnet",
+                                            "children": [
+                                                "Private Endpoint",
+                                                "Private Endpoint",
+                                                "Private Endpoint",
+                                                "Private Endpoint",
+                                                "Private Endpoint",
+                                                "Private Endpoint",
+                                                "Private Endpoint"
+                                            ]
+                                        },
+                                        {
+                                            "name": "API Management Subnet",
+                                            "type": "Subnet",
+                                            "children": [
+                                                "API Management"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Build Agent Subnet",
+                                            "type": "Subnet",
+                                            "children": [
+                                                "Build Agent VM"
+                                            ]
+                                        },
+                                        {
+                                            "name": "Container App Environment Subnet",
+                                            "type": "Subnet",
+                                            "children": [
+                                                "Container App Environment"
+                                            ]
+                                        },
+                                        {
+                                            "name": "AI Foundry Agent Subnet",
+                                            "type": "Subnet",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "GenAI app dependencies",
+                                    "type": "Dependencies",
+                                    "children": [
+                                        "Cosmos DB",
+                                        "Key Vault",
+                                        "Storage Account",
+                                        "Container Registry",
+                                        "App Configuration"
+                                    ]
+                                },
+                                {
+                                    "name": "GenAI app microservices",
+                                    "type": "Microservices",
+                                    "children": [
+                                        "Frontend",
+                                        "Orchestrator",
+                                        "SK",
+                                        "MCP",
+                                        "Ingestion"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "external_and_unbound_entities": [
+        "User",
+        "Internet",
+        "Ext Systems (e.g., Payment GW, UIDAI, Moengage, etc.)",
+        "On-premises network",
+        "Enterprise and public knowledge sources",
+        "Grounding with Bing",
+        "Security and Governance",
+        "Subscription policy assignments",
+        "Defender for Cloud",
+        "Entra ID",
+        "Purview",
+        "Azure DevOps",
+        "Azure AD P2",
+        "Prometheus"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "User",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Ext Systems (e.g., Payment GW, UIDAI, etc.)",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Ingress VNET > Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Ingress VNET > Application Gateway",
+            "target": "Azure Firewall (in Inspection VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic Inspection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall (Inspection VNET)",
+            "target": "Egress VNET > Proxy Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic Inspection)",
+            "sequence": "None"
+        },
+        {
+            "source": "Egress VNET > Proxy Firewall",
+            "target": "AI Services Virtual Network / AI Landing Zone Prod Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "Orange Solid Line (Egress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "VPN/ExpressRoute Gateways",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic / Outbound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "VPN/ExpressRoute Gateways",
+            "target": "On-premises network",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Solid Blue Line (Network Interconnect)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > Jump Box Subnet",
+            "target": "Jump Box VM",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Isolated Management Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Private Endpoints",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Service-Bound Access)",
+            "sequence": "None"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "AI Foundry Agent Service Dependencies (e.g., Storage Account, AI Search, Cosmos DB, and Key Vault)",
+            "flow": "Bidirectional",
+            "style_and_meaning": "Dashed Blue Line (AI Service Data Exchange)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > API Management Subnet",
+            "target": "API Management",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Service Management Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network > Build Agent Subnet",
+            "target": "Build Agent VM",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Build Automation Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Container App Environment Subnet",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Blue Line (Microservices Traffic)",
+            "sequence": "None"
+        }
+    ]
+}

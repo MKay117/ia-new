@@ -1,0 +1,226 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "AWS Cloud",
+            "type": "Boundary",
+            "children": [
+                {
+                    "name": "1 Shop floor, device tier",
+                    "type": "Zone",
+                    "children": [
+                        "X-ray machines",
+                        "cameras",
+                        "devices",
+                        "MES system"
+                    ]
+                },
+                {
+                    "name": "2 Edge tier",
+                    "type": "Zone",
+                    "children": [
+                        "AWS Transfer Family",
+                        "AWS DataSync",
+                        "AWS IoT Greengrass"
+                    ]
+                },
+                {
+                    "name": "3 Store",
+                    "type": "Process",
+                    "children": [
+                        "Amazon S3 images dataset"
+                    ]
+                },
+                {
+                    "name": "4 Training pipeline",
+                    "type": "Process",
+                    "children": [
+                        "Amazon Lookout for Vision",
+                        "train model",
+                        "AWS Lambda manage model"
+                    ]
+                },
+                {
+                    "name": "5 Final results",
+                    "type": "Process",
+                    "children": [
+                        "Amazon API Gateway",
+                        "admins, data scientists"
+                    ]
+                },
+                {
+                    "name": "6 Testing/inference pipeline",
+                    "type": "Process",
+                    "children": [
+                        {
+                            "name": "AWS Step Functions workflow",
+                            "type": "Subprocess",
+                            "children": [
+                                "inference function",
+                                "publish to SNS",
+                                "publish to S3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "7",
+                    "type": "Process",
+                    "children": [
+                        "AWS Lambda start state machine, submit batch job",
+                        "AWS Batch",
+                        "AWS Fargate"
+                    ]
+                },
+                {
+                    "name": "8",
+                    "type": "Process",
+                    "children": [
+                        "Amazon SNS",
+                        "Amazon S3",
+                        "Amazon QuickSight",
+                        "business users"
+                    ]
+                },
+                {
+                    "name": "9",
+                    "type": "Process",
+                    "children": [
+                        "AWS Lambda write back to MES",
+                        "MES system"
+                    ]
+                }
+            ]
+        }
+    ],
+    "external_and_unbound_entities": [
+        "aws"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "X-ray machines",
+            "target": "MES system",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Flow)",
+            "sequence": "1"
+        },
+        {
+            "source": "MES system",
+            "target": "AWS IoT Greengrass",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Flow)",
+            "sequence": "2"
+        },
+        {
+            "source": "AWS IoT Greengrass",
+            "target": "Amazon S3 images dataset",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Flow)",
+            "sequence": "3"
+        },
+        {
+            "source": "Amazon S3 images dataset",
+            "target": "Amazon Lookout for Vision",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Training Pipeline)",
+            "sequence": "4"
+        },
+        {
+            "source": "Amazon Lookout for Vision",
+            "target": "train model",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Training Step)",
+            "sequence": "4"
+        },
+        {
+            "source": "train model",
+            "target": "AWS Lambda manage model",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Flow)",
+            "sequence": "5"
+        },
+        {
+            "source": "AWS Lambda manage model",
+            "target": "Amazon API Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Flow)",
+            "sequence": "5"
+        },
+        {
+            "source": "Amazon API Gateway",
+            "target": "admins, data scientists",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (API Interaction)",
+            "sequence": "5"
+        },
+        {
+            "source": "Amazon S3 images dataset",
+            "target": "AWS Step Functions workflow",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Testing/Inference Pipeline)",
+            "sequence": "6"
+        },
+        {
+            "source": "AWS Step Functions workflow",
+            "target": "inference function",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Testing Step)",
+            "sequence": "6"
+        },
+        {
+            "source": "inference function",
+            "target": "publish to SNS",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Testing Step)",
+            "sequence": "6"
+        },
+        {
+            "source": "inference function",
+            "target": "publish to S3",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Testing Step)",
+            "sequence": "6"
+        },
+        {
+            "source": "publish to SNS",
+            "target": "Amazon SNS",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Notification Flow)",
+            "sequence": "8"
+        },
+        {
+            "source": "publish to S3",
+            "target": "Amazon S3",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Storage)",
+            "sequence": "8"
+        },
+        {
+            "source": "Amazon S3",
+            "target": "Amazon QuickSight",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Data Analysis)",
+            "sequence": "8"
+        },
+        {
+            "source": "Amazon QuickSight",
+            "target": "business users",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Insights Access)",
+            "sequence": "8"
+        },
+        {
+            "source": "Amazon S3",
+            "target": "AWS Lambda write back to MES",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Feedback Loop)",
+            "sequence": "9"
+        },
+        {
+            "source": "AWS Lambda write back to MES",
+            "target": "MES system",
+            "flow": "One-way",
+            "style_and_meaning": "Solid (Feedback Loop)",
+            "sequence": "9"
+        }
+    ]
+}

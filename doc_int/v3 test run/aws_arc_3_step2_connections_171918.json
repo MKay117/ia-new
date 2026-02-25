@@ -1,0 +1,81 @@
+{
+    "connections": [
+        {
+            "source": "EC2 instance (Region A, VPC 1)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed black (VPC attachment)",
+            "sequence": "C"
+        },
+        {
+            "source": "EC2 instance (Region A, VPC 2)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed black (VPC attachment)",
+            "sequence": "1"
+        },
+        {
+            "source": "EC2 instance (Region B, VPC 1)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed black (VPC attachment)",
+            "sequence": "None"
+        },
+        {
+            "source": "EC2 instance (Region B, VPC 2)",
+            "target": "Core Network (prod segment)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed black (VPC attachment)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network (prod segment)",
+            "target": "Core Network Edge (CNE)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed purple (VPC attachment)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Appliance VPC (third-party virtual appliance)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed purple (VPC attachment)",
+            "sequence": "B"
+        },
+        {
+            "source": "Appliance VPC (third-party virtual appliance)",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid (SD-WAN overlay)",
+            "sequence": "A"
+        },
+        {
+            "source": "Appliance VPC (third-party virtual appliance)",
+            "target": "Corporate (AWS Direct Connect)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed purple (Virtual Private Gateway)",
+            "sequence": "3"
+        },
+        {
+            "source": "AWS Direct Connect",
+            "target": "Corporate",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed purple (Virtual Private Gateway)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network Edge (CNE)",
+            "target": "Core Network (on-prem segment)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed green (BGP peering)",
+            "sequence": "None"
+        },
+        {
+            "source": "Core Network (on-prem segment)",
+            "target": "Core Network Edge (CNE)",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Dashed green (BGP peering)",
+            "sequence": "None"
+        }
+    ]
+}
