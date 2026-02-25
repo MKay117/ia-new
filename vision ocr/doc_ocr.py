@@ -310,40 +310,31 @@ def extract_connections(image_path):
     )
 
     prompt = """
-    Analyze this technical architecture diagram. You are a networking routing expert.
+        Analyze this technical architecture diagram. You are a precise visual routing expert.
 
-    STEP 1: VISUAL LEGEND & SEMANTICS
-    Before tracing any lines, scan the entire image for a Legend or implicit visual semantics. 
-    - Note what different colors mean (e.g., Orange = SD-WAN, Blue = GRE, Green = Ingress).
-    - Note what line styles mean (e.g., Dashed = Peering/Logical, Solid = Physical/Direct).
-    - Look for sequencing markers (e.g., numbered steps like 1, 2, 3 or lettered steps like A, B, C).
+        STEP 1: AUTONOMOUS LEGEND & SEMANTIC ANALYSIS
+        Before tracing any lines, scan the entire image for a Legend or consistent visual patterns.
+        - Autonomously determine what different colors, line thicknesses, and styles (e.g., dashed vs. solid) represent in the context of this specific image.
+        - Look for sequencing markers (numbered or lettered steps) that dictate traffic flow.
 
-    STEP 2: EXTRACT CONNECTIONS
-    Focus ONLY on the lines and arrows connecting components. Using the context from the legend, extract:
-    1. The source component name and the destination component name.
-    2. The direction (One-way, Bi-directional).
-    3. The semantic style (Incorporate the color, line style, and meaning based on the legend).
-    4. The sequence step (if labelled on the line).
+        STEP 2: STRICT HOP-BY-HOP EXTRACTION
+        Extract the connections by following these absolute geometric rules:
+        1. DO NOT SKIP INTERMEDIARIES: If a line passes through, touches, or stops at an icon or component boundary, that component is a MANDATORY hop. You must break the path into segments (e.g., Source -> Intermediary Node, Intermediary Node -> Destination).
+        2. FIND THE ARROWHEAD: To determine the 'target' and direction, you MUST physically locate the arrowhead drawn on the line. Do not guess direction based on component names or logical assumptions. 
+        3. INTERSECTIONS ARE NOT HOPS: If two lines merely cross over each other without a distinct connecting node or dot, they are independent lines. Do not map them as connected.
 
-    OUTPUT SCHEMA (STRICT JSON):
-    {
-      "connections": [
+        OUTPUT FORMAT (STRICT JSON):
         {
-          "source": "Internet",
-          "target": "WAF",
-          "flow": "One-way",
-          "style_and_meaning": "Solid Green (Ingress Traffic)",
-          "sequence": "None"
-        },
-        {
-          "source": "Virtual Private Gateway",
-          "target": "TGW ENI",
-          "flow": "One-way",
-          "style_and_meaning": "Solid Orange (SD-WAN overlay)",
-          "sequence": "3"
+        "connections": [
+            {
+            "source": "[Exact Name of Source Component]",
+            "target": "[Exact Name of Target Component]",
+            "flow": "One-way | Bi-directional | Unknown",
+            "style_and_meaning": "[Color/Style] ([Inferred Meaning from Legend])",
+            "sequence": "[Step Number/Letter or 'None']"
+            }
+        ]
         }
-      ]
-    }
     """
 
     response = llm_client.chat.completions.create(
@@ -376,23 +367,39 @@ def consolidate_architecture(image_path, spatial_data, connections):
     )
 
     prompt = f"""
-    You are a Principal Cloud Architect. Synthesize the provided Spatial Map and Connection List into a single source of truth.
-    
-    INPUTS:
-    1. Spatial Map (OCR Text + Positions): {json.dumps(spatial_data)}
-    2. Connection List (Legend-aware geometric relationships): {json.dumps(connections)}
-    
-    RULES:
-    - Use the Spatial Map to define the Hierarchy (what is inside what).
-    - Use the Connection List to define the end_to_end_flows. Ensure you retain the specific semantic styles and sequence steps.
-    - If a connection target name in the List slightly differs from the OCR text, prioritize the OCR text to link them properly.
-    - DO NOT drop components from the hierarchy just because they lack a hard bounding box (e.g., Gateways on borders, or external services). Place them logically.
-    
-    OUTPUT FORMAT (STRICT JSON):
-    {{
-      "architectural_hierarchy": [...],
-      "end_to_end_flows": [...]
-    }}
+        You are a Principal Cloud Architect and Spatial Data Synthesizer. Synthesize the provided Spatial Map and Connection List into a single, accurate JSON representation.
+        
+        INPUTS:
+        1. Spatial Map (OCR Text + X/Y Polygons): {json.dumps(spatial_data)}
+        2. Connection List (Legend-aware geometric relationships): {json.dumps(connections)}
+        
+        CRITICAL ALGORITHMIC RULES:
+        1. INFER BOUNDARIES FROM PROXIMITY (THE FALLBACK RULE): If explicit boundary polygons are missing from the spatial map, you MUST use the X/Y polygon coordinates of the text to infer boundaries. If a cluster of services is located directly beneath a header text or grouped closely together, nest them under that header.
+        2. NO DEDUPLICATION (COORDINATE NAMESPACING): Diagrams often have identical components in different physical zones. If you see identical text labels with significantly different X/Y coordinates, DO NOT merge them. Treat them as distinct instances. Differentiate them in your output using their spatial context (e.g., "Component Name (Left Zone)").
+        3. SEPARATE FLOW FROM STRUCTURE: Do NOT nest components inside one another simply because a flow arrow connects them. Hierarchy is dictated strictly by physical enclosure or tight spatial clustering.
+        4. ZERO DROP POLICY & EXTERNAL ENTITIES: Every single text block from the Spatial Map MUST be accounted for. If a component (e.g., a user icon, branch office, or floating monitoring tool) sits physically outside the main structural clusters, do not force it into the hierarchy or delete it. Place it in the "external_and_unbound_entities" array.
+        
+        OUTPUT FORMAT (STRICT JSON):
+        {{
+        "architectural_hierarchy": [
+            {{
+            "name": "[Main Boundary/Region Name]",
+            "type": "[Boundary Type]",
+            "children": [
+                {{
+                "name": "[Nested Boundary/VPC/VNET Name]",
+                "type": "[Boundary Type]",
+                "children": ["[Component 1]", "[Component 2]"]
+                }}
+            ]
+            }}
+        ],
+        "external_and_unbound_entities": [
+            "[Floating Entity 1]",
+            "[External Network 2]"
+        ],
+        "end_to_end_flows": [...]
+        }}
     """
 
     response = llm_client.chat.completions.create(
