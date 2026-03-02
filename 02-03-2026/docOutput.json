@@ -1,0 +1,4146 @@
+{
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-layout",
+    "stringIndexType": "textElements",
+    "content": "1 Shop floor, device tier\nX-ray machines\ncameras\ndevices\nMES system\n2\nEdge tier\nAWS Transfer Family\nAWS DataSync\nAWS loT Greengrass\naws\nAWS Cloud\n3 Store\n4 Training pipeline\n5\nFinal results\nAmazon S3 images dataset\nAmazon Lookout for Vision\ntrain model\nAWS Lambda manage model\nAmazon API Gateway\nadmins, data scientists\nTesting/inference pipeline\nAWS Step Functions workflow\n8\ninference function\npublish to SNS\nAmazon SNS\npublish to S3\n6\nAmazon S3\nAmazon QuickSight\nbusiness users\n9\nAWS Lambda start state machine, submit batch job\n7\nAWS Batch\nAWS Fargate\nAWS Lambda write back to MES",
+    "pages": [
+        {
+            "pageNumber": 1,
+            "angle": 0.04921339079737663,
+            "width": 1385,
+            "height": 828,
+            "unit": "pixel",
+            "words": [
+                {
+                    "content": "1",
+                    "polygon": [
+                        23,
+                        46,
+                        33,
+                        46,
+                        33,
+                        66,
+                        23,
+                        66
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 0,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Shop",
+                    "polygon": [
+                        52,
+                        69,
+                        104,
+                        69,
+                        104,
+                        92,
+                        52,
+                        92
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 2,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "floor,",
+                    "polygon": [
+                        111,
+                        69,
+                        164,
+                        69,
+                        164,
+                        92,
+                        111,
+                        92
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 7,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "device",
+                    "polygon": [
+                        56,
+                        96,
+                        120,
+                        96,
+                        120,
+                        117,
+                        56,
+                        117
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 14,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "tier",
+                    "polygon": [
+                        127,
+                        96,
+                        163,
+                        97,
+                        163,
+                        118,
+                        126,
+                        118
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 21,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "X-ray",
+                    "polygon": [
+                        76,
+                        237,
+                        127,
+                        238,
+                        127,
+                        258,
+                        76,
+                        256
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 26,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "machines",
+                    "polygon": [
+                        58,
+                        261,
+                        146,
+                        261,
+                        146,
+                        279,
+                        58,
+                        279
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 32,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "cameras",
+                    "polygon": [
+                        64,
+                        384,
+                        141,
+                        384,
+                        141,
+                        400,
+                        64,
+                        400
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 41,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "devices",
+                    "polygon": [
+                        66,
+                        497,
+                        134,
+                        498,
+                        134,
+                        516,
+                        65,
+                        516
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 49,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "MES",
+                    "polygon": [
+                        47,
+                        627,
+                        87,
+                        628,
+                        87,
+                        648,
+                        46,
+                        647
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 57,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "system",
+                    "polygon": [
+                        93,
+                        628,
+                        157,
+                        628,
+                        157,
+                        648,
+                        93,
+                        648
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 61,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "2",
+                    "polygon": [
+                        213,
+                        48,
+                        228,
+                        48,
+                        228,
+                        69,
+                        213,
+                        69
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 68,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Edge",
+                    "polygon": [
+                        257,
+                        73,
+                        306,
+                        74,
+                        306,
+                        96,
+                        256,
+                        96
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 70,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "tier",
+                    "polygon": [
+                        313,
+                        73,
+                        349,
+                        73,
+                        349,
+                        96,
+                        313,
+                        96
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 75,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        234,
+                        236,
+                        278,
+                        237,
+                        278,
+                        256,
+                        234,
+                        256
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 80,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Transfer",
+                    "polygon": [
+                        283,
+                        237,
+                        361,
+                        237,
+                        361,
+                        257,
+                        283,
+                        256
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 84,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "Family",
+                    "polygon": [
+                        266,
+                        261,
+                        329,
+                        261,
+                        329,
+                        283,
+                        266,
+                        282
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 93,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        232,
+                        424,
+                        277,
+                        425,
+                        277,
+                        446,
+                        232,
+                        446
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 100,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "DataSync",
+                    "polygon": [
+                        284,
+                        425,
+                        370,
+                        425,
+                        370,
+                        446,
+                        284,
+                        446
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 104,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        256,
+                        615,
+                        300,
+                        615,
+                        300,
+                        634,
+                        256,
+                        634
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 113,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "loT",
+                    "polygon": [
+                        307,
+                        615,
+                        336,
+                        615,
+                        336,
+                        634,
+                        307,
+                        634
+                    ],
+                    "confidence": 0.675,
+                    "span": {
+                        "offset": 117,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Greengrass",
+                    "polygon": [
+                        245,
+                        640,
+                        349,
+                        641,
+                        349,
+                        661,
+                        244,
+                        661
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 121,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "aws",
+                    "polygon": [
+                        411,
+                        23,
+                        454,
+                        23,
+                        454,
+                        40,
+                        411,
+                        40
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 132,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        473,
+                        22,
+                        526,
+                        22,
+                        526,
+                        44,
+                        473,
+                        44
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 136,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Cloud",
+                    "polygon": [
+                        534,
+                        22,
+                        598,
+                        21,
+                        598,
+                        45,
+                        534,
+                        44
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 140,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "3",
+                    "polygon": [
+                        423,
+                        85,
+                        438,
+                        84,
+                        438,
+                        105,
+                        423,
+                        105
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 146,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Store",
+                    "polygon": [
+                        476,
+                        96,
+                        532,
+                        97,
+                        532,
+                        116,
+                        476,
+                        116
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 148,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "4",
+                    "polygon": [
+                        610,
+                        82,
+                        625,
+                        82,
+                        625,
+                        101,
+                        610,
+                        101
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 154,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Training",
+                    "polygon": [
+                        694,
+                        95,
+                        778,
+                        95,
+                        778,
+                        119,
+                        694,
+                        119
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 156,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "pipeline",
+                    "polygon": [
+                        786,
+                        95,
+                        866,
+                        95,
+                        866,
+                        119,
+                        786,
+                        120
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 165,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "5",
+                    "polygon": [
+                        976,
+                        82,
+                        991,
+                        82,
+                        991,
+                        101,
+                        976,
+                        101
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 174,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Final",
+                    "polygon": [
+                        1048,
+                        95,
+                        1097,
+                        95,
+                        1097,
+                        116,
+                        1048,
+                        116
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 176,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "results",
+                    "polygon": [
+                        1104,
+                        95,
+                        1170,
+                        95,
+                        1170,
+                        116,
+                        1104,
+                        116
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 182,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        450,
+                        188,
+                        525,
+                        188,
+                        525,
+                        207,
+                        450,
+                        208
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 190,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "S3",
+                    "polygon": [
+                        532,
+                        188,
+                        555,
+                        188,
+                        555,
+                        207,
+                        531,
+                        207
+                    ],
+                    "confidence": 0.957,
+                    "span": {
+                        "offset": 197,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "images",
+                    "polygon": [
+                        434,
+                        212,
+                        499,
+                        212,
+                        499,
+                        234,
+                        433,
+                        234
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 200,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "dataset",
+                    "polygon": [
+                        504,
+                        212,
+                        573,
+                        212,
+                        573,
+                        233,
+                        504,
+                        234
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 207,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        614,
+                        183,
+                        689,
+                        183,
+                        689,
+                        203,
+                        614,
+                        203
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 215,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "Lookout",
+                    "polygon": [
+                        696,
+                        183,
+                        773,
+                        182,
+                        773,
+                        203,
+                        696,
+                        203
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 222,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "for",
+                    "polygon": [
+                        647,
+                        206,
+                        676,
+                        206,
+                        676,
+                        226,
+                        647,
+                        226
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 230,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Vision",
+                    "polygon": [
+                        681,
+                        206,
+                        738,
+                        206,
+                        738,
+                        226,
+                        681,
+                        226
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 234,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "train",
+                    "polygon": [
+                        795,
+                        184,
+                        841,
+                        184,
+                        841,
+                        202,
+                        795,
+                        202
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 241,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "model",
+                    "polygon": [
+                        874,
+                        186,
+                        935,
+                        184,
+                        935,
+                        203,
+                        874,
+                        203
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 247,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        982,
+                        194,
+                        1026,
+                        194,
+                        1026,
+                        214,
+                        982,
+                        214
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 253,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Lambda",
+                    "polygon": [
+                        1033,
+                        194,
+                        1107,
+                        193,
+                        1107,
+                        214,
+                        1033,
+                        214
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 257,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "manage",
+                    "polygon": [
+                        977,
+                        219,
+                        1049,
+                        218,
+                        1049,
+                        239,
+                        977,
+                        240
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 264,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "model",
+                    "polygon": [
+                        1053,
+                        218,
+                        1114,
+                        218,
+                        1114,
+                        239,
+                        1053,
+                        239
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 271,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        1125,
+                        193,
+                        1200,
+                        193,
+                        1200,
+                        213,
+                        1125,
+                        213
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 277,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "API",
+                    "polygon": [
+                        1206,
+                        193,
+                        1237,
+                        193,
+                        1237,
+                        213,
+                        1206,
+                        212
+                    ],
+                    "confidence": 0.986,
+                    "span": {
+                        "offset": 284,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Gateway",
+                    "polygon": [
+                        1141,
+                        218,
+                        1223,
+                        218,
+                        1223,
+                        239,
+                        1141,
+                        238
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 288,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "admins,",
+                    "polygon": [
+                        1252,
+                        183,
+                        1323,
+                        183,
+                        1323,
+                        203,
+                        1252,
+                        203
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 296,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "data",
+                    "polygon": [
+                        1330,
+                        183,
+                        1370,
+                        183,
+                        1370,
+                        203,
+                        1330,
+                        203
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 304,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "scientists",
+                    "polygon": [
+                        1268,
+                        208,
+                        1355,
+                        208,
+                        1355,
+                        227,
+                        1268,
+                        227
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 309,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "Testing/inference",
+                    "polygon": [
+                        509,
+                        280,
+                        688,
+                        279,
+                        688,
+                        305,
+                        509,
+                        305
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 320,
+                        "length": 17
+                    }
+                },
+                {
+                    "content": "pipeline",
+                    "polygon": [
+                        696,
+                        279,
+                        777,
+                        279,
+                        777,
+                        305,
+                        696,
+                        305
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 338,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        601,
+                        324,
+                        649,
+                        324,
+                        649,
+                        347,
+                        601,
+                        347
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 347,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Step",
+                    "polygon": [
+                        657,
+                        324,
+                        700,
+                        324,
+                        700,
+                        347,
+                        656,
+                        347
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 351,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "Functions",
+                    "polygon": [
+                        708,
+                        324,
+                        805,
+                        324,
+                        805,
+                        347,
+                        708,
+                        347
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 356,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "workflow",
+                    "polygon": [
+                        601,
+                        352,
+                        698,
+                        351,
+                        698,
+                        373,
+                        601,
+                        372
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 366,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "8",
+                    "polygon": [
+                        997,
+                        361,
+                        1012,
+                        361,
+                        1012,
+                        380,
+                        997,
+                        380
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 375,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "inference",
+                    "polygon": [
+                        583,
+                        440,
+                        671,
+                        440,
+                        671,
+                        460,
+                        583,
+                        459
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 377,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "function",
+                    "polygon": [
+                        587,
+                        463,
+                        667,
+                        464,
+                        667,
+                        483,
+                        587,
+                        483
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 387,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "publish",
+                    "polygon": [
+                        686,
+                        441,
+                        754,
+                        441,
+                        754,
+                        461,
+                        686,
+                        462
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 396,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        760,
+                        441,
+                        781,
+                        440,
+                        781,
+                        461,
+                        760,
+                        461
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 404,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "SNS",
+                    "polygon": [
+                        714,
+                        465,
+                        754,
+                        465,
+                        754,
+                        484,
+                        714,
+                        484
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 407,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        1007,
+                        441,
+                        1082,
+                        441,
+                        1082,
+                        460,
+                        1006,
+                        461
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 411,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "SNS",
+                    "polygon": [
+                        1088,
+                        441,
+                        1126,
+                        441,
+                        1126,
+                        461,
+                        1088,
+                        460
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 418,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "publish",
+                    "polygon": [
+                        648,
+                        549,
+                        718,
+                        547,
+                        718,
+                        568,
+                        649,
+                        570
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 422,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        658,
+                        573,
+                        679,
+                        572,
+                        679,
+                        591,
+                        658,
+                        591
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 430,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "S3",
+                    "polygon": [
+                        685,
+                        572,
+                        708,
+                        572,
+                        708,
+                        591,
+                        685,
+                        591
+                    ],
+                    "confidence": 0.912,
+                    "span": {
+                        "offset": 433,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "6",
+                    "polygon": [
+                        462,
+                        572,
+                        477,
+                        572,
+                        477,
+                        592,
+                        462,
+                        591
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 436,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        1006,
+                        560,
+                        1081,
+                        559,
+                        1081,
+                        579,
+                        1005,
+                        580
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 438,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "S3",
+                    "polygon": [
+                        1088,
+                        559,
+                        1113,
+                        559,
+                        1113,
+                        580,
+                        1088,
+                        579
+                    ],
+                    "confidence": 0.956,
+                    "span": {
+                        "offset": 445,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        1140,
+                        556,
+                        1218,
+                        557,
+                        1218,
+                        576,
+                        1140,
+                        576
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 448,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "QuickSight",
+                    "polygon": [
+                        1129,
+                        579,
+                        1232,
+                        579,
+                        1232,
+                        602,
+                        1129,
+                        602
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 455,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "business",
+                    "polygon": [
+                        1278,
+                        542,
+                        1358,
+                        542,
+                        1358,
+                        561,
+                        1278,
+                        561
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 466,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "users",
+                    "polygon": [
+                        1293,
+                        569,
+                        1343,
+                        569,
+                        1343,
+                        585,
+                        1293,
+                        585
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 475,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "9",
+                    "polygon": [
+                        997,
+                        605,
+                        1012,
+                        605,
+                        1012,
+                        624,
+                        997,
+                        624
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 481,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        453,
+                        670,
+                        497,
+                        670,
+                        497,
+                        689,
+                        453,
+                        689
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 483,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Lambda",
+                    "polygon": [
+                        504,
+                        670,
+                        577,
+                        669,
+                        577,
+                        689,
+                        504,
+                        689
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 487,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "start",
+                    "polygon": [
+                        425,
+                        695,
+                        469,
+                        694,
+                        469,
+                        714,
+                        425,
+                        714
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 494,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "state",
+                    "polygon": [
+                        474,
+                        694,
+                        519,
+                        694,
+                        519,
+                        714,
+                        474,
+                        714
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 500,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "machine,",
+                    "polygon": [
+                        524,
+                        694,
+                        604,
+                        694,
+                        604,
+                        715,
+                        524,
+                        714
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 506,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "submit",
+                    "polygon": [
+                        439,
+                        718,
+                        503,
+                        718,
+                        503,
+                        739,
+                        439,
+                        739
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 515,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "batch",
+                    "polygon": [
+                        508,
+                        718,
+                        557,
+                        718,
+                        557,
+                        739,
+                        508,
+                        739
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 522,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "job",
+                    "polygon": [
+                        562,
+                        718,
+                        591,
+                        718,
+                        591,
+                        739,
+                        562,
+                        739
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 528,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "7",
+                    "polygon": [
+                        624,
+                        659,
+                        639,
+                        659,
+                        639,
+                        680,
+                        624,
+                        680
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 532,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        683,
+                        672,
+                        727,
+                        672,
+                        727,
+                        693,
+                        683,
+                        693
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 534,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Batch",
+                    "polygon": [
+                        735,
+                        672,
+                        787,
+                        672,
+                        787,
+                        693,
+                        734,
+                        693
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 538,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        816,
+                        672,
+                        860,
+                        672,
+                        860,
+                        694,
+                        816,
+                        694
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 544,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Fargate",
+                    "polygon": [
+                        868,
+                        673,
+                        937,
+                        673,
+                        937,
+                        694,
+                        867,
+                        694
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 548,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        1002,
+                        707,
+                        1046,
+                        707,
+                        1046,
+                        726,
+                        1002,
+                        726
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 556,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Lambda",
+                    "polygon": [
+                        1053,
+                        707,
+                        1126,
+                        706,
+                        1126,
+                        726,
+                        1053,
+                        726
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 560,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "write",
+                    "polygon": [
+                        983,
+                        731,
+                        1030,
+                        731,
+                        1030,
+                        751,
+                        983,
+                        751
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 567,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "back",
+                    "polygon": [
+                        1035,
+                        731,
+                        1076,
+                        731,
+                        1076,
+                        751,
+                        1035,
+                        751
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 573,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        1082,
+                        731,
+                        1100,
+                        731,
+                        1100,
+                        751,
+                        1082,
+                        751
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 578,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "MES",
+                    "polygon": [
+                        1105,
+                        731,
+                        1146,
+                        730,
+                        1146,
+                        750,
+                        1105,
+                        750
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 581,
+                        "length": 3
+                    }
+                }
+            ],
+            "lines": [
+                {
+                    "content": "1",
+                    "polygon": [
+                        23,
+                        46,
+                        32,
+                        46,
+                        32,
+                        65,
+                        23,
+                        65
+                    ],
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Shop floor,",
+                    "polygon": [
+                        52,
+                        68,
+                        164,
+                        69,
+                        164,
+                        92,
+                        52,
+                        92
+                    ],
+                    "spans": [
+                        {
+                            "offset": 2,
+                            "length": 11
+                        }
+                    ]
+                },
+                {
+                    "content": "device tier",
+                    "polygon": [
+                        56,
+                        96,
+                        163,
+                        96,
+                        163,
+                        118,
+                        56,
+                        117
+                    ],
+                    "spans": [
+                        {
+                            "offset": 14,
+                            "length": 11
+                        }
+                    ]
+                },
+                {
+                    "content": "X-ray",
+                    "polygon": [
+                        76,
+                        237,
+                        127,
+                        238,
+                        126,
+                        257,
+                        76,
+                        256
+                    ],
+                    "spans": [
+                        {
+                            "offset": 26,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "machines",
+                    "polygon": [
+                        58,
+                        261,
+                        146,
+                        261,
+                        146,
+                        279,
+                        58,
+                        279
+                    ],
+                    "spans": [
+                        {
+                            "offset": 32,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "cameras",
+                    "polygon": [
+                        64,
+                        384,
+                        140,
+                        384,
+                        140,
+                        400,
+                        64,
+                        400
+                    ],
+                    "spans": [
+                        {
+                            "offset": 41,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "devices",
+                    "polygon": [
+                        66,
+                        497,
+                        133,
+                        498,
+                        133,
+                        516,
+                        65,
+                        516
+                    ],
+                    "spans": [
+                        {
+                            "offset": 49,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "MES system",
+                    "polygon": [
+                        47,
+                        627,
+                        157,
+                        628,
+                        156,
+                        648,
+                        46,
+                        647
+                    ],
+                    "spans": [
+                        {
+                            "offset": 57,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "2",
+                    "polygon": [
+                        213,
+                        47,
+                        228,
+                        47,
+                        228,
+                        68,
+                        213,
+                        68
+                    ],
+                    "spans": [
+                        {
+                            "offset": 68,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Edge tier",
+                    "polygon": [
+                        256,
+                        73,
+                        348,
+                        73,
+                        348,
+                        96,
+                        256,
+                        96
+                    ],
+                    "spans": [
+                        {
+                            "offset": 70,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Transfer",
+                    "polygon": [
+                        234,
+                        236,
+                        361,
+                        237,
+                        361,
+                        256,
+                        234,
+                        256
+                    ],
+                    "spans": [
+                        {
+                            "offset": 80,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "Family",
+                    "polygon": [
+                        266,
+                        260,
+                        329,
+                        261,
+                        328,
+                        282,
+                        266,
+                        281
+                    ],
+                    "spans": [
+                        {
+                            "offset": 93,
+                            "length": 6
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS DataSync",
+                    "polygon": [
+                        232,
+                        424,
+                        370,
+                        425,
+                        370,
+                        446,
+                        232,
+                        445
+                    ],
+                    "spans": [
+                        {
+                            "offset": 100,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS loT",
+                    "polygon": [
+                        256,
+                        615,
+                        335,
+                        615,
+                        335,
+                        634,
+                        256,
+                        634
+                    ],
+                    "spans": [
+                        {
+                            "offset": 113,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "Greengrass",
+                    "polygon": [
+                        245,
+                        640,
+                        348,
+                        641,
+                        348,
+                        662,
+                        244,
+                        660
+                    ],
+                    "spans": [
+                        {
+                            "offset": 121,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "aws",
+                    "polygon": [
+                        411,
+                        23,
+                        454,
+                        23,
+                        453,
+                        40,
+                        411,
+                        40
+                    ],
+                    "spans": [
+                        {
+                            "offset": 132,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Cloud",
+                    "polygon": [
+                        473,
+                        21,
+                        597,
+                        21,
+                        597,
+                        44,
+                        473,
+                        44
+                    ],
+                    "spans": [
+                        {
+                            "offset": 136,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "3",
+                    "polygon": [
+                        423,
+                        84,
+                        437,
+                        84,
+                        437,
+                        104,
+                        423,
+                        104
+                    ],
+                    "spans": [
+                        {
+                            "offset": 146,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Store",
+                    "polygon": [
+                        476,
+                        96,
+                        532,
+                        96,
+                        531,
+                        116,
+                        476,
+                        116
+                    ],
+                    "spans": [
+                        {
+                            "offset": 148,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "4",
+                    "polygon": [
+                        610,
+                        82,
+                        625,
+                        82,
+                        625,
+                        101,
+                        610,
+                        101
+                    ],
+                    "spans": [
+                        {
+                            "offset": 154,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Training pipeline",
+                    "polygon": [
+                        694,
+                        95,
+                        866,
+                        95,
+                        866,
+                        119,
+                        694,
+                        119
+                    ],
+                    "spans": [
+                        {
+                            "offset": 156,
+                            "length": 17
+                        }
+                    ]
+                },
+                {
+                    "content": "5",
+                    "polygon": [
+                        976,
+                        82,
+                        990,
+                        82,
+                        990,
+                        101,
+                        976,
+                        101
+                    ],
+                    "spans": [
+                        {
+                            "offset": 174,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Final results",
+                    "polygon": [
+                        1048,
+                        95,
+                        1170,
+                        95,
+                        1170,
+                        116,
+                        1048,
+                        116
+                    ],
+                    "spans": [
+                        {
+                            "offset": 176,
+                            "length": 13
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon S3",
+                    "polygon": [
+                        449,
+                        188,
+                        555,
+                        188,
+                        555,
+                        207,
+                        450,
+                        207
+                    ],
+                    "spans": [
+                        {
+                            "offset": 190,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "images dataset",
+                    "polygon": [
+                        433,
+                        212,
+                        573,
+                        212,
+                        573,
+                        233,
+                        433,
+                        234
+                    ],
+                    "spans": [
+                        {
+                            "offset": 200,
+                            "length": 14
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon Lookout",
+                    "polygon": [
+                        614,
+                        182,
+                        772,
+                        182,
+                        772,
+                        202,
+                        614,
+                        202
+                    ],
+                    "spans": [
+                        {
+                            "offset": 215,
+                            "length": 14
+                        }
+                    ]
+                },
+                {
+                    "content": "for Vision",
+                    "polygon": [
+                        647,
+                        206,
+                        738,
+                        206,
+                        738,
+                        226,
+                        647,
+                        226
+                    ],
+                    "spans": [
+                        {
+                            "offset": 230,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "train",
+                    "polygon": [
+                        795,
+                        184,
+                        841,
+                        183,
+                        841,
+                        202,
+                        795,
+                        202
+                    ],
+                    "spans": [
+                        {
+                            "offset": 241,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "model",
+                    "polygon": [
+                        874,
+                        184,
+                        934,
+                        184,
+                        935,
+                        203,
+                        874,
+                        203
+                    ],
+                    "spans": [
+                        {
+                            "offset": 247,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Lambda",
+                    "polygon": [
+                        982,
+                        193,
+                        1107,
+                        193,
+                        1107,
+                        213,
+                        982,
+                        214
+                    ],
+                    "spans": [
+                        {
+                            "offset": 253,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "manage model",
+                    "polygon": [
+                        977,
+                        218,
+                        1113,
+                        218,
+                        1113,
+                        239,
+                        977,
+                        240
+                    ],
+                    "spans": [
+                        {
+                            "offset": 264,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon API",
+                    "polygon": [
+                        1125,
+                        193,
+                        1237,
+                        193,
+                        1237,
+                        212,
+                        1125,
+                        212
+                    ],
+                    "spans": [
+                        {
+                            "offset": 277,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "Gateway",
+                    "polygon": [
+                        1141,
+                        217,
+                        1222,
+                        218,
+                        1222,
+                        238,
+                        1141,
+                        238
+                    ],
+                    "spans": [
+                        {
+                            "offset": 288,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "admins, data",
+                    "polygon": [
+                        1252,
+                        183,
+                        1370,
+                        183,
+                        1370,
+                        203,
+                        1252,
+                        203
+                    ],
+                    "spans": [
+                        {
+                            "offset": 296,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "scientists",
+                    "polygon": [
+                        1268,
+                        208,
+                        1354,
+                        208,
+                        1354,
+                        226,
+                        1268,
+                        226
+                    ],
+                    "spans": [
+                        {
+                            "offset": 309,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "Testing/inference pipeline",
+                    "polygon": [
+                        509,
+                        279,
+                        776,
+                        279,
+                        776,
+                        305,
+                        509,
+                        304
+                    ],
+                    "spans": [
+                        {
+                            "offset": 320,
+                            "length": 26
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Step Functions",
+                    "polygon": [
+                        601,
+                        323,
+                        805,
+                        324,
+                        805,
+                        347,
+                        601,
+                        347
+                    ],
+                    "spans": [
+                        {
+                            "offset": 347,
+                            "length": 18
+                        }
+                    ]
+                },
+                {
+                    "content": "workflow",
+                    "polygon": [
+                        601,
+                        351,
+                        698,
+                        351,
+                        697,
+                        372,
+                        601,
+                        372
+                    ],
+                    "spans": [
+                        {
+                            "offset": 366,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "8",
+                    "polygon": [
+                        997,
+                        361,
+                        1012,
+                        361,
+                        1012,
+                        380,
+                        997,
+                        380
+                    ],
+                    "spans": [
+                        {
+                            "offset": 375,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "inference",
+                    "polygon": [
+                        583,
+                        439,
+                        671,
+                        440,
+                        670,
+                        460,
+                        583,
+                        459
+                    ],
+                    "spans": [
+                        {
+                            "offset": 377,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "function",
+                    "polygon": [
+                        587,
+                        463,
+                        666,
+                        463,
+                        666,
+                        483,
+                        587,
+                        483
+                    ],
+                    "spans": [
+                        {
+                            "offset": 387,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "publish to",
+                    "polygon": [
+                        686,
+                        441,
+                        780,
+                        440,
+                        780,
+                        461,
+                        686,
+                        462
+                    ],
+                    "spans": [
+                        {
+                            "offset": 396,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "SNS",
+                    "polygon": [
+                        714,
+                        465,
+                        753,
+                        465,
+                        753,
+                        484,
+                        714,
+                        484
+                    ],
+                    "spans": [
+                        {
+                            "offset": 407,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon SNS",
+                    "polygon": [
+                        1006,
+                        441,
+                        1125,
+                        441,
+                        1125,
+                        460,
+                        1006,
+                        460
+                    ],
+                    "spans": [
+                        {
+                            "offset": 411,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "publish",
+                    "polygon": [
+                        648,
+                        549,
+                        717,
+                        547,
+                        718,
+                        567,
+                        649,
+                        569
+                    ],
+                    "spans": [
+                        {
+                            "offset": 422,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "to S3",
+                    "polygon": [
+                        658,
+                        572,
+                        708,
+                        572,
+                        708,
+                        591,
+                        658,
+                        591
+                    ],
+                    "spans": [
+                        {
+                            "offset": 430,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "6",
+                    "polygon": [
+                        462,
+                        572,
+                        476,
+                        572,
+                        476,
+                        591,
+                        462,
+                        591
+                    ],
+                    "spans": [
+                        {
+                            "offset": 436,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon S3",
+                    "polygon": [
+                        1005,
+                        559,
+                        1113,
+                        559,
+                        1113,
+                        579,
+                        1005,
+                        579
+                    ],
+                    "spans": [
+                        {
+                            "offset": 438,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "Amazon",
+                    "polygon": [
+                        1140,
+                        556,
+                        1218,
+                        557,
+                        1218,
+                        576,
+                        1140,
+                        575
+                    ],
+                    "spans": [
+                        {
+                            "offset": 448,
+                            "length": 6
+                        }
+                    ]
+                },
+                {
+                    "content": "QuickSight",
+                    "polygon": [
+                        1129,
+                        579,
+                        1232,
+                        579,
+                        1232,
+                        601,
+                        1129,
+                        601
+                    ],
+                    "spans": [
+                        {
+                            "offset": 455,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "business",
+                    "polygon": [
+                        1278,
+                        542,
+                        1357,
+                        542,
+                        1357,
+                        561,
+                        1278,
+                        561
+                    ],
+                    "spans": [
+                        {
+                            "offset": 466,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "users",
+                    "polygon": [
+                        1293,
+                        569,
+                        1342,
+                        569,
+                        1342,
+                        585,
+                        1293,
+                        585
+                    ],
+                    "spans": [
+                        {
+                            "offset": 475,
+                            "length": 5
+                        }
+                    ]
+                },
+                {
+                    "content": "9",
+                    "polygon": [
+                        997,
+                        605,
+                        1011,
+                        605,
+                        1011,
+                        624,
+                        997,
+                        624
+                    ],
+                    "spans": [
+                        {
+                            "offset": 481,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Lambda",
+                    "polygon": [
+                        453,
+                        669,
+                        577,
+                        669,
+                        577,
+                        689,
+                        453,
+                        689
+                    ],
+                    "spans": [
+                        {
+                            "offset": 483,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "start state machine,",
+                    "polygon": [
+                        425,
+                        694,
+                        604,
+                        694,
+                        604,
+                        714,
+                        425,
+                        713
+                    ],
+                    "spans": [
+                        {
+                            "offset": 494,
+                            "length": 20
+                        }
+                    ]
+                },
+                {
+                    "content": "submit batch job",
+                    "polygon": [
+                        439,
+                        718,
+                        591,
+                        718,
+                        591,
+                        739,
+                        439,
+                        739
+                    ],
+                    "spans": [
+                        {
+                            "offset": 515,
+                            "length": 16
+                        }
+                    ]
+                },
+                {
+                    "content": "7",
+                    "polygon": [
+                        624,
+                        659,
+                        638,
+                        659,
+                        638,
+                        680,
+                        624,
+                        680
+                    ],
+                    "spans": [
+                        {
+                            "offset": 532,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Batch",
+                    "polygon": [
+                        683,
+                        672,
+                        786,
+                        672,
+                        786,
+                        692,
+                        683,
+                        692
+                    ],
+                    "spans": [
+                        {
+                            "offset": 534,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Fargate",
+                    "polygon": [
+                        816,
+                        672,
+                        937,
+                        673,
+                        937,
+                        694,
+                        816,
+                        694
+                    ],
+                    "spans": [
+                        {
+                            "offset": 544,
+                            "length": 11
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Lambda",
+                    "polygon": [
+                        1002,
+                        706,
+                        1125,
+                        706,
+                        1126,
+                        726,
+                        1002,
+                        726
+                    ],
+                    "spans": [
+                        {
+                            "offset": 556,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "write back to MES",
+                    "polygon": [
+                        983,
+                        731,
+                        1145,
+                        730,
+                        1145,
+                        750,
+                        983,
+                        751
+                    ],
+                    "spans": [
+                        {
+                            "offset": 567,
+                            "length": 17
+                        }
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 584
+                }
+            ]
+        }
+    ],
+    "tables": [],
+    "paragraphs": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 25
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        23,
+                        44,
+                        171,
+                        70,
+                        159,
+                        135,
+                        11,
+                        109
+                    ]
+                }
+            ],
+            "content": "1 Shop floor, device tier"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 26,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        58,
+                        237,
+                        146,
+                        236,
+                        146,
+                        279,
+                        58,
+                        279
+                    ]
+                }
+            ],
+            "content": "X-ray machines"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 41,
+                    "length": 7
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        64,
+                        384,
+                        140,
+                        384,
+                        140,
+                        400,
+                        64,
+                        400
+                    ]
+                }
+            ],
+            "content": "cameras"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 49,
+                    "length": 7
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        66,
+                        497,
+                        133,
+                        498,
+                        133,
+                        516,
+                        65,
+                        516
+                    ]
+                }
+            ],
+            "content": "devices"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 57,
+                    "length": 10
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        47,
+                        627,
+                        157,
+                        628,
+                        156,
+                        648,
+                        46,
+                        647
+                    ]
+                }
+            ],
+            "content": "MES system"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 68,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        213,
+                        47,
+                        228,
+                        47,
+                        228,
+                        68,
+                        213,
+                        68
+                    ]
+                }
+            ],
+            "content": "2"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 70,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        256,
+                        73,
+                        348,
+                        73,
+                        348,
+                        96,
+                        256,
+                        96
+                    ]
+                }
+            ],
+            "content": "Edge tier"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 80,
+                    "length": 19
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        234,
+                        236,
+                        361,
+                        237,
+                        361,
+                        282,
+                        234,
+                        282
+                    ]
+                }
+            ],
+            "content": "AWS Transfer Family"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 100,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        232,
+                        424,
+                        370,
+                        425,
+                        370,
+                        446,
+                        232,
+                        445
+                    ]
+                }
+            ],
+            "content": "AWS DataSync"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 113,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        245,
+                        614,
+                        349,
+                        615,
+                        348,
+                        662,
+                        244,
+                        660
+                    ]
+                }
+            ],
+            "content": "AWS loT Greengrass"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 132,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        411,
+                        23,
+                        454,
+                        23,
+                        453,
+                        40,
+                        411,
+                        40
+                    ]
+                }
+            ],
+            "content": "aws"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 136,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        473,
+                        21,
+                        597,
+                        21,
+                        597,
+                        44,
+                        473,
+                        44
+                    ]
+                }
+            ],
+            "content": "AWS Cloud"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 146,
+                    "length": 7
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        423,
+                        83,
+                        534,
+                        97,
+                        531,
+                        123,
+                        420,
+                        109
+                    ]
+                }
+            ],
+            "content": "3 Store"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 154,
+                    "length": 19
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        610,
+                        81,
+                        867,
+                        95,
+                        865,
+                        128,
+                        608,
+                        115
+                    ]
+                }
+            ],
+            "content": "4 Training pipeline"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 174,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        976,
+                        82,
+                        990,
+                        82,
+                        990,
+                        101,
+                        976,
+                        101
+                    ]
+                }
+            ],
+            "content": "5"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 176,
+                    "length": 13
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1048,
+                        95,
+                        1170,
+                        95,
+                        1170,
+                        116,
+                        1048,
+                        116
+                    ]
+                }
+            ],
+            "content": "Final results"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 190,
+                    "length": 24
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        433,
+                        188,
+                        573,
+                        188,
+                        573,
+                        233,
+                        433,
+                        234
+                    ]
+                }
+            ],
+            "content": "Amazon S3 images dataset"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 215,
+                    "length": 25
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        614,
+                        182,
+                        772,
+                        182,
+                        772,
+                        226,
+                        614,
+                        226
+                    ]
+                }
+            ],
+            "content": "Amazon Lookout for Vision"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 241,
+                    "length": 11
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        795,
+                        183,
+                        935,
+                        184,
+                        935,
+                        204,
+                        795,
+                        203
+                    ]
+                }
+            ],
+            "content": "train model"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 253,
+                    "length": 23
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        976,
+                        193,
+                        1113,
+                        192,
+                        1113,
+                        239,
+                        977,
+                        240
+                    ]
+                }
+            ],
+            "content": "AWS Lambda manage model"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 277,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1125,
+                        193,
+                        1237,
+                        193,
+                        1237,
+                        238,
+                        1125,
+                        238
+                    ]
+                }
+            ],
+            "content": "Amazon API Gateway"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 296,
+                    "length": 23
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1252,
+                        183,
+                        1370,
+                        183,
+                        1370,
+                        226,
+                        1252,
+                        226
+                    ]
+                }
+            ],
+            "content": "admins, data scientists"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 320,
+                    "length": 26
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        509,
+                        279,
+                        776,
+                        279,
+                        776,
+                        305,
+                        509,
+                        304
+                    ]
+                }
+            ],
+            "content": "Testing/inference pipeline"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 347,
+                    "length": 27
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        601,
+                        323,
+                        805,
+                        324,
+                        805,
+                        373,
+                        600,
+                        372
+                    ]
+                }
+            ],
+            "content": "AWS Step Functions workflow"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 375,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        997,
+                        361,
+                        1012,
+                        361,
+                        1012,
+                        380,
+                        997,
+                        380
+                    ]
+                }
+            ],
+            "content": "8"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 377,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        583,
+                        439,
+                        671,
+                        440,
+                        670,
+                        483,
+                        583,
+                        483
+                    ]
+                }
+            ],
+            "content": "inference function"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 396,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        686,
+                        441,
+                        780,
+                        440,
+                        781,
+                        484,
+                        687,
+                        485
+                    ]
+                }
+            ],
+            "content": "publish to SNS"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 411,
+                    "length": 10
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1006,
+                        441,
+                        1125,
+                        441,
+                        1125,
+                        460,
+                        1006,
+                        460
+                    ]
+                }
+            ],
+            "content": "Amazon SNS"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 422,
+                    "length": 13
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        648,
+                        549,
+                        717,
+                        547,
+                        719,
+                        590,
+                        650,
+                        592
+                    ]
+                }
+            ],
+            "content": "publish to S3"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 436,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        462,
+                        572,
+                        476,
+                        572,
+                        476,
+                        591,
+                        462,
+                        591
+                    ]
+                }
+            ],
+            "content": "6"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 438,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1005,
+                        559,
+                        1113,
+                        559,
+                        1113,
+                        579,
+                        1005,
+                        579
+                    ]
+                }
+            ],
+            "content": "Amazon S3"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 448,
+                    "length": 17
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1129,
+                        556,
+                        1232,
+                        556,
+                        1232,
+                        601,
+                        1129,
+                        601
+                    ]
+                }
+            ],
+            "content": "Amazon QuickSight"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 466,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1278,
+                        542,
+                        1357,
+                        542,
+                        1357,
+                        585,
+                        1278,
+                        585
+                    ]
+                }
+            ],
+            "content": "business users"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 481,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        997,
+                        605,
+                        1011,
+                        605,
+                        1011,
+                        624,
+                        997,
+                        624
+                    ]
+                }
+            ],
+            "content": "9"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 483,
+                    "length": 48
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        425,
+                        669,
+                        604,
+                        669,
+                        604,
+                        739,
+                        425,
+                        739
+                    ]
+                }
+            ],
+            "content": "AWS Lambda start state machine, submit batch job"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 532,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        624,
+                        659,
+                        638,
+                        659,
+                        638,
+                        680,
+                        624,
+                        680
+                    ]
+                }
+            ],
+            "content": "7"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 534,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        683,
+                        672,
+                        786,
+                        672,
+                        786,
+                        692,
+                        683,
+                        692
+                    ]
+                }
+            ],
+            "content": "AWS Batch"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 544,
+                    "length": 11
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        816,
+                        672,
+                        937,
+                        673,
+                        937,
+                        694,
+                        816,
+                        694
+                    ]
+                }
+            ],
+            "content": "AWS Fargate"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 556,
+                    "length": 28
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        983,
+                        707,
+                        1145,
+                        706,
+                        1145,
+                        750,
+                        983,
+                        751
+                    ]
+                }
+            ],
+            "content": "AWS Lambda write back to MES"
+        }
+    ],
+    "styles": [],
+    "documents": [
+        {
+            "docType": "document",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        0,
+                        0,
+                        1385,
+                        0,
+                        1385,
+                        828,
+                        0,
+                        828
+                    ]
+                }
+            ],
+            "fields": {
+                "connections": {
+                    "type": "string",
+                    "confidence": 0
+                },
+                "ip_addresses": {
+                    "type": "string",
+                    "confidence": 0
+                },
+                "port_numbers": {
+                    "type": "string",
+                    "confidence": 0
+                },
+                "subnet_cidr": {
+                    "type": "string",
+                    "confidence": 0
+                }
+            },
+            "confidence": 1,
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 584
+                }
+            ]
+        }
+    ],
+    "contentFormat": "text",
+    "sections": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 584
+                }
+            ],
+            "elements": [
+                "/paragraphs/0",
+                "/figures/0",
+                "/paragraphs/1",
+                "/figures/1",
+                "/paragraphs/2",
+                "/paragraphs/3",
+                "/figures/2",
+                "/paragraphs/4",
+                "/paragraphs/5",
+                "/paragraphs/6",
+                "/figures/3",
+                "/paragraphs/7",
+                "/figures/4",
+                "/paragraphs/8",
+                "/figures/5",
+                "/paragraphs/9",
+                "/figures/6"
+            ]
+        }
+    ],
+    "figures": [
+        {
+            "id": "1.1",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        61,
+                        160,
+                        140,
+                        160,
+                        140,
+                        234,
+                        61,
+                        234
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 25,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.2",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        72,
+                        334,
+                        131,
+                        334,
+                        131,
+                        375,
+                        72,
+                        375
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 40,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.3",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        59,
+                        560,
+                        142,
+                        560,
+                        142,
+                        627,
+                        59,
+                        627
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 56,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.4",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        267,
+                        166,
+                        328,
+                        166,
+                        328,
+                        230,
+                        267,
+                        229
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 79,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.5",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        268,
+                        348,
+                        326,
+                        348,
+                        326,
+                        405,
+                        268,
+                        405
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 99,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.6",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        268,
+                        546,
+                        328,
+                        546,
+                        328,
+                        609,
+                        268,
+                        609
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 112,
+                    "length": 0
+                }
+            ]
+        },
+        {
+            "id": "1.7",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        397,
+                        9,
+                        1370,
+                        10,
+                        1370,
+                        817,
+                        396,
+                        816
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 132,
+                    "length": 452
+                }
+            ],
+            "elements": [
+                "/paragraphs/10",
+                "/paragraphs/11",
+                "/paragraphs/12",
+                "/paragraphs/13",
+                "/paragraphs/14",
+                "/paragraphs/15",
+                "/paragraphs/16",
+                "/paragraphs/17",
+                "/paragraphs/18",
+                "/paragraphs/19",
+                "/paragraphs/20",
+                "/paragraphs/21",
+                "/paragraphs/22",
+                "/paragraphs/23",
+                "/paragraphs/24",
+                "/paragraphs/25",
+                "/paragraphs/26",
+                "/paragraphs/27",
+                "/paragraphs/28",
+                "/paragraphs/29",
+                "/paragraphs/30",
+                "/paragraphs/31",
+                "/paragraphs/32",
+                "/paragraphs/33",
+                "/paragraphs/34",
+                "/paragraphs/35",
+                "/paragraphs/36",
+                "/paragraphs/37",
+                "/paragraphs/38"
+            ]
+        }
+    ]
+}
