@@ -1,0 +1,266 @@
+{
+    "infrastructure_hierarchy": [
+        {
+            "name": "Shop floor, device tier",
+            "type": "subnet",
+            "components": [
+                {
+                    "name": "X-ray machines",
+                    "type": "device"
+                },
+                {
+                    "name": "cameras",
+                    "type": "device"
+                },
+                {
+                    "name": "devices",
+                    "type": "device"
+                },
+                {
+                    "name": "MES system",
+                    "type": "system"
+                }
+            ]
+        },
+        {
+            "name": "Edge tier",
+            "type": "subnet",
+            "components": [
+                {
+                    "name": "AWS Transfer Family",
+                    "type": "aws_service"
+                },
+                {
+                    "name": "AWS DataSync",
+                    "type": "aws_service"
+                },
+                {
+                    "name": "AWS IoT Greengrass",
+                    "type": "aws_service"
+                }
+            ]
+        },
+        {
+            "name": "AWS Cloud",
+            "type": "vnet",
+            "components": [
+                {
+                    "name": "Store",
+                    "type": "subnet",
+                    "components": [
+                        {
+                            "name": "Amazon S3 images dataset",
+                            "type": "aws_service"
+                        }
+                    ]
+                },
+                {
+                    "name": "Training pipeline",
+                    "type": "subnet",
+                    "components": [
+                        {
+                            "name": "Amazon Lookout for Vision",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "train model",
+                            "type": "process"
+                        },
+                        {
+                            "name": "AWS Lambda manage model",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "Amazon API Gateway",
+                            "type": "aws_service"
+                        }
+                    ]
+                },
+                {
+                    "name": "Testing/inference pipeline",
+                    "type": "subnet",
+                    "components": [
+                        {
+                            "name": "AWS Step Functions workflow",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "inference function",
+                            "type": "aws_lambda"
+                        },
+                        {
+                            "name": "publish to SNS",
+                            "type": "process"
+                        },
+                        {
+                            "name": "Amazon SNS",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "publish to S3",
+                            "type": "process"
+                        },
+                        {
+                            "name": "Amazon S3",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "Amazon QuickSight",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "AWS Lambda write back to MES",
+                            "type": "aws_service"
+                        }
+                    ]
+                },
+                {
+                    "name": "Batch processing",
+                    "type": "subnet",
+                    "components": [
+                        {
+                            "name": "AWS Lambda start state machine, submit batch job",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "AWS Batch",
+                            "type": "aws_service"
+                        },
+                        {
+                            "name": "AWS Fargate",
+                            "type": "aws_service"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "logical_connectivity": [
+        {
+            "source": "X-ray machines",
+            "target": "AWS Transfer Family",
+            "direction": "output",
+            "purpose": "data transfer"
+        },
+        {
+            "source": "cameras",
+            "target": "AWS Transfer Family",
+            "direction": "output",
+            "purpose": "data transfer"
+        },
+        {
+            "source": "devices",
+            "target": "AWS Transfer Family",
+            "direction": "output",
+            "purpose": "data transfer"
+        },
+        {
+            "source": "AWS Transfer Family",
+            "target": "AWS DataSync",
+            "direction": "output",
+            "purpose": "data synchronization"
+        },
+        {
+            "source": "AWS DataSync",
+            "target": "Amazon S3 images dataset",
+            "direction": "output",
+            "purpose": "data storage"
+        },
+        {
+            "source": "Amazon S3 images dataset",
+            "target": "Amazon Lookout for Vision",
+            "direction": "output",
+            "purpose": "model training"
+        },
+        {
+            "source": "Amazon Lookout for Vision",
+            "target": "train model",
+            "direction": "output",
+            "purpose": "AI model training"
+        },
+        {
+            "source": "train model",
+            "target": "AWS Lambda manage model",
+            "direction": "output",
+            "purpose": "model management"
+        },
+        {
+            "source": "AWS Lambda manage model",
+            "target": "Amazon API Gateway",
+            "direction": "output",
+            "purpose": "API access"
+        },
+        {
+            "source": "Amazon API Gateway",
+            "target": "admins, data scientists",
+            "direction": "output",
+            "purpose": "result access"
+        },
+        {
+            "source": "AWS Step Functions workflow",
+            "target": "inference function",
+            "direction": "output",
+            "purpose": "inference task"
+        },
+        {
+            "source": "inference function",
+            "target": "publish to SNS",
+            "direction": "output",
+            "purpose": "notifications"
+        },
+        {
+            "source": "inference function",
+            "target": "publish to S3",
+            "direction": "output",
+            "purpose": "results storage"
+        },
+        {
+            "source": "publish to SNS",
+            "target": "Amazon SNS",
+            "direction": "output",
+            "purpose": "notifications"
+        },
+        {
+            "source": "publish to S3",
+            "target": "Amazon S3",
+            "direction": "output",
+            "purpose": "storage"
+        },
+        {
+            "source": "Amazon SNS",
+            "target": "business users",
+            "direction": "output",
+            "purpose": "alerts"
+        },
+        {
+            "source": "Amazon S3",
+            "target": "Amazon QuickSight",
+            "direction": "output",
+            "purpose": "visualization"
+        },
+        {
+            "source": "AWS Lambda start state machine, submit batch job",
+            "target": "AWS Batch",
+            "direction": "output",
+            "purpose": "batch processing"
+        },
+        {
+            "source": "AWS Batch",
+            "target": "AWS Fargate",
+            "direction": "output",
+            "purpose": "scaling tasks"
+        },
+        {
+            "source": "AWS Fargate",
+            "target": "AWS Lambda write back to MES",
+            "direction": "output",
+            "purpose": "MES updates"
+        },
+        {
+            "source": "AWS Lambda write back to MES",
+            "target": "MES system",
+            "direction": "output",
+            "purpose": "system updates"
+        }
+    ]
+}

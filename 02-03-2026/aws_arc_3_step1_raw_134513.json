@@ -1,0 +1,4054 @@
+{
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-layout",
+    "stringIndexType": "textElements",
+    "content": "AWS Cloud\n\u20ad\nRegion A\nF\nVPC\nVPC\nRegion B\nVPC\nVPC\nC\nEC2 instance\nEC2 instance\nEC2 instance\nEC2 instance\nCore Network\nVPC attachment\n1\nVPC attachment\nVPC attachment\nVPC attachment\nprod (segment)\non-prem (segment)\nCore network edge (CNE)\nconnect attachment\nCore network edge (CNE)\nconnect attachment\nVPC\n2\nattachment\nB\nVPC\nattachment\nAppliance VPC\nAppliance VPC\ninternet gateway\nthird-party virtual appliance\nvirtual private gateway\nthird-party virtual appliance\nA\n3\nSD-WAN overlay\nGRE tunnel\ninternet\ninternet\nAWS Direct Connect\nBGP peering\nbranch\nbranch\ncorporate",
+    "pages": [
+        {
+            "pageNumber": 1,
+            "angle": -0.03999999910593033,
+            "width": 1387,
+            "height": 802,
+            "unit": "pixel",
+            "words": [
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        89,
+                        24,
+                        129,
+                        24,
+                        129,
+                        42,
+                        89,
+                        42
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 0,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Cloud",
+                    "polygon": [
+                        135,
+                        24,
+                        183,
+                        24,
+                        183,
+                        42,
+                        135,
+                        42
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 4,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "\u20ad",
+                    "polygon": [
+                        43,
+                        62,
+                        67,
+                        63,
+                        67,
+                        91,
+                        44,
+                        93
+                    ],
+                    "confidence": 0.119,
+                    "span": {
+                        "offset": 10,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "Region",
+                    "polygon": [
+                        113,
+                        75,
+                        170,
+                        75,
+                        170,
+                        95,
+                        112,
+                        95
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 12,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "A",
+                    "polygon": [
+                        175,
+                        75,
+                        190,
+                        75,
+                        190,
+                        95,
+                        175,
+                        95
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 19,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "F",
+                    "polygon": [
+                        713,
+                        63,
+                        737,
+                        64,
+                        737,
+                        91,
+                        713,
+                        92
+                    ],
+                    "confidence": 0.209,
+                    "span": {
+                        "offset": 21,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        324,
+                        91,
+                        364,
+                        91,
+                        364,
+                        109,
+                        324,
+                        109
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 23,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        522,
+                        91,
+                        561,
+                        92,
+                        561,
+                        109,
+                        522,
+                        109
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 27,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Region",
+                    "polygon": [
+                        782,
+                        75,
+                        840,
+                        75,
+                        840,
+                        95,
+                        782,
+                        95
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 31,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "B",
+                    "polygon": [
+                        846,
+                        75,
+                        858,
+                        75,
+                        858,
+                        94,
+                        846,
+                        95
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 38,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        993,
+                        90,
+                        1032,
+                        90,
+                        1032,
+                        108,
+                        993,
+                        108
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 40,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1190,
+                        90,
+                        1230,
+                        90,
+                        1230,
+                        108,
+                        1190,
+                        108
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 44,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "C",
+                    "polygon": [
+                        238,
+                        179,
+                        251,
+                        179,
+                        251,
+                        194,
+                        238,
+                        194
+                    ],
+                    "confidence": 0.984,
+                    "span": {
+                        "offset": 48,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "EC2",
+                    "polygon": [
+                        269,
+                        175,
+                        298,
+                        175,
+                        298,
+                        191,
+                        269,
+                        191
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 50,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "instance",
+                    "polygon": [
+                        303,
+                        175,
+                        364,
+                        175,
+                        364,
+                        191,
+                        303,
+                        191
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 54,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "EC2",
+                    "polygon": [
+                        463,
+                        176,
+                        493,
+                        176,
+                        493,
+                        192,
+                        463,
+                        192
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 63,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "instance",
+                    "polygon": [
+                        497,
+                        176,
+                        559,
+                        177,
+                        559,
+                        192,
+                        497,
+                        192
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 67,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "EC2",
+                    "polygon": [
+                        936,
+                        174,
+                        966,
+                        174,
+                        965,
+                        190,
+                        936,
+                        190
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 76,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "instance",
+                    "polygon": [
+                        970,
+                        174,
+                        1032,
+                        174,
+                        1032,
+                        191,
+                        970,
+                        190
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 80,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "EC2",
+                    "polygon": [
+                        1134,
+                        174,
+                        1162,
+                        174,
+                        1162,
+                        190,
+                        1134,
+                        190
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 89,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "instance",
+                    "polygon": [
+                        1165,
+                        174,
+                        1229,
+                        174,
+                        1229,
+                        190,
+                        1165,
+                        190
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 93,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "Core",
+                    "polygon": [
+                        135,
+                        241,
+                        175,
+                        241,
+                        175,
+                        260,
+                        135,
+                        259
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 102,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "Network",
+                    "polygon": [
+                        181,
+                        241,
+                        249,
+                        241,
+                        249,
+                        260,
+                        181,
+                        260
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 107,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        348,
+                        233,
+                        377,
+                        233,
+                        377,
+                        248,
+                        347,
+                        248
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 115,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        323,
+                        251,
+                        400,
+                        251,
+                        400,
+                        265,
+                        323,
+                        265
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 119,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "1",
+                    "polygon": [
+                        469,
+                        243,
+                        479,
+                        243,
+                        479,
+                        257,
+                        469,
+                        257
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 130,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        550,
+                        235,
+                        580,
+                        235,
+                        580,
+                        249,
+                        550,
+                        249
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 132,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        526,
+                        252,
+                        603,
+                        252,
+                        603,
+                        266,
+                        526,
+                        266
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 136,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1025,
+                        234,
+                        1055,
+                        234,
+                        1055,
+                        249,
+                        1025,
+                        248
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 147,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1001,
+                        252,
+                        1079,
+                        252,
+                        1079,
+                        266,
+                        1001,
+                        266
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 151,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1224,
+                        236,
+                        1253,
+                        235,
+                        1253,
+                        250,
+                        1224,
+                        250
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 162,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1200,
+                        253,
+                        1277,
+                        253,
+                        1277,
+                        267,
+                        1200,
+                        267
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 166,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "prod",
+                    "polygon": [
+                        642,
+                        284,
+                        682,
+                        284,
+                        682,
+                        304,
+                        642,
+                        305
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 177,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "(segment)",
+                    "polygon": [
+                        688,
+                        284,
+                        770,
+                        283,
+                        770,
+                        304,
+                        688,
+                        304
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 182,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "on-prem",
+                    "polygon": [
+                        627,
+                        333,
+                        698,
+                        333,
+                        698,
+                        353,
+                        627,
+                        353
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 192,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "(segment)",
+                    "polygon": [
+                        704,
+                        333,
+                        787,
+                        332,
+                        787,
+                        353,
+                        704,
+                        353
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 200,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "Core",
+                    "polygon": [
+                        232,
+                        372,
+                        272,
+                        373,
+                        272,
+                        390,
+                        232,
+                        391
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 210,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "network",
+                    "polygon": [
+                        278,
+                        373,
+                        343,
+                        372,
+                        343,
+                        390,
+                        278,
+                        391
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 215,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "edge",
+                    "polygon": [
+                        238,
+                        394,
+                        280,
+                        393,
+                        280,
+                        414,
+                        238,
+                        414
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 223,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "(CNE)",
+                    "polygon": [
+                        285,
+                        393,
+                        337,
+                        393,
+                        337,
+                        414,
+                        285,
+                        414
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 228,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "connect",
+                    "polygon": [
+                        466,
+                        388,
+                        520,
+                        388,
+                        520,
+                        401,
+                        466,
+                        401
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 234,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        454,
+                        404,
+                        531,
+                        404,
+                        531,
+                        418,
+                        454,
+                        418
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 242,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "Core",
+                    "polygon": [
+                        890,
+                        373,
+                        930,
+                        373,
+                        930,
+                        391,
+                        890,
+                        391
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 253,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "network",
+                    "polygon": [
+                        935,
+                        373,
+                        1000,
+                        372,
+                        1000,
+                        390,
+                        935,
+                        391
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 258,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "edge",
+                    "polygon": [
+                        895,
+                        395,
+                        937,
+                        394,
+                        937,
+                        415,
+                        895,
+                        414
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 266,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "(CNE)",
+                    "polygon": [
+                        942,
+                        394,
+                        994,
+                        394,
+                        994,
+                        415,
+                        942,
+                        415
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 271,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "connect",
+                    "polygon": [
+                        1145,
+                        398,
+                        1199,
+                        397,
+                        1199,
+                        410,
+                        1145,
+                        410
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 277,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1134,
+                        413,
+                        1210,
+                        413,
+                        1210,
+                        427,
+                        1134,
+                        427
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 285,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        308,
+                        418,
+                        337,
+                        418,
+                        337,
+                        433,
+                        308,
+                        432
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 296,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "2",
+                    "polygon": [
+                        1056,
+                        422,
+                        1069,
+                        422,
+                        1069,
+                        436,
+                        1056,
+                        436
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 300,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        284,
+                        437,
+                        361,
+                        436,
+                        361,
+                        450,
+                        284,
+                        450
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 302,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "B",
+                    "polygon": [
+                        391,
+                        428,
+                        402,
+                        427,
+                        402,
+                        441,
+                        391,
+                        441
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 313,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        972,
+                        417,
+                        1001,
+                        417,
+                        1001,
+                        431,
+                        972,
+                        431
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 315,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        948,
+                        436,
+                        1026,
+                        435,
+                        1026,
+                        449,
+                        948,
+                        449
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 319,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "Appliance",
+                    "polygon": [
+                        326,
+                        470,
+                        408,
+                        470,
+                        408,
+                        489,
+                        326,
+                        489
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 330,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        327,
+                        491,
+                        366,
+                        491,
+                        366,
+                        509,
+                        327,
+                        509
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 340,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Appliance",
+                    "polygon": [
+                        998,
+                        470,
+                        1081,
+                        470,
+                        1081,
+                        488,
+                        998,
+                        489
+                    ],
+                    "confidence": 0.597,
+                    "span": {
+                        "offset": 344,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        999,
+                        490,
+                        1039,
+                        490,
+                        1039,
+                        508,
+                        999,
+                        508
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 354,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        216,
+                        531,
+                        277,
+                        531,
+                        277,
+                        547,
+                        216,
+                        547
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 358,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "gateway",
+                    "polygon": [
+                        214,
+                        551,
+                        278,
+                        551,
+                        278,
+                        568,
+                        214,
+                        568
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 367,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "third-party",
+                    "polygon": [
+                        340,
+                        548,
+                        422,
+                        548,
+                        422,
+                        567,
+                        340,
+                        567
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 375,
+                        "length": 11
+                    }
+                },
+                {
+                    "content": "virtual",
+                    "polygon": [
+                        426,
+                        548,
+                        475,
+                        548,
+                        475,
+                        567,
+                        426,
+                        567
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 387,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "appliance",
+                    "polygon": [
+                        371,
+                        569,
+                        444,
+                        568,
+                        444,
+                        586,
+                        371,
+                        587
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 395,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "virtual",
+                    "polygon": [
+                        841,
+                        531,
+                        890,
+                        531,
+                        890,
+                        549,
+                        841,
+                        549
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 405,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "private",
+                    "polygon": [
+                        894,
+                        531,
+                        947,
+                        531,
+                        947,
+                        549,
+                        894,
+                        549
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 413,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "gateway",
+                    "polygon": [
+                        862,
+                        552,
+                        927,
+                        551,
+                        927,
+                        568,
+                        862,
+                        569
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 421,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "third-party",
+                    "polygon": [
+                        1012,
+                        547,
+                        1094,
+                        548,
+                        1094,
+                        566,
+                        1012,
+                        566
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 429,
+                        "length": 11
+                    }
+                },
+                {
+                    "content": "virtual",
+                    "polygon": [
+                        1098,
+                        547,
+                        1147,
+                        547,
+                        1147,
+                        566,
+                        1098,
+                        566
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 441,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "appliance",
+                    "polygon": [
+                        1043,
+                        568,
+                        1116,
+                        567,
+                        1116,
+                        585,
+                        1043,
+                        586
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 449,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "A",
+                    "polygon": [
+                        207,
+                        660,
+                        221,
+                        659,
+                        221,
+                        674,
+                        207,
+                        674
+                    ],
+                    "confidence": 0.99,
+                    "span": {
+                        "offset": 459,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "3",
+                    "polygon": [
+                        987,
+                        659,
+                        999,
+                        659,
+                        999,
+                        673,
+                        987,
+                        673
+                    ],
+                    "confidence": 0.533,
+                    "span": {
+                        "offset": 461,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "SD-WAN",
+                    "polygon": [
+                        1248,
+                        663,
+                        1312,
+                        663,
+                        1312,
+                        681,
+                        1248,
+                        680
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 463,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "overlay",
+                    "polygon": [
+                        1318,
+                        663,
+                        1372,
+                        663,
+                        1372,
+                        681,
+                        1317,
+                        681
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 470,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "GRE",
+                    "polygon": [
+                        1259,
+                        704,
+                        1291,
+                        704,
+                        1290,
+                        720,
+                        1259,
+                        720
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 478,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "tunnel",
+                    "polygon": [
+                        1294,
+                        704,
+                        1344,
+                        704,
+                        1344,
+                        721,
+                        1294,
+                        720
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 482,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        211,
+                        739,
+                        273,
+                        739,
+                        273,
+                        755,
+                        211,
+                        755
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 489,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        457,
+                        742,
+                        519,
+                        742,
+                        519,
+                        758,
+                        457,
+                        758
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 498,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "AWS",
+                    "polygon": [
+                        950,
+                        763,
+                        985,
+                        763,
+                        985,
+                        779,
+                        950,
+                        779
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 507,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Direct",
+                    "polygon": [
+                        990,
+                        763,
+                        1035,
+                        763,
+                        1035,
+                        779,
+                        990,
+                        779
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 511,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "Connect",
+                    "polygon": [
+                        962,
+                        782,
+                        1024,
+                        783,
+                        1024,
+                        798,
+                        962,
+                        798
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 518,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "BGP",
+                    "polygon": [
+                        1255,
+                        749,
+                        1287,
+                        749,
+                        1287,
+                        767,
+                        1255,
+                        766
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 526,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "peering",
+                    "polygon": [
+                        1292,
+                        749,
+                        1347,
+                        750,
+                        1347,
+                        768,
+                        1292,
+                        767
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 530,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "branch",
+                    "polygon": [
+                        157,
+                        772,
+                        210,
+                        772,
+                        210,
+                        788,
+                        157,
+                        788
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 538,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "branch",
+                    "polygon": [
+                        403,
+                        771,
+                        456,
+                        771,
+                        456,
+                        787,
+                        403,
+                        787
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 545,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "corporate",
+                    "polygon": [
+                        825,
+                        787,
+                        890,
+                        786,
+                        890,
+                        800,
+                        825,
+                        800
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 552,
+                        "length": 9
+                    }
+                }
+            ],
+            "lines": [
+                {
+                    "content": "AWS Cloud",
+                    "polygon": [
+                        89,
+                        24,
+                        182,
+                        24,
+                        182,
+                        42,
+                        89,
+                        42
+                    ],
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "\u20ad",
+                    "polygon": [
+                        43,
+                        62,
+                        67,
+                        62,
+                        67,
+                        92,
+                        44,
+                        92
+                    ],
+                    "spans": [
+                        {
+                            "offset": 10,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "Region A",
+                    "polygon": [
+                        112,
+                        75,
+                        190,
+                        75,
+                        190,
+                        94,
+                        112,
+                        95
+                    ],
+                    "spans": [
+                        {
+                            "offset": 12,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "F",
+                    "polygon": [
+                        713,
+                        63,
+                        736,
+                        63,
+                        736,
+                        91,
+                        713,
+                        92
+                    ],
+                    "spans": [
+                        {
+                            "offset": 21,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        324,
+                        91,
+                        363,
+                        91,
+                        363,
+                        109,
+                        324,
+                        109
+                    ],
+                    "spans": [
+                        {
+                            "offset": 23,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        522,
+                        91,
+                        561,
+                        92,
+                        561,
+                        109,
+                        521,
+                        109
+                    ],
+                    "spans": [
+                        {
+                            "offset": 27,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "Region B",
+                    "polygon": [
+                        782,
+                        75,
+                        858,
+                        75,
+                        858,
+                        94,
+                        782,
+                        95
+                    ],
+                    "spans": [
+                        {
+                            "offset": 31,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        993,
+                        90,
+                        1032,
+                        90,
+                        1032,
+                        108,
+                        992,
+                        108
+                    ],
+                    "spans": [
+                        {
+                            "offset": 40,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1190,
+                        90,
+                        1229,
+                        90,
+                        1229,
+                        108,
+                        1190,
+                        108
+                    ],
+                    "spans": [
+                        {
+                            "offset": 44,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "C",
+                    "polygon": [
+                        238,
+                        179,
+                        250,
+                        179,
+                        250,
+                        194,
+                        238,
+                        194
+                    ],
+                    "spans": [
+                        {
+                            "offset": 48,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "EC2 instance",
+                    "polygon": [
+                        269,
+                        175,
+                        364,
+                        175,
+                        364,
+                        191,
+                        268,
+                        191
+                    ],
+                    "spans": [
+                        {
+                            "offset": 50,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "EC2 instance",
+                    "polygon": [
+                        463,
+                        176,
+                        558,
+                        177,
+                        558,
+                        192,
+                        463,
+                        192
+                    ],
+                    "spans": [
+                        {
+                            "offset": 63,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "EC2 instance",
+                    "polygon": [
+                        936,
+                        173,
+                        1031,
+                        174,
+                        1031,
+                        190,
+                        936,
+                        190
+                    ],
+                    "spans": [
+                        {
+                            "offset": 76,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "EC2 instance",
+                    "polygon": [
+                        1134,
+                        174,
+                        1229,
+                        174,
+                        1228,
+                        190,
+                        1134,
+                        190
+                    ],
+                    "spans": [
+                        {
+                            "offset": 89,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "Core Network",
+                    "polygon": [
+                        135,
+                        241,
+                        248,
+                        241,
+                        248,
+                        259,
+                        135,
+                        260
+                    ],
+                    "spans": [
+                        {
+                            "offset": 102,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        348,
+                        233,
+                        376,
+                        233,
+                        376,
+                        248,
+                        347,
+                        247
+                    ],
+                    "spans": [
+                        {
+                            "offset": 115,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        323,
+                        251,
+                        400,
+                        251,
+                        400,
+                        265,
+                        323,
+                        265
+                    ],
+                    "spans": [
+                        {
+                            "offset": 119,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "1",
+                    "polygon": [
+                        469,
+                        243,
+                        478,
+                        243,
+                        478,
+                        257,
+                        469,
+                        257
+                    ],
+                    "spans": [
+                        {
+                            "offset": 130,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        550,
+                        234,
+                        579,
+                        234,
+                        579,
+                        249,
+                        550,
+                        249
+                    ],
+                    "spans": [
+                        {
+                            "offset": 132,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        526,
+                        252,
+                        603,
+                        252,
+                        603,
+                        266,
+                        526,
+                        266
+                    ],
+                    "spans": [
+                        {
+                            "offset": 136,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1025,
+                        234,
+                        1054,
+                        234,
+                        1054,
+                        249,
+                        1025,
+                        248
+                    ],
+                    "spans": [
+                        {
+                            "offset": 147,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1001,
+                        252,
+                        1078,
+                        252,
+                        1078,
+                        266,
+                        1001,
+                        266
+                    ],
+                    "spans": [
+                        {
+                            "offset": 151,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        1224,
+                        235,
+                        1252,
+                        235,
+                        1252,
+                        250,
+                        1224,
+                        249
+                    ],
+                    "spans": [
+                        {
+                            "offset": 162,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1200,
+                        253,
+                        1276,
+                        253,
+                        1276,
+                        267,
+                        1200,
+                        267
+                    ],
+                    "spans": [
+                        {
+                            "offset": 166,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "prod (segment)",
+                    "polygon": [
+                        642,
+                        284,
+                        770,
+                        283,
+                        770,
+                        304,
+                        642,
+                        304
+                    ],
+                    "spans": [
+                        {
+                            "offset": 177,
+                            "length": 14
+                        }
+                    ]
+                },
+                {
+                    "content": "on-prem (segment)",
+                    "polygon": [
+                        627,
+                        333,
+                        786,
+                        332,
+                        786,
+                        353,
+                        627,
+                        353
+                    ],
+                    "spans": [
+                        {
+                            "offset": 192,
+                            "length": 17
+                        }
+                    ]
+                },
+                {
+                    "content": "Core network",
+                    "polygon": [
+                        232,
+                        372,
+                        342,
+                        372,
+                        342,
+                        390,
+                        232,
+                        390
+                    ],
+                    "spans": [
+                        {
+                            "offset": 210,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "edge (CNE)",
+                    "polygon": [
+                        238,
+                        393,
+                        336,
+                        393,
+                        336,
+                        413,
+                        238,
+                        414
+                    ],
+                    "spans": [
+                        {
+                            "offset": 223,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "connect",
+                    "polygon": [
+                        466,
+                        388,
+                        519,
+                        388,
+                        519,
+                        401,
+                        466,
+                        401
+                    ],
+                    "spans": [
+                        {
+                            "offset": 234,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        454,
+                        404,
+                        531,
+                        404,
+                        531,
+                        418,
+                        454,
+                        418
+                    ],
+                    "spans": [
+                        {
+                            "offset": 242,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "Core network",
+                    "polygon": [
+                        890,
+                        373,
+                        999,
+                        372,
+                        999,
+                        390,
+                        890,
+                        391
+                    ],
+                    "spans": [
+                        {
+                            "offset": 253,
+                            "length": 12
+                        }
+                    ]
+                },
+                {
+                    "content": "edge (CNE)",
+                    "polygon": [
+                        895,
+                        394,
+                        993,
+                        394,
+                        993,
+                        414,
+                        895,
+                        414
+                    ],
+                    "spans": [
+                        {
+                            "offset": 266,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "connect",
+                    "polygon": [
+                        1145,
+                        397,
+                        1198,
+                        397,
+                        1199,
+                        410,
+                        1145,
+                        410
+                    ],
+                    "spans": [
+                        {
+                            "offset": 277,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        1134,
+                        413,
+                        1210,
+                        413,
+                        1210,
+                        427,
+                        1134,
+                        427
+                    ],
+                    "spans": [
+                        {
+                            "offset": 285,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        308,
+                        418,
+                        336,
+                        418,
+                        336,
+                        432,
+                        308,
+                        432
+                    ],
+                    "spans": [
+                        {
+                            "offset": 296,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "2",
+                    "polygon": [
+                        1056,
+                        422,
+                        1068,
+                        422,
+                        1068,
+                        436,
+                        1056,
+                        436
+                    ],
+                    "spans": [
+                        {
+                            "offset": 300,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        284,
+                        436,
+                        361,
+                        436,
+                        361,
+                        450,
+                        284,
+                        450
+                    ],
+                    "spans": [
+                        {
+                            "offset": 302,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "B",
+                    "polygon": [
+                        391,
+                        428,
+                        402,
+                        428,
+                        402,
+                        441,
+                        391,
+                        441
+                    ],
+                    "spans": [
+                        {
+                            "offset": 313,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        972,
+                        417,
+                        1001,
+                        417,
+                        1001,
+                        431,
+                        972,
+                        431
+                    ],
+                    "spans": [
+                        {
+                            "offset": 315,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "attachment",
+                    "polygon": [
+                        948,
+                        436,
+                        1025,
+                        435,
+                        1026,
+                        449,
+                        948,
+                        449
+                    ],
+                    "spans": [
+                        {
+                            "offset": 319,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "Appliance",
+                    "polygon": [
+                        326,
+                        470,
+                        407,
+                        469,
+                        407,
+                        489,
+                        326,
+                        489
+                    ],
+                    "spans": [
+                        {
+                            "offset": 330,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        327,
+                        491,
+                        366,
+                        491,
+                        366,
+                        509,
+                        327,
+                        509
+                    ],
+                    "spans": [
+                        {
+                            "offset": 340,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "Appliance",
+                    "polygon": [
+                        998,
+                        470,
+                        1080,
+                        470,
+                        1080,
+                        489,
+                        998,
+                        489
+                    ],
+                    "spans": [
+                        {
+                            "offset": 344,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "VPC",
+                    "polygon": [
+                        999,
+                        490,
+                        1038,
+                        490,
+                        1038,
+                        508,
+                        999,
+                        508
+                    ],
+                    "spans": [
+                        {
+                            "offset": 354,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        216,
+                        531,
+                        277,
+                        531,
+                        277,
+                        547,
+                        216,
+                        547
+                    ],
+                    "spans": [
+                        {
+                            "offset": 358,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "gateway",
+                    "polygon": [
+                        214,
+                        551,
+                        278,
+                        551,
+                        278,
+                        568,
+                        214,
+                        568
+                    ],
+                    "spans": [
+                        {
+                            "offset": 367,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "third-party virtual",
+                    "polygon": [
+                        340,
+                        548,
+                        475,
+                        548,
+                        475,
+                        567,
+                        340,
+                        567
+                    ],
+                    "spans": [
+                        {
+                            "offset": 375,
+                            "length": 19
+                        }
+                    ]
+                },
+                {
+                    "content": "appliance",
+                    "polygon": [
+                        371,
+                        569,
+                        444,
+                        568,
+                        444,
+                        586,
+                        371,
+                        587
+                    ],
+                    "spans": [
+                        {
+                            "offset": 395,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "virtual private",
+                    "polygon": [
+                        841,
+                        531,
+                        947,
+                        531,
+                        947,
+                        549,
+                        841,
+                        549
+                    ],
+                    "spans": [
+                        {
+                            "offset": 405,
+                            "length": 15
+                        }
+                    ]
+                },
+                {
+                    "content": "gateway",
+                    "polygon": [
+                        862,
+                        551,
+                        926,
+                        551,
+                        926,
+                        568,
+                        862,
+                        568
+                    ],
+                    "spans": [
+                        {
+                            "offset": 421,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "third-party virtual",
+                    "polygon": [
+                        1012,
+                        547,
+                        1147,
+                        547,
+                        1147,
+                        566,
+                        1012,
+                        566
+                    ],
+                    "spans": [
+                        {
+                            "offset": 429,
+                            "length": 19
+                        }
+                    ]
+                },
+                {
+                    "content": "appliance",
+                    "polygon": [
+                        1043,
+                        568,
+                        1115,
+                        567,
+                        1116,
+                        585,
+                        1043,
+                        585
+                    ],
+                    "spans": [
+                        {
+                            "offset": 449,
+                            "length": 9
+                        }
+                    ]
+                },
+                {
+                    "content": "A",
+                    "polygon": [
+                        207,
+                        659,
+                        220,
+                        659,
+                        220,
+                        674,
+                        207,
+                        674
+                    ],
+                    "spans": [
+                        {
+                            "offset": 459,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "3",
+                    "polygon": [
+                        987,
+                        659,
+                        998,
+                        659,
+                        998,
+                        673,
+                        987,
+                        673
+                    ],
+                    "spans": [
+                        {
+                            "offset": 461,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "SD-WAN overlay",
+                    "polygon": [
+                        1248,
+                        662,
+                        1371,
+                        663,
+                        1371,
+                        681,
+                        1248,
+                        680
+                    ],
+                    "spans": [
+                        {
+                            "offset": 463,
+                            "length": 14
+                        }
+                    ]
+                },
+                {
+                    "content": "GRE tunnel",
+                    "polygon": [
+                        1259,
+                        704,
+                        1343,
+                        704,
+                        1343,
+                        720,
+                        1259,
+                        720
+                    ],
+                    "spans": [
+                        {
+                            "offset": 478,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        211,
+                        739,
+                        273,
+                        739,
+                        272,
+                        755,
+                        211,
+                        755
+                    ],
+                    "spans": [
+                        {
+                            "offset": 489,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "internet",
+                    "polygon": [
+                        457,
+                        742,
+                        519,
+                        742,
+                        519,
+                        758,
+                        457,
+                        758
+                    ],
+                    "spans": [
+                        {
+                            "offset": 498,
+                            "length": 8
+                        }
+                    ]
+                },
+                {
+                    "content": "AWS Direct",
+                    "polygon": [
+                        950,
+                        763,
+                        1035,
+                        763,
+                        1034,
+                        779,
+                        950,
+                        779
+                    ],
+                    "spans": [
+                        {
+                            "offset": 507,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "Connect",
+                    "polygon": [
+                        962,
+                        782,
+                        1024,
+                        783,
+                        1024,
+                        798,
+                        962,
+                        798
+                    ],
+                    "spans": [
+                        {
+                            "offset": 518,
+                            "length": 7
+                        }
+                    ]
+                },
+                {
+                    "content": "BGP peering",
+                    "polygon": [
+                        1255,
+                        749,
+                        1347,
+                        750,
+                        1347,
+                        768,
+                        1255,
+                        767
+                    ],
+                    "spans": [
+                        {
+                            "offset": 526,
+                            "length": 11
+                        }
+                    ]
+                },
+                {
+                    "content": "branch",
+                    "polygon": [
+                        157,
+                        772,
+                        209,
+                        772,
+                        209,
+                        788,
+                        157,
+                        787
+                    ],
+                    "spans": [
+                        {
+                            "offset": 538,
+                            "length": 6
+                        }
+                    ]
+                },
+                {
+                    "content": "branch",
+                    "polygon": [
+                        403,
+                        771,
+                        455,
+                        771,
+                        455,
+                        787,
+                        403,
+                        787
+                    ],
+                    "spans": [
+                        {
+                            "offset": 545,
+                            "length": 6
+                        }
+                    ]
+                },
+                {
+                    "content": "corporate",
+                    "polygon": [
+                        825,
+                        786,
+                        889,
+                        786,
+                        889,
+                        799,
+                        825,
+                        800
+                    ],
+                    "spans": [
+                        {
+                            "offset": 552,
+                            "length": 9
+                        }
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 561
+                }
+            ]
+        }
+    ],
+    "tables": [],
+    "paragraphs": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        89,
+                        24,
+                        182,
+                        24,
+                        182,
+                        42,
+                        89,
+                        42
+                    ]
+                }
+            ],
+            "role": "pageHeader",
+            "content": "AWS Cloud"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 10,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        43,
+                        62,
+                        67,
+                        62,
+                        67,
+                        92,
+                        44,
+                        92
+                    ]
+                }
+            ],
+            "content": "\u20ad"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 12,
+                    "length": 8
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        112,
+                        75,
+                        190,
+                        75,
+                        190,
+                        94,
+                        112,
+                        95
+                    ]
+                }
+            ],
+            "content": "Region A"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 21,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        713,
+                        63,
+                        736,
+                        63,
+                        736,
+                        91,
+                        713,
+                        92
+                    ]
+                }
+            ],
+            "content": "F"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 23,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        324,
+                        91,
+                        363,
+                        91,
+                        363,
+                        109,
+                        324,
+                        109
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 27,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        522,
+                        91,
+                        561,
+                        92,
+                        561,
+                        109,
+                        521,
+                        109
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 31,
+                    "length": 8
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        782,
+                        75,
+                        858,
+                        75,
+                        858,
+                        94,
+                        782,
+                        95
+                    ]
+                }
+            ],
+            "content": "Region B"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 40,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        993,
+                        90,
+                        1032,
+                        90,
+                        1032,
+                        108,
+                        992,
+                        108
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 44,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1190,
+                        90,
+                        1229,
+                        90,
+                        1229,
+                        108,
+                        1190,
+                        108
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 48,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        238,
+                        179,
+                        250,
+                        179,
+                        250,
+                        194,
+                        238,
+                        194
+                    ]
+                }
+            ],
+            "content": "C"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 50,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        269,
+                        175,
+                        364,
+                        175,
+                        364,
+                        191,
+                        268,
+                        191
+                    ]
+                }
+            ],
+            "content": "EC2 instance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 63,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        463,
+                        176,
+                        558,
+                        177,
+                        558,
+                        192,
+                        463,
+                        192
+                    ]
+                }
+            ],
+            "content": "EC2 instance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 76,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        936,
+                        173,
+                        1031,
+                        174,
+                        1031,
+                        190,
+                        936,
+                        190
+                    ]
+                }
+            ],
+            "content": "EC2 instance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 89,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1134,
+                        174,
+                        1229,
+                        174,
+                        1228,
+                        190,
+                        1134,
+                        190
+                    ]
+                }
+            ],
+            "content": "EC2 instance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 102,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        135,
+                        241,
+                        248,
+                        241,
+                        248,
+                        259,
+                        135,
+                        260
+                    ]
+                }
+            ],
+            "content": "Core Network"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 115,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        323,
+                        233,
+                        400,
+                        233,
+                        400,
+                        265,
+                        323,
+                        265
+                    ]
+                }
+            ],
+            "content": "VPC attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 130,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        469,
+                        243,
+                        478,
+                        243,
+                        478,
+                        257,
+                        469,
+                        257
+                    ]
+                }
+            ],
+            "content": "1"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 132,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        526,
+                        234,
+                        603,
+                        234,
+                        603,
+                        266,
+                        526,
+                        266
+                    ]
+                }
+            ],
+            "content": "VPC attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 147,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1001,
+                        234,
+                        1078,
+                        234,
+                        1078,
+                        266,
+                        1001,
+                        266
+                    ]
+                }
+            ],
+            "content": "VPC attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 162,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1200,
+                        235,
+                        1276,
+                        235,
+                        1276,
+                        267,
+                        1200,
+                        267
+                    ]
+                }
+            ],
+            "content": "VPC attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 177,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        642,
+                        284,
+                        770,
+                        283,
+                        770,
+                        304,
+                        642,
+                        304
+                    ]
+                }
+            ],
+            "content": "prod (segment)"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 192,
+                    "length": 17
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        627,
+                        333,
+                        786,
+                        332,
+                        786,
+                        353,
+                        627,
+                        353
+                    ]
+                }
+            ],
+            "content": "on-prem (segment)"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 210,
+                    "length": 23
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        232,
+                        372,
+                        342,
+                        372,
+                        342,
+                        413,
+                        232,
+                        414
+                    ]
+                }
+            ],
+            "content": "Core network edge (CNE)"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 234,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        454,
+                        388,
+                        531,
+                        388,
+                        531,
+                        418,
+                        454,
+                        418
+                    ]
+                }
+            ],
+            "content": "connect attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 253,
+                    "length": 23
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        890,
+                        373,
+                        999,
+                        372,
+                        1000,
+                        414,
+                        890,
+                        415
+                    ]
+                }
+            ],
+            "content": "Core network edge (CNE)"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 277,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1133,
+                        397,
+                        1210,
+                        397,
+                        1210,
+                        427,
+                        1134,
+                        427
+                    ]
+                }
+            ],
+            "content": "connect attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 296,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        308,
+                        418,
+                        336,
+                        418,
+                        336,
+                        432,
+                        308,
+                        432
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 300,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1056,
+                        422,
+                        1068,
+                        422,
+                        1068,
+                        436,
+                        1056,
+                        436
+                    ]
+                }
+            ],
+            "content": "2"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 302,
+                    "length": 10
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        284,
+                        436,
+                        361,
+                        436,
+                        361,
+                        450,
+                        284,
+                        450
+                    ]
+                }
+            ],
+            "content": "attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 313,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        391,
+                        428,
+                        402,
+                        428,
+                        402,
+                        441,
+                        391,
+                        441
+                    ]
+                }
+            ],
+            "content": "B"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 315,
+                    "length": 3
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        972,
+                        417,
+                        1001,
+                        417,
+                        1001,
+                        431,
+                        972,
+                        431
+                    ]
+                }
+            ],
+            "content": "VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 319,
+                    "length": 10
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        948,
+                        436,
+                        1025,
+                        435,
+                        1026,
+                        449,
+                        948,
+                        449
+                    ]
+                }
+            ],
+            "content": "attachment"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 330,
+                    "length": 13
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        326,
+                        470,
+                        407,
+                        469,
+                        407,
+                        509,
+                        326,
+                        509
+                    ]
+                }
+            ],
+            "content": "Appliance VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 344,
+                    "length": 13
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        998,
+                        470,
+                        1080,
+                        470,
+                        1080,
+                        508,
+                        998,
+                        508
+                    ]
+                }
+            ],
+            "content": "Appliance VPC"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 358,
+                    "length": 16
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        214,
+                        531,
+                        278,
+                        531,
+                        278,
+                        568,
+                        214,
+                        568
+                    ]
+                }
+            ],
+            "content": "internet gateway"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 375,
+                    "length": 29
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        340,
+                        548,
+                        475,
+                        548,
+                        475,
+                        586,
+                        340,
+                        587
+                    ]
+                }
+            ],
+            "content": "third-party virtual appliance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 405,
+                    "length": 23
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        841,
+                        531,
+                        947,
+                        531,
+                        947,
+                        568,
+                        841,
+                        568
+                    ]
+                }
+            ],
+            "content": "virtual private gateway"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 429,
+                    "length": 29
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1012,
+                        547,
+                        1147,
+                        547,
+                        1147,
+                        585,
+                        1012,
+                        585
+                    ]
+                }
+            ],
+            "content": "third-party virtual appliance"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 459,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        207,
+                        659,
+                        220,
+                        659,
+                        220,
+                        674,
+                        207,
+                        674
+                    ]
+                }
+            ],
+            "content": "A"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 461,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        987,
+                        659,
+                        998,
+                        659,
+                        998,
+                        673,
+                        987,
+                        673
+                    ]
+                }
+            ],
+            "content": "3"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 463,
+                    "length": 14
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1248,
+                        662,
+                        1371,
+                        663,
+                        1371,
+                        681,
+                        1248,
+                        680
+                    ]
+                }
+            ],
+            "content": "SD-WAN overlay"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 478,
+                    "length": 10
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1259,
+                        704,
+                        1343,
+                        704,
+                        1343,
+                        720,
+                        1259,
+                        720
+                    ]
+                }
+            ],
+            "content": "GRE tunnel"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 489,
+                    "length": 8
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        211,
+                        739,
+                        273,
+                        739,
+                        272,
+                        755,
+                        211,
+                        755
+                    ]
+                }
+            ],
+            "content": "internet"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 498,
+                    "length": 8
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        457,
+                        742,
+                        519,
+                        742,
+                        519,
+                        758,
+                        457,
+                        758
+                    ]
+                }
+            ],
+            "content": "internet"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 507,
+                    "length": 18
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        950,
+                        763,
+                        1035,
+                        763,
+                        1034,
+                        798,
+                        950,
+                        798
+                    ]
+                }
+            ],
+            "content": "AWS Direct Connect"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 526,
+                    "length": 11
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1255,
+                        749,
+                        1347,
+                        750,
+                        1347,
+                        768,
+                        1255,
+                        767
+                    ]
+                }
+            ],
+            "content": "BGP peering"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 538,
+                    "length": 6
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        157,
+                        772,
+                        209,
+                        772,
+                        209,
+                        788,
+                        157,
+                        787
+                    ]
+                }
+            ],
+            "content": "branch"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 545,
+                    "length": 6
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        403,
+                        771,
+                        455,
+                        771,
+                        455,
+                        787,
+                        403,
+                        787
+                    ]
+                }
+            ],
+            "content": "branch"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 552,
+                    "length": 9
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        825,
+                        786,
+                        889,
+                        786,
+                        889,
+                        799,
+                        825,
+                        800
+                    ]
+                }
+            ],
+            "content": "corporate"
+        }
+    ],
+    "styles": [
+        {
+            "confidence": 0.6,
+            "spans": [
+                {
+                    "offset": 21,
+                    "length": 1
+                }
+            ],
+            "isHandwritten": true
+        }
+    ],
+    "contentFormat": "text",
+    "sections": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 561
+                }
+            ],
+            "elements": [
+                "/figures/0"
+            ]
+        }
+    ],
+    "figures": [
+        {
+            "id": "1.1",
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        19,
+                        20,
+                        1375,
+                        19,
+                        1376,
+                        793,
+                        20,
+                        794
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 561
+                }
+            ],
+            "elements": [
+                "/paragraphs/0",
+                "/paragraphs/1",
+                "/paragraphs/2",
+                "/paragraphs/3",
+                "/paragraphs/4",
+                "/paragraphs/5",
+                "/paragraphs/6",
+                "/paragraphs/7",
+                "/paragraphs/8",
+                "/paragraphs/9",
+                "/paragraphs/10",
+                "/paragraphs/11",
+                "/paragraphs/12",
+                "/paragraphs/13",
+                "/paragraphs/14",
+                "/paragraphs/15",
+                "/paragraphs/16",
+                "/paragraphs/17",
+                "/paragraphs/18",
+                "/paragraphs/19",
+                "/paragraphs/20",
+                "/paragraphs/21",
+                "/paragraphs/22",
+                "/paragraphs/23",
+                "/paragraphs/24",
+                "/paragraphs/25",
+                "/paragraphs/26",
+                "/paragraphs/27",
+                "/paragraphs/28",
+                "/paragraphs/29",
+                "/paragraphs/30",
+                "/paragraphs/31",
+                "/paragraphs/32",
+                "/paragraphs/33",
+                "/paragraphs/34",
+                "/paragraphs/35",
+                "/paragraphs/36",
+                "/paragraphs/37",
+                "/paragraphs/38",
+                "/paragraphs/39",
+                "/paragraphs/40",
+                "/paragraphs/41",
+                "/paragraphs/42",
+                "/paragraphs/43",
+                "/paragraphs/44",
+                "/paragraphs/45",
+                "/paragraphs/46",
+                "/paragraphs/47",
+                "/paragraphs/48"
+            ]
+        }
+    ]
+}

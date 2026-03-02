@@ -1,0 +1,159 @@
+{
+    "infrastructure_hierarchy": [
+        {
+            "name": "AWS Cloud",
+            "type": "cloud",
+            "components": [
+                {
+                    "name": "Region A",
+                    "type": "region",
+                    "components": [
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "ec2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "ec2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Region B",
+                    "type": "region",
+                    "components": [
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "ec2"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "VPC",
+                            "type": "vpc",
+                            "components": [
+                                {
+                                    "name": "EC2 instance",
+                                    "type": "ec2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Core Network",
+                    "type": "network",
+                    "components": []
+                },
+                {
+                    "name": "on-prem segment",
+                    "type": "segment",
+                    "components": [
+                        {
+                            "name": "Appliance VPC",
+                            "type": "vpc",
+                            "components": [
+                                {
+                                    "name": "third-party virtual appliance",
+                                    "type": "virtual_appliance"
+                                },
+                                {
+                                    "name": "internet gateway",
+                                    "type": "gateway"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "corporate",
+                    "type": "corporate",
+                    "components": []
+                },
+                {
+                    "name": "branch",
+                    "type": "branch",
+                    "components": []
+                }
+            ]
+        }
+    ],
+    "logical_connectivity": [
+        {
+            "source": "EC2 instance (Region A - VPC 1)",
+            "target": "VPC attachment 1",
+            "direction": "source to target",
+            "purpose": "traffic routing"
+        },
+        {
+            "source": "EC2 instance (Region B - VPC 3)",
+            "target": "VPC attachment 3",
+            "direction": "source to target",
+            "purpose": "traffic routing"
+        },
+        {
+            "source": "VPC attachment 1",
+            "target": "Core Network",
+            "direction": "source to target",
+            "purpose": "data transfer"
+        },
+        {
+            "source": "Core Network",
+            "target": "on-prem segment",
+            "direction": "source to target",
+            "purpose": "network traffic"
+        },
+        {
+            "source": "on-prem segment",
+            "target": "Appliance VPC",
+            "direction": "source to target",
+            "purpose": "security and connectivity"
+        },
+        {
+            "source": "Appliance VPC",
+            "target": "internet gateway",
+            "direction": "source to target",
+            "purpose": "internet access"
+        },
+        {
+            "source": "Appliance VPC",
+            "target": "GRE tunnel",
+            "direction": "bi-directional",
+            "purpose": "VPN connectivity"
+        },
+        {
+            "source": "corporate",
+            "target": "AWS Direct Connect",
+            "direction": "source to target",
+            "purpose": "private connectivity"
+        },
+        {
+            "source": "branch",
+            "target": "on-prem segment",
+            "direction": "source to target",
+            "purpose": "network access"
+        },
+        {
+            "source": "AWS Direct Connect",
+            "target": "BGP peering",
+            "direction": "source to target",
+            "purpose": "route advertisement"
+        }
+    ]
+}

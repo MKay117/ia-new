@@ -1,0 +1,306 @@
+{
+    "infrastructure_hierarchy": [
+        {
+            "name": "Azure AI Landing Zone",
+            "type": "zone",
+            "components": [
+                {
+                    "name": "DMZ Subscription",
+                    "type": "subscription",
+                    "components": [
+                        {
+                            "name": "Egress VNET",
+                            "type": "vnet",
+                            "components": [
+                                {
+                                    "name": "Proxy Firewall",
+                                    "type": "service"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Inspection VNET",
+                            "type": "vnet",
+                            "components": [
+                                {
+                                    "name": "Azure Firewall",
+                                    "type": "service"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ingress VNET",
+                            "type": "vnet",
+                            "components": [
+                                {
+                                    "name": "Application Gateway Subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "Application Gateway",
+                                            "type": "service"
+                                        },
+                                        {
+                                            "name": "WAF",
+                                            "type": "service"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Corporate Subscription",
+                    "type": "subscription",
+                    "components": [
+                        {
+                            "name": "Corporate VNET",
+                            "type": "vnet",
+                            "components": [
+                                {
+                                    "name": "Azure DNS Private Resolver",
+                                    "type": "service"
+                                },
+                                {
+                                    "name": "Azure Bastion",
+                                    "type": "service"
+                                },
+                                {
+                                    "name": "Azure Firewall",
+                                    "type": "service"
+                                },
+                                {
+                                    "name": "VPN/ExpressRoute Gateways",
+                                    "type": "gateway"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AI Landing Zone Prod Subscription",
+                    "type": "subscription",
+                    "components": [
+                        {
+                            "name": "AI App Resource Group",
+                            "type": "group",
+                            "components": [
+                                {
+                                    "name": "AI Services Virtual Network",
+                                    "type": "vnet",
+                                    "components": [
+                                        {
+                                            "name": "Jump box Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "Jump Box VM",
+                                                    "type": "vm"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Private Endpoints Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                },
+                                                {
+                                                    "name": "Private Endpoint",
+                                                    "type": "service"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "API Management Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "API Management",
+                                                    "type": "service"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "AI Foundry Agent Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "AI Foundry Agent Service",
+                                                    "type": "service"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Container App Environment Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "Container App Environment",
+                                                    "type": "service"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Build Agent Subnet",
+                                            "type": "subnet",
+                                            "components": [
+                                                {
+                                                    "name": "Build Agent VM",
+                                                    "type": "vm"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "AI Foundry Agent Service",
+                                    "type": "service",
+                                    "components": [
+                                        {
+                                            "name": "AI Foundry Project",
+                                            "type": "resource"
+                                        },
+                                        {
+                                            "name": "Azure AI Foundry Services",
+                                            "type": "resource"
+                                        },
+                                        {
+                                            "name": "Foundry Models",
+                                            "type": "resource"
+                                        },
+                                        {
+                                            "name": "Foundry Agent Service",
+                                            "type": "resource"
+                                        },
+                                        {
+                                            "name": "Connections",
+                                            "type": "resource"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "AI Foundry Agent Service dependencies",
+                                    "type": "dependencies",
+                                    "components": [
+                                        {
+                                            "name": "Storage Account",
+                                            "type": "service"
+                                        },
+                                        {
+                                            "name": "AI Search",
+                                            "type": "service"
+                                        },
+                                        {
+                                            "name": "Cosmos DB",
+                                            "type": "service"
+                                        },
+                                        {
+                                            "name": "Key Vault",
+                                            "type": "service"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Diagnostics Tools",
+                                    "type": "tools",
+                                    "components": [
+                                        {
+                                            "name": "Diagnostics Settings",
+                                            "type": "monitor"
+                                        },
+                                        {
+                                            "name": "Log Analytics Workspace",
+                                            "type": "monitor"
+                                        },
+                                        {
+                                            "name": "Monitor",
+                                            "type": "monitor"
+                                        },
+                                        {
+                                            "name": "Application Insights",
+                                            "type": "monitor"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "logical_connectivity": [
+        {
+            "source": "External Systems",
+            "target": "Proxy Firewall",
+            "direction": "ingress",
+            "purpose": "traffic routing"
+        },
+        {
+            "source": "Proxy Firewall",
+            "target": "Azure Firewall",
+            "direction": "ingress",
+            "purpose": "traffic filtering"
+        },
+        {
+            "source": "Azure Firewall",
+            "target": "Application Gateway",
+            "direction": "ingress",
+            "purpose": "application traffic"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "Jump Box VM",
+            "direction": "ingress",
+            "purpose": "developer access"
+        },
+        {
+            "source": "Storage Account",
+            "target": "AI Foundry Agent Service",
+            "direction": "data",
+            "purpose": "data storage"
+        },
+        {
+            "source": "AI Search",
+            "target": "AI Foundry Agent Service",
+            "direction": "data",
+            "purpose": "intelligent search"
+        },
+        {
+            "source": "Cosmos DB",
+            "target": "AI Foundry Agent Service",
+            "direction": "data",
+            "purpose": "database operations"
+        },
+        {
+            "source": "Key Vault",
+            "target": "AI Foundry Agent Service",
+            "direction": "data",
+            "purpose": "secrets management"
+        }
+    ]
+}

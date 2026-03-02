@@ -1,0 +1,281 @@
+{
+    "infrastructure_hierarchy": [
+        {
+            "name": "AWS Region",
+            "type": "region",
+            "components": [
+                {
+                    "name": "Spoke VPC A",
+                    "type": "vnet",
+                    "cidr": [
+                        "10.0.0.0/16",
+                        "2001:db8:1234:1a00::/56"
+                    ],
+                    "components": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "availability-zone",
+                            "components": [
+                                {
+                                    "name": "workload subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "EC2 instance",
+                                            "type": "compute",
+                                            "id": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "network-interface",
+                                            "id": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Spoke VPC A route table",
+                            "type": "route-table",
+                            "routes": [
+                                {
+                                    "destination": "10.0.0.0/16",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:1a00::/56",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "0.0.0.0/0",
+                                    "target": "tgw-id"
+                                },
+                                {
+                                    "destination": "::/0",
+                                    "target": "tgw-id"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Spoke VPC B",
+                    "type": "vnet",
+                    "cidr": [
+                        "10.1.0.0/16",
+                        "2001:db8:1234:2b00::/56"
+                    ],
+                    "components": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "availability-zone",
+                            "components": [
+                                {
+                                    "name": "workload subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "EC2 instance",
+                                            "type": "compute",
+                                            "id": "D"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "network-interface"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Spoke VPC B route table",
+                            "type": "route-table",
+                            "routes": [
+                                {
+                                    "destination": "10.1.0.0/16",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:2b00::/56",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "0.0.0.0/0",
+                                    "target": "tgw-id"
+                                },
+                                {
+                                    "destination": "::/0",
+                                    "target": "tgw-id"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Appliance VPC",
+                    "type": "vnet",
+                    "cidr": [
+                        "10.2.0.0/16",
+                        "2001:db8:1234:3c00::/56"
+                    ],
+                    "components": [
+                        {
+                            "name": "Availability Zone A",
+                            "type": "availability-zone",
+                            "components": [
+                                {
+                                    "name": "TGW subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "TGW ENI",
+                                            "type": "network-interface"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "public subnet",
+                                    "type": "subnet",
+                                    "components": [
+                                        {
+                                            "name": "third-party virtual appliance",
+                                            "type": "compute"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Appliance VPC public route table",
+                            "type": "route-table",
+                            "routes": [
+                                {
+                                    "destination": "10.2.0.0/16",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "192.168.0.0/24",
+                                    "target": "vgw-id"
+                                },
+                                {
+                                    "destination": "0.0.0.0/0",
+                                    "target": "igw-id"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:3c00::/56",
+                                    "target": "local"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:4d00::/58",
+                                    "target": "vgw-id"
+                                },
+                                {
+                                    "destination": "::/0",
+                                    "target": "igw-id"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AWS Transit Gateway (TGW)",
+                    "type": "network-gateway",
+                    "components": [
+                        {
+                            "name": "Spoke VPC route table",
+                            "type": "route-table",
+                            "routes": [
+                                {
+                                    "destination": "192.168.0.0/16",
+                                    "target": "TGW connect"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:4d00::/56",
+                                    "target": "TGW connect"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Appliance VPC route table",
+                            "type": "route-table",
+                            "routes": [
+                                {
+                                    "destination": "10.0.0.0/24",
+                                    "target": "Spoke VPC A"
+                                },
+                                {
+                                    "destination": "10.1.0.0/24",
+                                    "target": "Spoke VPC B"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:1a00::/56",
+                                    "target": "Spoke VPC A"
+                                },
+                                {
+                                    "destination": "2001:db8:1234:2b00::/56",
+                                    "target": "Spoke VPC B"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "logical_connectivity": [
+        {
+            "source": "workload subnet (Spoke VPC A)",
+            "target": "TGW subnet (Spoke VPC A)",
+            "direction": "bidirectional",
+            "purpose": "traffic flow via TGW ENI"
+        },
+        {
+            "source": "TGW subnet (Spoke VPC A)",
+            "target": "AWS Transit Gateway (TGW)",
+            "direction": "bidirectional",
+            "purpose": "traffic forwarded to TGW"
+        },
+        {
+            "source": "TGW subnet (Appliance VPC)",
+            "target": "public subnet (Appliance VPC)",
+            "direction": "bidirectional",
+            "purpose": "traffic directed to virtual appliance"
+        },
+        {
+            "source": "AWS Transit Gateway (TGW)",
+            "target": "virtual private gateway (corporate)",
+            "direction": "unidirectional",
+            "purpose": "corporate connectivity via Direct Connect"
+        },
+        {
+            "source": "AWS Transit Gateway (TGW)",
+            "target": "internet gateway",
+            "direction": "bidirectional",
+            "purpose": "general internet connectivity"
+        },
+        {
+            "source": "AWS Transit Gateway (TGW)",
+            "target": "Spoke VPC B",
+            "direction": "bidirectional",
+            "purpose": "connectivity between TGW and Spoke B"
+        },
+        {
+            "source": "corporate",
+            "target": "third-party virtual appliance (Appliance VPC)",
+            "direction": "unidirectional",
+            "purpose": "traffic routed for security processing"
+        }
+    ]
+}
