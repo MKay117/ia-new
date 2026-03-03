@@ -1,0 +1,88 @@
+{
+    "connections": [
+        {
+            "source": "User",
+            "target": "Internet",
+            "flow": "Unknown",
+            "style": "Solid",
+            "annotation": ""
+        },
+        {
+            "source": "Internet",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style": "Solid",
+            "annotation": "Ingress Traffic"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "Azure Firewall (Inspection VNET)",
+            "flow": "One-way",
+            "style": "Solid",
+            "annotation": "Step 1"
+        },
+        {
+            "source": "Azure Firewall (Inspection VNET)",
+            "target": "AI Services Virtual Network",
+            "flow": "One-way",
+            "style": "Solid",
+            "annotation": ""
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "API Management Subnet",
+            "flow": "One-way",
+            "style": "Dashed",
+            "annotation": ""
+        },
+        {
+            "source": "API Management Subnet",
+            "target": "AI Foundry Agent Subnet",
+            "flow": "One-way",
+            "style": "Dashed",
+            "annotation": ""
+        },
+        {
+            "source": "AI Foundry Agent Subnet",
+            "target": "Azure AI Foundry Services",
+            "flow": "Unknown",
+            "style": "Dashed",
+            "annotation": ""
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Security and Governance",
+            "flow": "Bi-directional",
+            "style": "Solid",
+            "annotation": ""
+        },
+        {
+            "source": "Enterprise and public knowledge sources",
+            "target": "GenAI app dependencies",
+            "flow": "Bi-directional",
+            "style": "Dashed",
+            "annotation": ""
+        },
+        {
+            "source": "GenAI app dependencies",
+            "target": "GenAI app microservices",
+            "flow": "One-way",
+            "style": "Dashed",
+            "annotation": ""
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "ExpressRoute",
+            "flow": "Bi-directional",
+            "style": "Solid",
+            "annotation": "Egress Traffic"
+        },
+        {
+            "source": "Redis Cache",
+            "target": "AI Foundry Agent Service standard setup",
+            "flow": "Unknown",
+            "style": "Solid",
+            "annotation": ""
+        }
+    ]
+}

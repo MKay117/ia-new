@@ -1,0 +1,217 @@
+{
+    "components": [
+        {
+            "id": "p_0",
+            "label": "Azure AI Landing Zone",
+            "type": "Boundary",
+            "parent_id": null
+        },
+        {
+            "id": "p_1",
+            "label": "DMZ Subscription",
+            "type": "Boundary",
+            "parent_id": "p_0"
+        },
+        {
+            "id": "p_4",
+            "label": "Egress VNET",
+            "type": "Service",
+            "parent_id": "p_1"
+        },
+        {
+            "id": "p_6",
+            "label": "Proxy Firewall",
+            "type": "Service",
+            "parent_id": "p_4"
+        },
+        {
+            "id": "p_15",
+            "label": "Inspection VNET",
+            "type": "Service",
+            "parent_id": "p_1"
+        },
+        {
+            "id": "p_18",
+            "label": "Azure Firewall",
+            "type": "Service",
+            "parent_id": "p_15"
+        },
+        {
+            "id": "p_30",
+            "label": "Ingress VNET",
+            "type": "Service",
+            "parent_id": "p_1"
+        },
+        {
+            "id": "p_33",
+            "label": "Application Gateway Subnet",
+            "type": "Service",
+            "parent_id": "p_30"
+        },
+        {
+            "id": "p_38",
+            "label": "Application Gateway",
+            "type": "Service",
+            "parent_id": "p_33"
+        },
+        {
+            "id": "p_88",
+            "label": "Azure Bastion",
+            "type": "Service",
+            "parent_id": "p_1"
+        },
+        {
+            "id": "p_31",
+            "label": "AI Services Virtual Network",
+            "type": "Boundary",
+            "parent_id": "p_1"
+        },
+        {
+            "id": "p_34",
+            "label": "Jump Box Subnet",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_39",
+            "label": "Jump Box VM",
+            "type": "Service",
+            "parent_id": "p_34"
+        },
+        {
+            "id": "p_35",
+            "label": "Private Endpoints Subnet",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_41",
+            "label": "Private Endpoint",
+            "type": "Service",
+            "parent_id": "p_35"
+        },
+        {
+            "id": "p_48",
+            "label": "API Management",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_36",
+            "label": "API Management Subnet",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_37",
+            "label": "AI Foundry Agent Subnet",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_12",
+            "label": "Azure AI Foundry Services",
+            "type": "Service",
+            "parent_id": "p_31"
+        },
+        {
+            "id": "p_54",
+            "label": "Corporate Subscription",
+            "type": "Boundary",
+            "parent_id": "p_0"
+        },
+        {
+            "id": "p_62",
+            "label": "Corporate VNET",
+            "type": "Service",
+            "parent_id": "p_54"
+        },
+        {
+            "id": "p_65",
+            "label": "Azure DNS Private Resolver",
+            "type": "Service",
+            "parent_id": "p_62"
+        },
+        {
+            "id": "p_66",
+            "label": "VPN/ExpressRoute Gateways",
+            "type": "Service",
+            "parent_id": "p_62"
+        },
+        {
+            "id": "p_67",
+            "label": "Enterprise and public knowledge sources",
+            "type": "Service",
+            "parent_id": "p_0"
+        },
+        {
+            "id": "p_68",
+            "label": "GenAI app microservices",
+            "type": "Service",
+            "parent_id": "p_67"
+        },
+        {
+            "id": "p_69",
+            "label": "GenAI app dependencies",
+            "type": "Service",
+            "parent_id": "p_67"
+        },
+        {
+            "id": "p_53",
+            "label": "Redis Cache",
+            "type": "Service",
+            "parent_id": "p_0"
+        }
+    ],
+    "relationships": [
+        {
+            "source_id": "p_13",
+            "target_id": "p_28",
+            "flow": "Unknown",
+            "style": "Solid"
+        },
+        {
+            "source_id": "p_28",
+            "target_id": "p_38",
+            "flow": "One-way",
+            "style": "Solid"
+        },
+        {
+            "source_id": "p_38",
+            "target_id": "p_18",
+            "flow": "One-way",
+            "style": "Solid"
+        },
+        {
+            "source_id": "p_18",
+            "target_id": "p_31",
+            "flow": "One-way",
+            "style": "Solid"
+        },
+        {
+            "source_id": "p_31",
+            "target_id": "p_36",
+            "flow": "One-way",
+            "style": "Dashed"
+        },
+        {
+            "source_id": "p_36",
+            "target_id": "p_37",
+            "flow": "One-way",
+            "style": "Dashed"
+        },
+        {
+            "source_id": "p_37",
+            "target_id": "p_12",
+            "flow": "Unknown",
+            "style": "Dashed"
+        },
+        {
+            "source_id": "p_62",
+            "target_id": "p_0",
+            "flow": "Bi-directional",
+            "style": "Solid",
+            "annotation": ""
+        }
+    ]
+}
