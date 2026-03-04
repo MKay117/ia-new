@@ -1,0 +1,2766 @@
+{
+    "nodes": [
+        {
+            "id": "p_0",
+            "text": "Azure Al Landing Zone"
+        },
+        {
+            "id": "p_1",
+            "text": "DMZ Subscription"
+        },
+        {
+            "id": "p_2",
+            "text": "Al Landing Zone Prod Subscription"
+        },
+        {
+            "id": "p_3",
+            "text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT"
+        },
+        {
+            "id": "p_4",
+            "text": "Egress VNET"
+        },
+        {
+            "id": "p_5",
+            "text": "Al App Resource Group"
+        },
+        {
+            "id": "p_6",
+            "text": "Proxy Firewall"
+        },
+        {
+            "id": "p_7",
+            "text": "Al Foundry Agent Service standard setup"
+        },
+        {
+            "id": "p_8",
+            "text": "Diagnostics Settings"
+        },
+        {
+            "id": "p_9",
+            "text": "Role assignments"
+        },
+        {
+            "id": "p_10",
+            "text": "Managed Identities"
+        },
+        {
+            "id": "p_11",
+            "text": "Al Foundry Agent Service dependencies"
+        },
+        {
+            "id": "p_12",
+            "text": "Azure Al Foundry Services"
+        },
+        {
+            "id": "p_13",
+            "text": "User"
+        },
+        {
+            "id": "p_14",
+            "text": "Al Foundry Project"
+        },
+        {
+            "id": "p_15",
+            "text": "Inspection VNET"
+        },
+        {
+            "id": "p_16",
+            "text": "Log Analytics Workspace"
+        },
+        {
+            "id": "p_17",
+            "text": "Workload policy assignments"
+        },
+        {
+            "id": "p_18",
+            "text": "Azure Firewall"
+        },
+        {
+            "id": "p_19",
+            "text": "Al Services endpoints"
+        },
+        {
+            "id": "p_20",
+            "text": "Storage Account"
+        },
+        {
+            "id": "p_21",
+            "text": "Al Search"
+        },
+        {
+            "id": "p_22",
+            "text": "Key Vault"
+        },
+        {
+            "id": "p_23",
+            "text": "Foundry Models"
+        },
+        {
+            "id": "p_24",
+            "text": "Connections"
+        },
+        {
+            "id": "p_25",
+            "text": "Cosmos DB"
+        },
+        {
+            "id": "p_26",
+            "text": "Foundry Agent Service"
+        },
+        {
+            "id": "p_27",
+            "text": "Monitor"
+        },
+        {
+            "id": "p_28",
+            "text": "Internet"
+        },
+        {
+            "id": "p_29",
+            "text": "Tags"
+        },
+        {
+            "id": "p_30",
+            "text": "Ingress VNET"
+        },
+        {
+            "id": "p_31",
+            "text": "Al Services Virtual Network"
+        },
+        {
+            "id": "p_32",
+            "text": "Application Insights"
+        },
+        {
+            "id": "p_33",
+            "text": "Application Gateway Subnet"
+        },
+        {
+            "id": "p_34",
+            "text": "Jump box Subnet"
+        },
+        {
+            "id": "p_35",
+            "text": "Private Endpoints Subnet"
+        },
+        {
+            "id": "p_36",
+            "text": "API Management Subnet"
+        },
+        {
+            "id": "p_37",
+            "text": "AI Foundry Agent Subhet"
+        },
+        {
+            "id": "p_38",
+            "text": "Application Gateway"
+        },
+        {
+            "id": "p_39",
+            "text": "Jump Box VM"
+        },
+        {
+            "id": "p_40",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_41",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_42",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_43",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_44",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_45",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_46",
+            "text": "Network Watcher"
+        },
+        {
+            "id": "p_47",
+            "text": "WAF"
+        },
+        {
+            "id": "p_48",
+            "text": "API Management"
+        },
+        {
+            "id": "p_49",
+            "text": "On-premises network"
+        },
+        {
+            "id": "p_50",
+            "text": "Azure DDOS"
+        },
+        {
+            "id": "p_51",
+            "text": "Container App Environment Subnet"
+        },
+        {
+            "id": "p_52",
+            "text": "Build Agent Subnet"
+        },
+        {
+            "id": "p_53",
+            "text": "Redis Cache"
+        },
+        {
+            "id": "p_54",
+            "text": "Corporate Subscription"
+        },
+        {
+            "id": "p_55",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_56",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_57",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_58",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_59",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_60",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_61",
+            "text": "Private Endpoint"
+        },
+        {
+            "id": "p_62",
+            "text": "Corporate VNET"
+        },
+        {
+            "id": "p_63",
+            "text": "Build Agent VM"
+        },
+        {
+            "id": "p_64",
+            "text": "Stack"
+        },
+        {
+            "id": "p_65",
+            "text": "Azure DNS Private Resolver"
+        },
+        {
+            "id": "p_66",
+            "text": "VPN/ExpressRoute Gateways"
+        },
+        {
+            "id": "p_67",
+            "text": "Enterprise and public knowledge sources"
+        },
+        {
+            "id": "p_68",
+            "text": "GenAl app microservices"
+        },
+        {
+            "id": "p_69",
+            "text": "GenAl app dependencies"
+        },
+        {
+            "id": "p_70",
+            "text": "Managed Identities"
+        },
+        {
+            "id": "p_71",
+            "text": "ExpressRoute"
+        },
+        {
+            "id": "p_72",
+            "text": "Container App Environment"
+        },
+        {
+            "id": "p_73",
+            "text": "Azure Firewall"
+        },
+        {
+            "id": "p_74",
+            "text": "Grounding with Bing"
+        },
+        {
+            "id": "p_75",
+            "text": "Al Search"
+        },
+        {
+            "id": "p_76",
+            "text": "Cosmos DB"
+        },
+        {
+            "id": "p_77",
+            "text": "Key Vault"
+        },
+        {
+            "id": "p_78",
+            "text": "Storage Account"
+        },
+        {
+            "id": "p_79",
+            "text": "Container Registry"
+        },
+        {
+            "id": "p_80",
+            "text": "App Configuration"
+        },
+        {
+            "id": "p_81",
+            "text": "dapr"
+        },
+        {
+            "id": "p_82",
+            "text": "Frontend"
+        },
+        {
+            "id": "p_83",
+            "text": "Orchestrator"
+        },
+        {
+            "id": "p_84",
+            "text": "SK"
+        },
+        {
+            "id": "p_85",
+            "text": "MCP"
+        },
+        {
+            "id": "p_86",
+            "text": "Ingestion"
+        },
+        {
+            "id": "p_87",
+            "text": "Egress Traffic"
+        },
+        {
+            "id": "p_88",
+            "text": "Azure Bastion"
+        },
+        {
+            "id": "p_89",
+            "text": "Security and Governance"
+        },
+        {
+            "id": "p_90",
+            "text": "Ingress Traffic"
+        },
+        {
+            "id": "p_91",
+            "text": "Azure DDOS"
+        },
+        {
+            "id": "p_92",
+            "text": "Subscription policy assignments"
+        },
+        {
+            "id": "p_93",
+            "text": "Defender for Cloud"
+        },
+        {
+            "id": "p_94",
+            "text": "Azure DevOps"
+        },
+        {
+            "id": "p_95",
+            "text": "Azure AD P2"
+        },
+        {
+            "id": "p_96",
+            "text": "Prometheus"
+        },
+        {
+            "id": "p_97",
+            "text": "DNS"
+        },
+        {
+            "id": "p_98",
+            "text": "Entra ID"
+        },
+        {
+            "id": "p_99",
+            "text": "Purview"
+        }
+    ],
+    "edges": [
+        {
+            "connector_id": "line_4",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_5",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_6",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_7",
+            "source_id": "p_86",
+            "source_text": "Ingestion",
+            "target_id": "p_74",
+            "target_text": "Grounding with Bing",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_8",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_9",
+            "source_id": "p_55",
+            "source_text": "Private Endpoint",
+            "target_id": "p_61",
+            "target_text": "Private Endpoint",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_10",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_12",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_0",
+            "target_text": "Azure Al Landing Zone",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_14",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_16",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_22",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_10",
+            "target_text": "Managed Identities",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_23",
+            "source_id": "p_86",
+            "source_text": "Ingestion",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_24",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_25",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_31",
+            "target_text": "Al Services Virtual Network",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_27",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_1",
+            "target_text": "DMZ Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_28",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_30",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_97",
+            "target_text": "DNS",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_31",
+            "source_id": "p_11",
+            "source_text": "Al Foundry Agent Service dependencies",
+            "target_id": "p_7",
+            "target_text": "Al Foundry Agent Service standard setup",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_33",
+            "source_id": "p_54",
+            "source_text": "Corporate Subscription",
+            "target_id": "p_1",
+            "target_text": "DMZ Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_34",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_37",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_34",
+            "target_text": "Jump box Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_41",
+            "source_id": "p_78",
+            "source_text": "Storage Account",
+            "target_id": "p_74",
+            "target_text": "Grounding with Bing",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_46",
+            "source_id": "p_78",
+            "source_text": "Storage Account",
+            "target_id": "p_74",
+            "target_text": "Grounding with Bing",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_49",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_54",
+            "target_text": "Corporate Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_52",
+            "source_id": "p_50",
+            "source_text": "Azure DDOS",
+            "target_id": "p_30",
+            "target_text": "Ingress VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_53",
+            "source_id": "p_2",
+            "source_text": "Al Landing Zone Prod Subscription",
+            "target_id": "p_97",
+            "target_text": "DNS",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_58",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_59",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_62",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_65",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_66",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_68",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_20",
+            "target_text": "Storage Account",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_69",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_72",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_97",
+            "target_text": "DNS",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_73",
+            "source_id": "p_75",
+            "source_text": "Al Search",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_75",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_76",
+            "source_id": "p_1",
+            "source_text": "DMZ Subscription",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_81",
+            "source_id": "p_33",
+            "source_text": "Application Gateway Subnet",
+            "target_id": "p_30",
+            "target_text": "Ingress VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_84",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_87",
+            "source_id": "p_25",
+            "source_text": "Cosmos DB",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_90",
+            "source_id": "p_86",
+            "source_text": "Ingestion",
+            "target_id": "p_68",
+            "target_text": "GenAl app microservices",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_94",
+            "source_id": "p_1",
+            "source_text": "DMZ Subscription",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_95",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_55",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_96",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_102",
+            "source_id": "p_73",
+            "source_text": "Azure Firewall",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_103",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_107",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_109",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_115",
+            "source_id": "p_54",
+            "source_text": "Corporate Subscription",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_116",
+            "source_id": "p_86",
+            "source_text": "Ingestion",
+            "target_id": "p_68",
+            "target_text": "GenAl app microservices",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_117",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_122",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_131",
+            "source_id": "p_50",
+            "source_text": "Azure DDOS",
+            "target_id": "p_47",
+            "target_text": "WAF",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_134",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_136",
+            "source_id": "p_11",
+            "source_text": "Al Foundry Agent Service dependencies",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_137",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_61",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_140",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_145",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_147",
+            "source_id": "p_61",
+            "source_text": "Private Endpoint",
+            "target_id": "p_51",
+            "target_text": "Container App Environment Subnet",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_149",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_61",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_150",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_154",
+            "source_id": "p_4",
+            "source_text": "Egress VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_156",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_157",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_158",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_162",
+            "source_id": "p_49",
+            "source_text": "On-premises network",
+            "target_id": "p_28",
+            "target_text": "Internet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_163",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_168",
+            "source_id": "p_49",
+            "source_text": "On-premises network",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_170",
+            "source_id": "p_50",
+            "source_text": "Azure DDOS",
+            "target_id": "p_47",
+            "target_text": "WAF",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_177",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_181",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_82",
+            "target_text": "Frontend",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_183",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_34",
+            "target_text": "Jump box Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_184",
+            "source_id": "p_4",
+            "source_text": "Egress VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_198",
+            "source_id": "p_16",
+            "source_text": "Log Analytics Workspace",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_201",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_206",
+            "source_id": "p_49",
+            "source_text": "On-premises network",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_210",
+            "source_id": "p_63",
+            "source_text": "Build Agent VM",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_214",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_224",
+            "source_id": "p_76",
+            "source_text": "Cosmos DB",
+            "target_id": "p_56",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_225",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_238",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_239",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_240",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_242",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_243",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_246",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_249",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_258",
+            "source_id": "p_73",
+            "source_text": "Azure Firewall",
+            "target_id": "p_74",
+            "target_text": "Grounding with Bing",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_259",
+            "source_id": "p_45",
+            "source_text": "Private Endpoint",
+            "target_id": "p_48",
+            "target_text": "API Management",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_271",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_276",
+            "source_id": "p_73",
+            "source_text": "Azure Firewall",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_281",
+            "source_id": "p_3",
+            "source_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_283",
+            "source_id": "p_3",
+            "source_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target_id": "p_28",
+            "target_text": "Internet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_288",
+            "source_id": "p_74",
+            "source_text": "Grounding with Bing",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_293",
+            "source_id": "p_33",
+            "source_text": "Application Gateway Subnet",
+            "target_id": "p_47",
+            "target_text": "WAF",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_297",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_303",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_305",
+            "source_id": "p_2",
+            "source_text": "Al Landing Zone Prod Subscription",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_314",
+            "source_id": "p_37",
+            "source_text": "AI Foundry Agent Subhet",
+            "target_id": "p_26",
+            "target_text": "Foundry Agent Service",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_315",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_316",
+            "source_id": "p_33",
+            "source_text": "Application Gateway Subnet",
+            "target_id": "p_47",
+            "target_text": "WAF",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_318",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_320",
+            "source_id": "p_66",
+            "source_text": "VPN/ExpressRoute Gateways",
+            "target_id": "p_62",
+            "target_text": "Corporate VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_321",
+            "source_id": "p_25",
+            "source_text": "Cosmos DB",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_322",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_2",
+            "target_text": "Al Landing Zone Prod Subscription",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_327",
+            "source_id": "p_11",
+            "source_text": "Al Foundry Agent Service dependencies",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_328",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_334",
+            "source_id": "p_93",
+            "source_text": "Defender for Cloud",
+            "target_id": "p_92",
+            "target_text": "Subscription policy assignments",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_337",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_15",
+            "target_text": "Inspection VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_343",
+            "source_id": "p_47",
+            "source_text": "WAF",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_346",
+            "source_id": "p_93",
+            "source_text": "Defender for Cloud",
+            "target_id": "p_98",
+            "target_text": "Entra ID",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_348",
+            "source_id": "p_97",
+            "source_text": "DNS",
+            "target_id": "p_73",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_354",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_363",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_370",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_374",
+            "source_id": "p_76",
+            "source_text": "Cosmos DB",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_381",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_36",
+            "target_text": "API Management Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_388",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_389",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_46",
+            "target_text": "Network Watcher",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_395",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_82",
+            "target_text": "Frontend",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_398",
+            "source_id": "p_66",
+            "source_text": "VPN/ExpressRoute Gateways",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_409",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_411",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_416",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_4",
+            "target_text": "Egress VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_419",
+            "source_id": "p_71",
+            "source_text": "ExpressRoute",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_424",
+            "source_id": "p_43",
+            "source_text": "Private Endpoint",
+            "target_id": "p_35",
+            "target_text": "Private Endpoints Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_426",
+            "source_id": "p_35",
+            "source_text": "Private Endpoints Subnet",
+            "target_id": "p_25",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_430",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_432",
+            "source_id": "p_45",
+            "source_text": "Private Endpoint",
+            "target_id": "p_48",
+            "target_text": "API Management",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_437",
+            "source_id": "p_39",
+            "source_text": "Jump Box VM",
+            "target_id": "p_31",
+            "target_text": "Al Services Virtual Network",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_438",
+            "source_id": "p_92",
+            "source_text": "Subscription policy assignments",
+            "target_id": "p_93",
+            "target_text": "Defender for Cloud",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_439",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_82",
+            "target_text": "Frontend",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_440",
+            "source_id": "p_76",
+            "source_text": "Cosmos DB",
+            "target_id": "p_55",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_445",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_450",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_451",
+            "source_id": "p_66",
+            "source_text": "VPN/ExpressRoute Gateways",
+            "target_id": "p_62",
+            "target_text": "Corporate VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_454",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_456",
+            "source_id": "p_26",
+            "source_text": "Foundry Agent Service",
+            "target_id": "p_10",
+            "target_text": "Managed Identities",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_457",
+            "source_id": "p_14",
+            "source_text": "Al Foundry Project",
+            "target_id": "p_24",
+            "target_text": "Connections",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_460",
+            "source_id": "p_78",
+            "source_text": "Storage Account",
+            "target_id": "p_58",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_465",
+            "source_id": "p_37",
+            "source_text": "AI Foundry Agent Subhet",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_466",
+            "source_id": "p_70",
+            "source_text": "Managed Identities",
+            "target_id": "p_51",
+            "target_text": "Container App Environment Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_468",
+            "source_id": "p_93",
+            "source_text": "Defender for Cloud",
+            "target_id": "p_92",
+            "target_text": "Subscription policy assignments",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_472",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_474",
+            "source_id": "p_76",
+            "source_text": "Cosmos DB",
+            "target_id": "p_55",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_475",
+            "source_id": "p_4",
+            "source_text": "Egress VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_481",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_486",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_488",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_491",
+            "source_id": "p_52",
+            "source_text": "Build Agent Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_494",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_496",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_82",
+            "target_text": "Frontend",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_509",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_512",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_515",
+            "source_id": "p_26",
+            "source_text": "Foundry Agent Service",
+            "target_id": "p_10",
+            "target_text": "Managed Identities",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_518",
+            "source_id": "p_75",
+            "source_text": "Al Search",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_519",
+            "source_id": "p_81",
+            "source_text": "dapr",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_523",
+            "source_id": "p_25",
+            "source_text": "Cosmos DB",
+            "target_id": "p_11",
+            "target_text": "Al Foundry Agent Service dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_527",
+            "source_id": "p_38",
+            "source_text": "Application Gateway",
+            "target_id": "p_30",
+            "target_text": "Ingress VNET",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_528",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_46",
+            "target_text": "Network Watcher",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_529",
+            "source_id": "p_25",
+            "source_text": "Cosmos DB",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_531",
+            "source_id": "p_50",
+            "source_text": "Azure DDOS",
+            "target_id": "p_33",
+            "target_text": "Application Gateway Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_537",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_541",
+            "source_id": "p_65",
+            "source_text": "Azure DNS Private Resolver",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_550",
+            "source_id": "p_70",
+            "source_text": "Managed Identities",
+            "target_id": "p_61",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_555",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_557",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_558",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_559",
+            "source_id": "p_66",
+            "source_text": "VPN/ExpressRoute Gateways",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_560",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_563",
+            "source_id": "p_39",
+            "source_text": "Jump Box VM",
+            "target_id": "p_31",
+            "target_text": "Al Services Virtual Network",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_569",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_571",
+            "source_id": "p_72",
+            "source_text": "Container App Environment",
+            "target_id": "p_51",
+            "target_text": "Container App Environment Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_578",
+            "source_id": "p_90",
+            "source_text": "Ingress Traffic",
+            "target_id": "p_87",
+            "target_text": "Egress Traffic",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_579",
+            "source_id": "p_66",
+            "source_text": "VPN/ExpressRoute Gateways",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_580",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_581",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_582",
+            "source_id": "p_98",
+            "source_text": "Entra ID",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_583",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_586",
+            "source_id": "p_16",
+            "source_text": "Log Analytics Workspace",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_590",
+            "source_id": "p_33",
+            "source_text": "Application Gateway Subnet",
+            "target_id": "p_38",
+            "target_text": "Application Gateway",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_591",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_592",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_595",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_596",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_597",
+            "source_id": "p_3",
+            "source_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_601",
+            "source_id": "p_69",
+            "source_text": "GenAl app dependencies",
+            "target_id": "p_60",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_605",
+            "source_id": "p_79",
+            "source_text": "Container Registry",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_611",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_46",
+            "target_text": "Network Watcher",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_613",
+            "source_id": "p_22",
+            "source_text": "Key Vault",
+            "target_id": "p_43",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_617",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_618",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_625",
+            "source_id": "p_69",
+            "source_text": "GenAl app dependencies",
+            "target_id": "p_59",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_626",
+            "source_id": "p_35",
+            "source_text": "Private Endpoints Subnet",
+            "target_id": "p_21",
+            "target_text": "Al Search",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_631",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_632",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_1",
+            "target_text": "DMZ Subscription",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_635",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_636",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_639",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_646",
+            "source_id": "p_34",
+            "source_text": "Jump box Subnet",
+            "target_id": "p_39",
+            "target_text": "Jump Box VM",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_650",
+            "source_id": "p_52",
+            "source_text": "Build Agent Subnet",
+            "target_id": "p_51",
+            "target_text": "Container App Environment Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_652",
+            "source_id": "p_37",
+            "source_text": "AI Foundry Agent Subhet",
+            "target_id": "p_26",
+            "target_text": "Foundry Agent Service",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_663",
+            "source_id": "p_45",
+            "source_text": "Private Endpoint",
+            "target_id": "p_48",
+            "target_text": "API Management",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_667",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_48",
+            "target_text": "API Management",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_671",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_673",
+            "source_id": "p_63",
+            "source_text": "Build Agent VM",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_675",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_681",
+            "source_id": "p_10",
+            "source_text": "Managed Identities",
+            "target_id": "p_26",
+            "target_text": "Foundry Agent Service",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_687",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_67",
+            "target_text": "Enterprise and public knowledge sources",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_693",
+            "source_id": "p_16",
+            "source_text": "Log Analytics Workspace",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_694",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_68",
+            "target_text": "GenAl app microservices",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_702",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_705",
+            "source_id": "p_26",
+            "source_text": "Foundry Agent Service",
+            "target_id": "p_19",
+            "target_text": "Al Services endpoints",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_710",
+            "source_id": "p_32",
+            "source_text": "Application Insights",
+            "target_id": "p_46",
+            "target_text": "Network Watcher",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_712",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_715",
+            "source_id": "p_46",
+            "source_text": "Network Watcher",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_719",
+            "source_id": "p_67",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_id": "p_76",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_720",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_722",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_728",
+            "source_id": "p_91",
+            "source_text": "Azure DDOS",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_732",
+            "source_id": "p_88",
+            "source_text": "Azure Bastion",
+            "target_id": "p_73",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_736",
+            "source_id": "p_90",
+            "source_text": "Ingress Traffic",
+            "target_id": "p_87",
+            "target_text": "Egress Traffic",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_742",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_12",
+            "target_text": "Azure Al Foundry Services",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_744",
+            "source_id": "p_92",
+            "source_text": "Subscription policy assignments",
+            "target_id": "p_74",
+            "target_text": "Grounding with Bing",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_752",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_754",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_762",
+            "source_id": "p_44",
+            "source_text": "Private Endpoint",
+            "target_id": "p_19",
+            "target_text": "Al Services endpoints",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_767",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_10",
+            "target_text": "Managed Identities",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_769",
+            "source_id": "p_68",
+            "source_text": "GenAl app microservices",
+            "target_id": "p_48",
+            "target_text": "API Management",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_772",
+            "source_id": "p_40",
+            "source_text": "Private Endpoint",
+            "target_id": "p_20",
+            "target_text": "Storage Account",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_780",
+            "source_id": "p_59",
+            "source_text": "Private Endpoint",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_782",
+            "source_id": "p_76",
+            "source_text": "Cosmos DB",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_783",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_13",
+            "target_text": "User",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_785",
+            "source_id": "p_27",
+            "source_text": "Monitor",
+            "target_id": "p_32",
+            "target_text": "Application Insights",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_794",
+            "source_id": "p_25",
+            "source_text": "Cosmos DB",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_799",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_801",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_802",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_803",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_810",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_3",
+            "target_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_820",
+            "source_id": "p_52",
+            "source_text": "Build Agent Subnet",
+            "target_id": "p_51",
+            "target_text": "Container App Environment Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_823",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_824",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_836",
+            "source_id": "p_44",
+            "source_text": "Private Endpoint",
+            "target_id": "p_19",
+            "target_text": "Al Services endpoints",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_841",
+            "source_id": "p_93",
+            "source_text": "Defender for Cloud",
+            "target_id": "p_92",
+            "target_text": "Subscription policy assignments",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_848",
+            "source_id": "p_30",
+            "source_text": "Ingress VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_849",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_851",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_855",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_36",
+            "target_text": "API Management Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_861",
+            "source_id": "p_80",
+            "source_text": "App Configuration",
+            "target_id": "p_81",
+            "target_text": "dapr",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_866",
+            "source_id": "p_69",
+            "source_text": "GenAl app dependencies",
+            "target_id": "p_57",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_876",
+            "source_id": "p_33",
+            "source_text": "Application Gateway Subnet",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_878",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_882",
+            "source_id": "p_69",
+            "source_text": "GenAl app dependencies",
+            "target_id": "p_58",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_886",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_888",
+            "source_id": "p_16",
+            "source_text": "Log Analytics Workspace",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_892",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_896",
+            "source_id": "p_77",
+            "source_text": "Key Vault",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_897",
+            "source_id": "p_26",
+            "source_text": "Foundry Agent Service",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_899",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_904",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_34",
+            "target_text": "Jump box Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_911",
+            "source_id": "p_7",
+            "source_text": "Al Foundry Agent Service standard setup",
+            "target_id": "p_19",
+            "target_text": "Al Services endpoints",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_915",
+            "source_id": "p_16",
+            "source_text": "Log Analytics Workspace",
+            "target_id": "p_8",
+            "target_text": "Diagnostics Settings",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_918",
+            "source_id": "p_26",
+            "source_text": "Foundry Agent Service",
+            "target_id": "p_19",
+            "target_text": "Al Services endpoints",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_923",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_939",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_940",
+            "source_id": "p_11",
+            "source_text": "Al Foundry Agent Service dependencies",
+            "target_id": "p_7",
+            "target_text": "Al Foundry Agent Service standard setup",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_945",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_946",
+            "source_id": "p_42",
+            "source_text": "Private Endpoint",
+            "target_id": "p_25",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_962",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_66",
+            "target_text": "VPN/ExpressRoute Gateways",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_963",
+            "source_id": "p_8",
+            "source_text": "Diagnostics Settings",
+            "target_id": "p_16",
+            "target_text": "Log Analytics Workspace",
+            "direction": "bidirectional"
+        },
+        {
+            "connector_id": "line_970",
+            "source_id": "p_51",
+            "source_text": "Container App Environment Subnet",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_972",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_974",
+            "source_id": "p_82",
+            "source_text": "Frontend",
+            "target_id": "p_83",
+            "target_text": "Orchestrator",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_976",
+            "source_id": "p_28",
+            "source_text": "Internet",
+            "target_id": "p_3",
+            "target_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_986",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_995",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_996",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1001",
+            "source_id": "p_89",
+            "source_text": "Security and Governance",
+            "target_id": "p_99",
+            "target_text": "Purview",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1012",
+            "source_id": "p_35",
+            "source_text": "Private Endpoints Subnet",
+            "target_id": "p_25",
+            "target_text": "Cosmos DB",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1014",
+            "source_id": "p_56",
+            "source_text": "Private Endpoint",
+            "target_id": "p_69",
+            "target_text": "GenAl app dependencies",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1020",
+            "source_id": "p_11",
+            "source_text": "Al Foundry Agent Service dependencies",
+            "target_id": "p_20",
+            "target_text": "Storage Account",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1030",
+            "source_id": "p_35",
+            "source_text": "Private Endpoints Subnet",
+            "target_id": "p_22",
+            "target_text": "Key Vault",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1032",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1034",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_18",
+            "target_text": "Azure Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1036",
+            "source_id": "p_37",
+            "source_text": "AI Foundry Agent Subhet",
+            "target_id": "p_52",
+            "target_text": "Build Agent Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1037",
+            "source_id": "p_62",
+            "source_text": "Corporate VNET",
+            "target_id": "p_65",
+            "target_text": "Azure DNS Private Resolver",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1052",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1053",
+            "source_id": "p_41",
+            "source_text": "Private Endpoint",
+            "target_id": "p_21",
+            "target_text": "Al Search",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1056",
+            "source_id": "p_15",
+            "source_text": "Inspection VNET",
+            "target_id": "p_6",
+            "target_text": "Proxy Firewall",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1060",
+            "source_id": "p_36",
+            "source_text": "API Management Subnet",
+            "target_id": "p_37",
+            "target_text": "AI Foundry Agent Subhet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1061",
+            "source_id": "p_69",
+            "source_text": "GenAl app dependencies",
+            "target_id": "p_58",
+            "target_text": "Private Endpoint",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1071",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_34",
+            "target_text": "Jump box Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1074",
+            "source_id": "p_31",
+            "source_text": "Al Services Virtual Network",
+            "target_id": "p_34",
+            "target_text": "Jump box Subnet",
+            "direction": "unidirectional"
+        },
+        {
+            "connector_id": "line_1079",
+            "source_id": "p_96",
+            "source_text": "Prometheus",
+            "target_id": "p_84",
+            "target_text": "SK",
+            "direction": "unidirectional"
+        }
+    ]
+}
