@@ -1,0 +1,114 @@
+{
+    "icons": [
+        {
+            "icon_name": "Application Gateway",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Icon matches the standard representation with descriptive text next to it."
+        },
+        {
+            "icon_name": "Azure DDoS",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Clearly labeled and well-recognized Azure DDoS icon."
+        },
+        {
+            "icon_name": "Azure Firewall",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Icon is labeled, and it aligns with the standard Azure Firewall icon."
+        },
+        {
+            "icon_name": "Azure DNS Private Resolver",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Icon has accompanying text and follows the common Azure DNS icon."
+        },
+        {
+            "icon_name": "Jump Box VM",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Specific name next to the icon supports identifying it as per Azure standards."
+        },
+        {
+            "icon_name": "API Management",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Matching labeled icon for Azure API Management service."
+        },
+        {
+            "icon_name": "Private Endpoint",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Standard Azure representation and labeled "
+        },
+        {
+            "icon_name": "Cosmos DB",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Standard Azure representation of Cosmos DB is clearly labeled."
+        },
+        {
+            "icon_name": "Key Vault",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Accurately labeled and corresponds to Azure's Key Vault service."
+        },
+        {
+            "icon_name": "Storage Account",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Matches Azure's standard representation with label confirmation."
+        },
+        {
+            "icon_name": "Container Registry",
+            "finding_method": "inference",
+            "inference": "Icon is similar to Azure's Container Registry representation with ocean wave visuals and container reference.",
+            "confidence_score": 85,
+            "confidence_explanation": "Azure's Container Registry typically uses recognized waves iconography, though label isn't explicit here."
+        },
+        {
+            "icon_name": "Managed Identities",
+            "finding_method": "inference",
+            "inference": "Visual follows a standard Azure 'person with a shield' icon style for managed identities.",
+            "confidence_score": 85,
+            "confidence_explanation": "Inference made based on familiarity with Microsoft Azure's standards, though adjacent label isn't very specific."
+        },
+        {
+            "icon_name": "Application Insights",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Standard icon for Application Insights with confirmation through text."
+        },
+        {
+            "icon_name": "Azure DevOps",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Clearly labeled and matches the Azure DevOps standard iconography."
+        },
+        {
+            "icon_name": "Azure AD P2",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Standard Azure icon for Azure AD services with corresponding label."
+        },
+        {
+            "icon_name": "Prometheus",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Clearly labeled and matches the observability Prometheus open source icon."
+        },
+        {
+            "icon_name": "Redis Cache",
+            "finding_method": "name near or around icon",
+            "confidence_score": 95,
+            "confidence_explanation": "Standard Azure Redis Cache service icon with clear label."
+        },
+        {
+            "icon_name": "Grounding with Bing",
+            "finding_method": "name near or around icon",
+            "confidence_score": 85,
+            "confidence_explanation": "Provides search functionality inference, corresponding to Microsoft's branding."
+        }
+    ]
+}

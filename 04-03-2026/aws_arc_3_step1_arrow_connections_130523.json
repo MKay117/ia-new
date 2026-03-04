@@ -1,0 +1,35 @@
+{
+    "legend": {
+        "line_type": {
+            "dashed": {
+                "description": "Used for VPC attachment and connect attachment links."
+            },
+            "solid": {
+                "description": "Used for internet connections."
+            },
+            "single_direction_arrow": {
+                "description": "Used to depict the direction of data transfer or operations, such as SD-WAN overlay and virtual private gateway."
+            },
+            "double_lines": {
+                "description": "Used to represent GRE tunnels."
+            },
+            "dashed_with_arrow": {
+                "description": "Used for BGP peering connections."
+            }
+        },
+        "line_color": {
+            "orange": {
+                "description": "Represents SD-WAN overlay."
+            },
+            "blue": {
+                "description": "Represents GRE tunnels."
+            },
+            "green": {
+                "description": "Represents BGP peering."
+            },
+            "purple": {
+                "description": "Represents VPC and connect attachments."
+            }
+        }
+    }
+}

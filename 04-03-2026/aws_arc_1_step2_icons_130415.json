@@ -1,0 +1,132 @@
+{
+    "icons": [
+        {
+            "icon_name": "X-ray machines",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Clear text label identifies the purpose of the icon within the Shop Floor/Device Tier."
+        },
+        {
+            "icon_name": "Cameras",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Clear text label ensures high confidence in identifying this icon feature."
+        },
+        {
+            "icon_name": "Devices",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Self-evident from labeled content in the diagram."
+        },
+        {
+            "icon_name": "MES system",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Explicitly labeled for easy identification."
+        },
+        {
+            "icon_name": "AWS Transfer Family",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Standard AWS product icon labeled directly."
+        },
+        {
+            "icon_name": "AWS DataSync",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Clear labeling of product ensures accurate identification."
+        },
+        {
+            "icon_name": "AWS IoT Greengrass",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Standard AWS IoT icon with explicit labeling in the image."
+        },
+        {
+            "icon_name": "Amazon S3",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "The bucket icon is a globally recognized representation of Amazon S3."
+        },
+        {
+            "icon_name": "Amazon Lookout for Vision",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Explicit label near icon, commonly associated with data training models."
+        },
+        {
+            "icon_name": "AWS Lambda",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "The orange Lambda icon is universally known as AWS Lambda."
+        },
+        {
+            "icon_name": "Amazon API Gateway",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Official icon representation of Amazon API Gateway."
+        },
+        {
+            "icon_name": "AWS Step Functions",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Highly confident as this pink icon is linked to Step Functions by AWS."
+        },
+        {
+            "icon_name": "Amazon SNS",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Common AWS icon representing SNS with labeled support."
+        },
+        {
+            "icon_name": "Amazon QuickSight",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Direct labeling in the diagram with specific visualization-related iconography."
+        },
+        {
+            "icon_name": "AWS Batch",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "AWS Batch icon and text annotation ensure unmistakable identification."
+        },
+        {
+            "icon_name": "AWS Fargate",
+            "finding_method": "name near icon",
+            "assumption": null,
+            "inference": null,
+            "confidence_score": 100,
+            "confidence_explanation": "Recognized as the AWS Fargate icon paired with a label."
+        }
+    ]
+}

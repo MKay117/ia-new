@@ -1,0 +1,28 @@
+{
+    "icons": [
+        {
+            "icon_name": "AWS Transfer Family",
+            "finding_method": "name around icon",
+            "inference": null,
+            "assumption": null,
+            "confidence_score": 95,
+            "confidence_explanation": "The label next to the icon clearly identifies it as AWS Transfer Family."
+        },
+        {
+            "icon_name": "AWS DataSync",
+            "finding_method": "name around icon",
+            "inference": null,
+            "assumption": null,
+            "confidence_score": 95,
+            "confidence_explanation": "The label indicators near the icon confirm this as AWS DataSync."
+        },
+        {
+            "icon_name": "Amazon S3",
+            "finding_method": "name around icon",
+            "inference": null,
+            "assumption": null,
+            "confidence_score": 95,
+            "confidence_explanation": "The bucket symbol confirmed AZS bucket tiers"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "legend": {
+        "line_type": {
+            "solid": "Representation of direct links or connections (e.g., user to internet, resource connections such as private endpoints).",
+            "single_direction_arrow": "Indicates unidirectional traffic flow (e.g., egress traffic from inspection VNET firewall to AI Services Virtual Network).",
+            "bi_directional_arrow": "Indicates bidirectional communication (e.g., ExpressRoute connection between On-premises network and Corporate VNET).",
+            "dashed": "Represents boundary or logical grouping of services or regions (e.g., boundaries of Azure corporate subscription, DMZ subscription, etc.)."
+        },
+        "line_color": {
+            "black_solid": "Standard connections such as inter-resource communication (e.g., resource within VNETs).",
+            "orange_single_direction_arrow": "Egress traffic (e.g., traffic flow between VNET subnets through firewalls).",
+            "blue_single_direction_arrow": "Ingress traffic flow (e.g., traffic flow from Azure Firewall to various service endpoints in the AI Landing Zone).",
+            "gray_dashed": "Represents logical boundaries (e.g., 'Prod subscription', 'Corporate subscription')."
+        }
+    }
+}

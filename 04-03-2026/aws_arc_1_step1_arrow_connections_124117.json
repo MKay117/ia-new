@@ -1,0 +1,22 @@
+{
+    "legend": {
+        "line_type": [
+            {
+                "type": "solid",
+                "color": "black"
+            },
+            {
+                "type": "dashed",
+                "color": "blue"
+            },
+            {
+                "type": "single direction arrow",
+                "color": "black"
+            },
+            {
+                "type": "bi directional arrow",
+                "color": "black"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "legend": {
+        "line_type": [
+            {
+                "type": "solid",
+                "line_color": "purple",
+                "description": "Indicates VPC association or TGW connection between resources (e.g., between VPCs and TGW)."
+            },
+            {
+                "type": "solid",
+                "line_color": "blue",
+                "description": "Indicates GRE tunnels used for secure communication."
+            },
+            {
+                "type": "dashed",
+                "line_color": "green",
+                "description": "Represents BGP peering connections between entities."
+            },
+            {
+                "type": "single direction arrow",
+                "line_color": "orange",
+                "description": "Signifies SD-WAN overlay from branch, corporate, or other endpoints to AWS and routing within the architecture."
+            }
+        ]
+    }
+}

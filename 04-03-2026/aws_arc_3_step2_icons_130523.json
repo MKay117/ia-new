@@ -1,0 +1,100 @@
+{
+    "icons": [
+        {
+            "icon_name": "AWS Cloud",
+            "finding_method": "common knowledge about icon",
+            "assumption": null,
+            "inference": "This is the standard AWS Cloud icon representing the AWS environment.",
+            "confidence_score": 100,
+            "confidence_explanation": "This is the official AWS logo as per standard diagrams."
+        },
+        {
+            "icon_name": "Region Flag",
+            "finding_method": "common knowledge about icon",
+            "assumption": null,
+            "inference": "The flag is representative of AWS regions (Region A and Region B).",
+            "confidence_score": 100,
+            "confidence_explanation": "Represents specific AWS regions as seen in official architectural diagrams."
+        },
+        {
+            "icon_name": "VPC",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The purple icon represents a Virtual Private Cloud (VPC).",
+            "confidence_score": 100,
+            "confidence_explanation": "This is the standard AWS VPC icon as labeled in the diagram."
+        },
+        {
+            "icon_name": "EC2 Instance",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The orange rectangular icon represents an EC2 instance encapsulated within the VPC.",
+            "confidence_score": 100,
+            "confidence_explanation": "This is the standard AWS EC2 instance icon with accompanying labels."
+        },
+        {
+            "icon_name": "Core Network (CNE)",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "It is labeled as 'core network edge' (CNE) in the diagram.",
+            "confidence_score": 100,
+            "confidence_explanation": "The naming and visual representation align with an AWS Core Network segment."
+        },
+        {
+            "icon_name": "Internet Gateway",
+            "finding_method": "common knowledge about icon",
+            "assumption": null,
+            "inference": "The semi-ellipsis icon connecting branches to the internet is a standard Internet Gateway icon.",
+            "confidence_score": 100,
+            "confidence_explanation": "This is a widely recognized symbol for Internet Gateway in AWS architecture."
+        },
+        {
+            "icon_name": "Appliance VPC",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "This VPC contains specialized services or appliances for the architecture.",
+            "confidence_score": 100,
+            "confidence_explanation": "This is clearly labeled in the diagram."
+        },
+        {
+            "icon_name": "SD-WAN Overlay",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The orange line with endpoints connecting branches is labeled as an SD-WAN overlay.",
+            "confidence_score": 100,
+            "confidence_explanation": "It aligns with SD-WAN representations in network architectures."
+        },
+        {
+            "icon_name": "GRE Tunnel",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The blue oval with endpoints is labeled as a GRE tunnel.",
+            "confidence_score": 100,
+            "confidence_explanation": "It is explicitly named in the diagram."
+        },
+        {
+            "icon_name": "BGP Peering",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The green dotted line labeled 'BGP peering' connects specific components.",
+            "confidence_score": 100,
+            "confidence_explanation": "It is clearly labeled with 'BGP peering.'"
+        },
+        {
+            "icon_name": "AWS Direct Connect",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "This connects on-premises environments directly with AWS, labeled accordingly.",
+            "confidence_score": 100,
+            "confidence_explanation": "This is a well-known AWS feature depicted clearly in the connection."
+        },
+        {
+            "icon_name": "Third-Party Virtual Appliance",
+            "finding_method": "name near or around icon",
+            "assumption": null,
+            "inference": "The icon represents a virtual appliance deployed in the Appliance VPC.",
+            "confidence_score": 100,
+            "confidence_explanation": "Labeling and placement in the diagram confirm the depiction."
+        }
+    ]
+}

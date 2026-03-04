@@ -1,0 +1,116 @@
+{
+    "icons": [
+        {
+            "icon_name": "AWS Region",
+            "finding_method": "common knowledge about icon",
+            "assumption": "AWS cloud region icon is standard within most AWS documents.",
+            "inference": "None",
+            "confidence_score": 100,
+            "confidence_explanation": "The icon is clearly recognized as the AWS Region icon used in official AWS diagrams."
+        },
+        {
+            "icon_name": "Spoke VPC",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 90,
+            "confidence_explanation": "The name is explicitly highlighted next to the icon, making it straightforward to identify."
+        },
+        {
+            "icon_name": "Availability Zone",
+            "finding_method": "inference",
+            "assumption": "None",
+            "inference": "Icons for Availability Zones are typically represented by a dashed rectangle surrounding resources in AWS diagrams.",
+            "confidence_score": 95,
+            "confidence_explanation": "The configuration and outline match official AWS documentation for Availability Zones."
+        },
+        {
+            "icon_name": "EC2 Instance",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 100,
+            "confidence_explanation": "The label explicitly states 'EC2 instance.'"
+        },
+        {
+            "icon_name": "TGW ENI",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 100,
+            "confidence_explanation": "The label explicitly identifies it as 'TGW ENI' (Transit Gateway Elastic Network Interface)."
+        },
+        {
+            "icon_name": "AWS Transit Gateway",
+            "finding_method": "common knowledge about icon",
+            "assumption": "AWS Transit Gateway design is widely known and used in architecture diagrams.",
+            "inference": "None",
+            "confidence_score": 95,
+            "confidence_explanation": "The purple hexagonal icon is recognized as the Transit Gateway from AWS iconography."
+        },
+        {
+            "icon_name": "Route Table",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 100,
+            "confidence_explanation": "The labels confirm these are route tables (e.g., 'Spoke VPC A route table')."
+        },
+        {
+            "icon_name": "Third-party virtual appliance",
+            "finding_method": "inference",
+            "assumption": "None",
+            "inference": "The rectangular icon with server representation and connections resembles a virtual appliance depiction.",
+            "confidence_score": 80,
+            "confidence_explanation": "While the context supports the identification, the lack of explicit labeling warrants slightly lower confidence."
+        },
+        {
+            "icon_name": "Internet Gateway",
+            "finding_method": "common knowledge about icon",
+            "assumption": "Internet Gateway designs are prominently depicted in AWS diagrams with similar symbols.",
+            "inference": "None",
+            "confidence_score": 90,
+            "confidence_explanation": "The curved gateway icon is consistent with AWS Internet Gateway illustrations."
+        },
+        {
+            "icon_name": "AWS Direct Connect",
+            "finding_method": "common knowledge about icon",
+            "assumption": "This specific optical cable-like connectivity icon is unique to AWS Direct Connect.",
+            "inference": "None",
+            "confidence_score": 95,
+            "confidence_explanation": "The label and icon combination aligns with AWS documentation."
+        },
+        {
+            "icon_name": "Corporate Connection",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 85,
+            "confidence_explanation": "The name alongside this icon indicates a corporate network connection."
+        },
+        {
+            "icon_name": "SD-WAN overlay",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 90,
+            "confidence_explanation": "The label next to the path designates it as 'SD-WAN overlay.'"
+        },
+        {
+            "icon_name": "GRE Tunnel",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 90,
+            "confidence_explanation": "The label aligns with the standard depiction of GRE Tunnels in diagrams."
+        },
+        {
+            "icon_name": "BGP Peering",
+            "finding_method": "name near or around icon",
+            "assumption": "None",
+            "inference": "None",
+            "confidence_score": 90,
+            "confidence_explanation": "The dashed green line corresponds to the BGP peering label."
+        }
+    ]
+}

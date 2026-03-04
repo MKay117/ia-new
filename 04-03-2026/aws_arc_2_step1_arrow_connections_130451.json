@@ -1,0 +1,36 @@
+{
+    "legend": {
+        "line_types": [
+            {
+                "line_type": "solid",
+                "line_color": "orange",
+                "description": "SD-WAN overlay connection"
+            },
+            {
+                "line_type": "solid",
+                "line_color": "blue",
+                "description": "GRE tunnel connection"
+            },
+            {
+                "line_type": "dashed",
+                "line_color": "green",
+                "description": "BGP peering connection"
+            },
+            {
+                "line_type": "single direction arrow",
+                "line_color": "red",
+                "description": "Traffic flow from Spoke VPCs through Transit Gateway"
+            },
+            {
+                "line_type": "bi-directional arrow",
+                "line_color": "blue",
+                "description": "Connectivity between external branches and internet gateway"
+            },
+            {
+                "line_type": "dashed",
+                "line_color": "black",
+                "description": "VPC association or Transit Gateway attachment"
+            }
+        ]
+    }
+}
