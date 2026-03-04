@@ -25,3 +25,35 @@ Required JSON Output Structure:
     { "source_id": "string", "source_text": "string", "target_id": "string", "target_text": "string", "direction": "unidirectional | bidirectional" }
   ]
 }
+
+
+def main():
+    for img_path in INPUT_DIR.glob("*.*"):
+        if img_path.suffix.lower() not in {".jpg", ".jpeg", ".png"}: continue
+
+        print(f"\n========== STARTING PIPELINE: {img_path.name} ==========")
+        timestamp = time.strftime("%H%M%S")
+        
+        # Step 1: Azure Doc Intelligence (OCR & Layout)
+        raw_ocr = run_stage1_doc_intelligence(img_path)
+        
+        # Step 2: OpenCV Geometry (Lines & Arrowheads)
+        geometry = run_stage2_cv_geometry(img_path)
+        
+        # Step 3: Minification
+        minified_data = minify_and_merge(raw_ocr, geometry)
+        
+        # Step 4: Spatial Stitching (Using Shapely or Rtree from previous step)
+        draft_graph = run_stage4_stitch_shapely(minified_data)
+        with open(OUTPUT_DIR / f"{img_path.stem}_step4_draft_graph_{timestamp}.json", "w") as f:
+            json.dump(draft_graph, f, indent=4)
+            
+        # Step 5: VLM Validation and Enrichment
+        final_graph = run_stage5_vlm_validation(img_path, draft_graph)
+        with open(OUTPUT_DIR / f"{img_path.stem}_step5_final_graph_{timestamp}.json", "w") as f:
+            json.dump(final_graph, f, indent=4)
+            
+        print(f"-> SUCCESS: Final Validated Graph Saved to {OUTPUT_DIR.name}")
+
+if __name__ == "__main__":
+    main()
