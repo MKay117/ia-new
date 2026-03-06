@@ -1,0 +1,315 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "Azure AI Landing Zone",
+            "type": "Landing Zone",
+            "children": [
+                {
+                    "name": "DMZ Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        {
+                            "name": "Egress VNET",
+                            "type": "VNET",
+                            "children": [
+                                "Proxy Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Inspection VNET",
+                            "type": "VNET",
+                            "children": [
+                                "Azure Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Ingress VNET",
+                            "type": "VNET",
+                            "children": [
+                                {
+                                    "name": "Application Gateway Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "Application Gateway",
+                                        "WAF"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Corporate Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        {
+                            "name": "Corporate VNET",
+                            "type": "VNET",
+                            "children": [
+                                {
+                                    "name": "Azure DNS Private Resolver",
+                                    "type": "Resolver",
+                                    "children": []
+                                },
+                                {
+                                    "name": "VPN/ExpressRoute Gateways",
+                                    "type": "Gateway",
+                                    "children": []
+                                },
+                                "Azure Firewall",
+                                "Azure Bastion",
+                                "Azure DDOS"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AI Landing Zone Prod Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        {
+                            "name": "AI Foundry Agent Service standard setup",
+                            "type": "Setup",
+                            "children": [
+                                {
+                                    "name": "AI Foundry Agent Service dependencies",
+                                    "type": "Dependencies",
+                                    "children": [
+                                        "Storage Account",
+                                        "AI Search",
+                                        "Cosmos DB",
+                                        "Key Vault"
+                                    ]
+                                },
+                                {
+                                    "name": "Azure AI Foundry Services",
+                                    "type": "Services",
+                                    "children": [
+                                        "AI Services endpoints",
+                                        "Foundry Models",
+                                        "Connections",
+                                        "Foundry Agent Service"
+                                    ]
+                                },
+                                "Log Analytics Workspace",
+                                "Diagnostics Settings",
+                                "Role assignments",
+                                "Workload policy assignments",
+                                "Tags"
+                            ]
+                        },
+                        {
+                            "name": "AI Services Virtual Network",
+                            "type": "VNET",
+                            "children": [
+                                {
+                                    "name": "Jump box Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "Jump Box VM"
+                                    ]
+                                },
+                                {
+                                    "name": "Private Endpoints Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint",
+                                        "Private Endpoint"
+                                    ]
+                                },
+                                {
+                                    "name": "API Management Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "API Management"
+                                    ]
+                                },
+                                {
+                                    "name": "AI Foundry Agent Subnet",
+                                    "type": "Subnet",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Container App Environment Subnet",
+                                    "type": "Subnet",
+                                    "children": []
+                                },
+                                {
+                                    "name": "Build Agent Subnet",
+                                    "type": "Subnet",
+                                    "children": [
+                                        "Build Agent VM"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Container App Environment",
+                            "type": "Environment",
+                            "children": [
+                                "GenAI app microservices",
+                                "Container App Environment",
+                                "Grounding with Bing",
+                                "App Configuration",
+                                "dapr",
+                                "Frontend",
+                                "Orchestrator",
+                                "SK",
+                                "MCP",
+                                "Ingestion"
+                            ]
+                        },
+                        {
+                            "name": "Enterprise and public knowledge sources",
+                            "type": "Sources",
+                            "children": [
+                                "Grounding with Bing",
+                                "AI Search",
+                                "Cosmos DB",
+                                "Key Vault",
+                                "Storage Account"
+                            ]
+                        },
+                        {
+                            "name": "Security and Governance",
+                            "type": "Domain",
+                            "children": [
+                                "Subscription policy assignments",
+                                "Defender for Cloud",
+                                "Entra ID",
+                                "Purview"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "External",
+                    "type": "Unbound",
+                    "children": [
+                        "Ext Systems (Payment GW, Moengage, UIDAI, NSDL, NPCHI, NSEIT)",
+                        "User",
+                        "Internet"
+                    ]
+                }
+            ]
+        }
+    ],
+    "external_and_unbound_entities": [
+        "Redis Cache",
+        "Stack",
+        "Prometheus",
+        "Azure AD P2",
+        "Azure DevOps",
+        "Monitor",
+        "Egress Traffic",
+        "Ingress Traffic",
+        "ExpressRoute",
+        "Network Watcher"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "User",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Internet",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "Azure Firewall (Inspection VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall (Inspection VNET)",
+            "target": "AI Services Virtual Network",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Blue Line (Ingress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Private Endpoints",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Grey Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Private Endpoints",
+            "target": "AI Foundry Services (AI Foundry Agent Subnet)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Grey Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "AI Foundry Services (AI Foundry Agent Subnet)",
+            "target": "Container App Environment (GenAI app microservices)",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Grey Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Corporate Subscription",
+            "target": "Corporate VNET",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Black Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Black Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Azure Firewall",
+            "target": "AI Services Virtual Network",
+            "flow": "One-way",
+            "style_and_meaning": "Dashed Grey Line (Internal Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "On-premises network",
+            "target": "ExpressRoute",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Black Line (Internal Traffic Routing)",
+            "sequence": "None"
+        },
+        {
+            "source": "ExpressRoute",
+            "target": "Corporate VNET",
+            "flow": "Bi-directional",
+            "style_and_meaning": "Solid Black Line (Internal Traffic Routing)",
+            "sequence": "None"
+        },
+        {
+            "source": "Egress Traffic",
+            "target": "Proxy Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange Line (Egress Traffic)",
+            "sequence": "None"
+        },
+        {
+            "source": "Proxy Firewall",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Solid Orange Line (Egress Traffic)",
+            "sequence": "None"
+        }
+    ]
+}

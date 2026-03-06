@@ -1,0 +1,289 @@
+{
+    "architectural_hierarchy": [
+        {
+            "name": "Azure AI Landing Zone",
+            "type": "Region",
+            "children": [
+                {
+                    "name": "Ext Systems",
+                    "type": "External Systems Cluster",
+                    "children": [
+                        "Payment GW",
+                        "Moengage",
+                        "UIDAI",
+                        "NSDL",
+                        "NPCHI",
+                        "NSEIT"
+                    ]
+                },
+                {
+                    "name": "DMZ Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        {
+                            "name": "Egress VNET",
+                            "type": "VPC",
+                            "children": [
+                                "Proxy Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Inspection VNET",
+                            "type": "VPC",
+                            "children": [
+                                "Azure Firewall"
+                            ]
+                        },
+                        {
+                            "name": "Ingress VNET",
+                            "type": "VPC",
+                            "children": [
+                                "Application Gateway Subnet",
+                                {
+                                    "name": "Application Gateway",
+                                    "type": "Resource",
+                                    "children": [
+                                        "Azure DDOS",
+                                        "WAF"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Corporate Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        {
+                            "name": "Corporate VNET",
+                            "type": "VPC",
+                            "children": [
+                                {
+                                    "name": "Azure DNS Private Resolver",
+                                    "type": "Resolver",
+                                    "children": [
+                                        "VPN/ExpressRoute Gateways"
+                                    ]
+                                },
+                                {
+                                    "name": "Azure Firewall",
+                                    "type": "Firewall",
+                                    "children": [
+                                        "Azure Bastion",
+                                        {
+                                            "name": "AI Services Virtual Network",
+                                            "type": "VNET",
+                                            "children": [
+                                                {
+                                                    "name": "Enterprise and public knowledge sources",
+                                                    "type": "Group",
+                                                    "children": [
+                                                        "Grounding with Bing",
+                                                        "AI Search"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "GenAI App Dependencies",
+                                                    "type": "Group",
+                                                    "children": [
+                                                        "Cosmos DB",
+                                                        "Key Vault",
+                                                        "Storage Account",
+                                                        "Container Registry",
+                                                        "App Configuration"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "GenAI App Microservices",
+                                                    "type": "Group",
+                                                    "children": [
+                                                        "dapr",
+                                                        "Frontend",
+                                                        "Orchestrator",
+                                                        "SK",
+                                                        "MCP",
+                                                        "Ingestion"
+                                                    ]
+                                                },
+                                                "Private Endpoints Subnet",
+                                                "API Management Subnet",
+                                                {
+                                                    "name": "Build Agent Subnet",
+                                                    "type": "Subnet",
+                                                    "children": [
+                                                        "Build Agent VM"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Container App Environment Subnet",
+                                                    "type": "Subnet",
+                                                    "children": [
+                                                        {
+                                                            "name": "Container App Environment",
+                                                            "type": "Environment",
+                                                            "children": [
+                                                                "Managed Identities"
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AI Landing Zone Prod Subscription",
+                    "type": "Subscription",
+                    "children": [
+                        "Role assignments",
+                        "Workload policy assignments",
+                        "Tags",
+                        {
+                            "name": "AI Foundry Agent Service standard setup",
+                            "type": "Service",
+                            "children": [
+                                {
+                                    "name": "AI Foundry Agent Service dependencies",
+                                    "type": "Dependencies",
+                                    "children": [
+                                        "Storage Account",
+                                        "AI Search",
+                                        "Cosmos DB",
+                                        "Key Vault"
+                                    ]
+                                },
+                                "Azure AI Foundry Services"
+                            ]
+                        },
+                        {
+                            "name": "AI App Resource Group",
+                            "type": "Resource Group",
+                            "children": [
+                                "Diagnostics Settings",
+                                "Log Analytics Workspace",
+                                "Application Insights",
+                                "Monitor",
+                                "Network Watcher",
+                                "Redis Cache",
+                                "Stack"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "external_and_unbound_entities": [
+        "User",
+        "On-premises network",
+        "ExpressRoute",
+        "Egress Traffic",
+        "Ingress Traffic",
+        "Security and Governance",
+        "Subscription policy assignments",
+        "Defender for Cloud",
+        "Azure DevOps",
+        "Azure AD P2",
+        "Prometheus",
+        "DNS",
+        "Entra ID",
+        "Purview"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "External Systems",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "Internet",
+            "target": "Proxy Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid line (Egress traffic)"
+        },
+        {
+            "source": "Proxy Firewall",
+            "target": "Azure Firewall (Inspection VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid line (Egress traffic)"
+        },
+        {
+            "source": "Azure Firewall (Inspection VNET)",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "Orange solid line (Egress traffic)"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "Azure DDoS (Ingress VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure DNS Private Resolver",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "Azure DNS Private Resolver",
+            "target": "VPN/ExpressRoute Gateways",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "VPN/ExpressRoute Gateways",
+            "target": "Azure Firewall (Corporate VNET)",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "Azure Firewall (Corporate VNET)",
+            "target": "Azure Bastion",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "Azure Firewall (Corporate VNET)",
+            "target": "AI Services Virtual Network",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Ingress traffic)"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "GenAI App Dependencies",
+            "flow": "One-way",
+            "style_and_meaning": "Black solid line (Cannot infer meaning without complete legend)"
+        },
+        {
+            "source": "GenAI App Dependencies",
+            "target": "GenAI App Microservices",
+            "flow": "One-way",
+            "style_and_meaning": "Black dashed line (Cannot infer meaning without complete legend)"
+        },
+        {
+            "source": "AI Services Virtual Network",
+            "target": "Private endpoints",
+            "flow": "One-way",
+            "style_and_meaning": "Grey dashed line (Cannot infer meaning without complete legend)"
+        },
+        {
+            "source": "GenAI App Microservices",
+            "target": "AI Foundry Services",
+            "flow": "Unknown",
+            "style_and_meaning": "Black dashed line (Cannot infer meaning without complete legend)"
+        },
+        {
+            "source": "GenAI App Microservices",
+            "target": "Redis Cache",
+            "flow": "Unknown",
+            "style_and_meaning": "Black dashed line (Cannot infer meaning without complete legend)"
+        }
+    ]
+}
