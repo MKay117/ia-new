@@ -1,0 +1,196 @@
+{
+    "connections": [
+        {
+            "source_id": "11",
+            "target_id": "17",
+            "direction": "unidirectional",
+            "line_style": "dashed black",
+            "source_text": "EC2 instance",
+            "target_text": "1"
+        },
+        {
+            "source_id": "12",
+            "target_id": "18",
+            "direction": "unidirectional",
+            "line_style": "dashed black",
+            "source_text": "EC2 instance",
+            "target_text": "VPC attachment"
+        },
+        {
+            "source_id": "13",
+            "target_id": "19",
+            "direction": "unidirectional",
+            "line_style": "dashed black",
+            "source_text": "EC2 instance",
+            "target_text": "VPC attachment"
+        },
+        {
+            "source_id": "14",
+            "target_id": "20",
+            "direction": "unidirectional",
+            "line_style": "dashed black",
+            "source_text": "EC2 instance",
+            "target_text": "VPC attachment"
+        },
+        {
+            "source_id": "17",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "1",
+            "target_text": "prod (segment)"
+        },
+        {
+            "source_id": "18",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "VPC attachment",
+            "target_text": "prod (segment)"
+        },
+        {
+            "source_id": "19",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "VPC attachment",
+            "target_text": "prod (segment)"
+        },
+        {
+            "source_id": "20",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "VPC attachment",
+            "target_text": "prod (segment)"
+        },
+        {
+            "source_id": "21",
+            "target_id": "23",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "prod (segment)",
+            "target_text": "Core network edge (CNE)"
+        },
+        {
+            "source_id": "22",
+            "target_id": "23",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "on-prem (segment)",
+            "target_text": "Core network edge (CNE)"
+        },
+        {
+            "source_id": "23",
+            "target_id": "24",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Core network edge (CNE)",
+            "target_text": "connect attachment"
+        },
+        {
+            "source_id": "24",
+            "target_id": "33",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "connect attachment",
+            "target_text": "Appliance VPC"
+        },
+        {
+            "source_id": "33",
+            "target_id": "35",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC",
+            "target_text": "internet gateway"
+        },
+        {
+            "source_id": "35",
+            "target_id": "36",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "internet gateway",
+            "target_text": "third-party virtual appliance"
+        },
+        {
+            "source_id": "36",
+            "target_id": "39",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "third-party virtual appliance",
+            "target_text": "A"
+        },
+        {
+            "source_id": "39",
+            "target_id": "47",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "A",
+            "target_text": "branch"
+        },
+        {
+            "source_id": "39",
+            "target_id": "48",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "A",
+            "target_text": "branch"
+        },
+        {
+            "source_id": "39",
+            "target_id": "49",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "A",
+            "target_text": "corporate"
+        },
+        {
+            "source_id": "33",
+            "target_id": "37",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC",
+            "target_text": "virtual private gateway"
+        },
+        {
+            "source_id": "37",
+            "target_id": "40",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "virtual private gateway",
+            "target_text": "3"
+        },
+        {
+            "source_id": "40",
+            "target_id": "41",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "3",
+            "target_text": "SD-WAN overlay"
+        },
+        {
+            "source_id": "40",
+            "target_id": "42",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "3",
+            "target_text": "GRE tunnel"
+        },
+        {
+            "source_id": "40",
+            "target_id": "45",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "3",
+            "target_text": "AWS Direct Connect"
+        },
+        {
+            "source_id": "45",
+            "target_id": "46",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "AWS Direct Connect",
+            "target_text": "BGP peering"
+        }
+    ]
+}

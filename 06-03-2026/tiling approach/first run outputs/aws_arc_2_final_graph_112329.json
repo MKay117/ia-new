@@ -1,0 +1,188 @@
+{
+    "connections": [
+        {
+            "source_id": "2",
+            "target_id": "26",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Spoke VPC A 10.0.0.0/16 2001:db8:1234:1a00 :: /56",
+            "target_text": "Spoke VPC A route table"
+        },
+        {
+            "source_id": "26",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Spoke VPC A route table",
+            "target_text": "AWS Transit Gateway"
+        },
+        {
+            "source_id": "2",
+            "target_id": "13",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Spoke VPC A 10.0.0.0/16 2001:db8:1234:1a00 :: /56",
+            "target_text": "TGW ENI"
+        },
+        {
+            "source_id": "13",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "TGW ENI",
+            "target_text": "AWS Transit Gateway"
+        },
+        {
+            "source_id": "17",
+            "target_id": "53",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Spoke VPC B 10.1.0.0/16 2001:db8:1234:2b00 :: /56",
+            "target_text": "Spoke VPC B route table"
+        },
+        {
+            "source_id": "53",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Spoke VPC B route table",
+            "target_text": "AWS Transit Gateway"
+        },
+        {
+            "source_id": "17",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Spoke VPC B 10.1.0.0/16 2001:db8:1234:2b00 :: /56",
+            "target_text": "TGW ENI"
+        },
+        {
+            "source_id": "21",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "TGW ENI",
+            "target_text": "AWS Transit Gateway"
+        },
+        {
+            "source_id": "79",
+            "target_id": "64",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Appliance VPC 10.2.0.0/16 / 2001:db8:1234:3c00 :: /56",
+            "target_text": "Appliance VPC public route table"
+        },
+        {
+            "source_id": "64",
+            "target_id": "80",
+            "direction": "unidirectional",
+            "line_style": "dashed purple",
+            "source_text": "Appliance VPC public route table",
+            "target_text": "virtual private gateway"
+        },
+        {
+            "source_id": "79",
+            "target_id": "90",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC 10.2.0.0/16 / 2001:db8:1234:3c00 :: /56",
+            "target_text": "TGW ENI"
+        },
+        {
+            "source_id": "90",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "TGW ENI",
+            "target_text": "AWS Transit Gateway"
+        },
+        {
+            "source_id": "79",
+            "target_id": "91",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC 10.2.0.0/16 / 2001:db8:1234:3c00 :: /56",
+            "target_text": "B third-party virtual appliance"
+        },
+        {
+            "source_id": "91",
+            "target_id": "92",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "B third-party virtual appliance",
+            "target_text": "internet gateway"
+        },
+        {
+            "source_id": "92",
+            "target_id": "89",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "internet gateway",
+            "target_text": "internet"
+        },
+        {
+            "source_id": "89",
+            "target_id": "108",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "internet",
+            "target_text": "branch 192.168.1.0/24 2001:db8:1234:4d40/58"
+        },
+        {
+            "source_id": "89",
+            "target_id": "110",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "internet",
+            "target_text": "branch"
+        },
+        {
+            "source_id": "89",
+            "target_id": "111",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "internet",
+            "target_text": "192.168.2.0/24"
+        },
+        {
+            "source_id": "79",
+            "target_id": "107",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC 10.2.0.0/16 / 2001:db8:1234:3c00 :: /56",
+            "target_text": "AWS Direct Connect"
+        },
+        {
+            "source_id": "107",
+            "target_id": "106",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "AWS Direct Connect",
+            "target_text": "corporate 192.168.0.0/24 2001:db8:1234:4d00/58"
+        },
+        {
+            "source_id": "79",
+            "target_id": "102",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Appliance VPC 10.2.0.0/16 / 2001:db8:1234:3c00 :: /56",
+            "target_text": "SD-WAN overlay"
+        },
+        {
+            "source_id": "102",
+            "target_id": "103",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "SD-WAN overlay",
+            "target_text": "GRE tunnel"
+        },
+        {
+            "source_id": "103",
+            "target_id": "104",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "GRE tunnel",
+            "target_text": "BGP peering"
+        }
+    ]
+}

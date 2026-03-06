@@ -1,0 +1,404 @@
+{
+    "connections": [
+        {
+            "source_id": "1",
+            "target_id": "2",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Azure Al Landing Zone",
+            "target_text": "DMZ Subscription"
+        },
+        {
+            "source_id": "1",
+            "target_id": "3",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Azure Al Landing Zone",
+            "target_text": "Al Landing Zone Prod Subscription"
+        },
+        {
+            "source_id": "4",
+            "target_id": "7",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target_text": "Proxy Firewall"
+        },
+        {
+            "source_id": "4",
+            "target_id": "14",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target_text": "User"
+        },
+        {
+            "source_id": "14",
+            "target_id": "29",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "User",
+            "target_text": "Internet"
+        },
+        {
+            "source_id": "29",
+            "target_id": "19",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Internet",
+            "target_text": "Azure Firewall"
+        },
+        {
+            "source_id": "19",
+            "target_id": "16",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Azure Firewall",
+            "target_text": "Inspection VNET"
+        },
+        {
+            "source_id": "16",
+            "target_id": "31",
+            "direction": "unidirectional",
+            "line_style": "solid orange",
+            "source_text": "Inspection VNET",
+            "target_text": "Ingress VNET"
+        },
+        {
+            "source_id": "31",
+            "target_id": "34",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Ingress VNET",
+            "target_text": "Application Gateway Subnet"
+        },
+        {
+            "source_id": "34",
+            "target_id": "39",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Application Gateway Subnet",
+            "target_text": "Application Gateway"
+        },
+        {
+            "source_id": "39",
+            "target_id": "48",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Application Gateway",
+            "target_text": "WAF"
+        },
+        {
+            "source_id": "50",
+            "target_id": "72",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "On-premises network",
+            "target_text": "ExpressRoute"
+        },
+        {
+            "source_id": "72",
+            "target_id": "63",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "ExpressRoute",
+            "target_text": "Corporate VNET"
+        },
+        {
+            "source_id": "63",
+            "target_id": "66",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Corporate VNET",
+            "target_text": "Azure DNS Private Resolver"
+        },
+        {
+            "source_id": "63",
+            "target_id": "67",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Corporate VNET",
+            "target_text": "VPN/ExpressRoute Gateways"
+        },
+        {
+            "source_id": "63",
+            "target_id": "74",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Corporate VNET",
+            "target_text": "Azure Firewall"
+        },
+        {
+            "source_id": "63",
+            "target_id": "89",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Corporate VNET",
+            "target_text": "Azure Bastion"
+        },
+        {
+            "source_id": "63",
+            "target_id": "92",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Corporate VNET",
+            "target_text": "Azure DDOS"
+        },
+        {
+            "source_id": "32",
+            "target_id": "35",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "Jump box Subnet"
+        },
+        {
+            "source_id": "32",
+            "target_id": "36",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "Private Endpoints Subnet"
+        },
+        {
+            "source_id": "32",
+            "target_id": "37",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "API Management Subnet"
+        },
+        {
+            "source_id": "32",
+            "target_id": "38",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "AI Foundry Agent Subhet"
+        },
+        {
+            "source_id": "32",
+            "target_id": "52",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "Container App Environment Subnet"
+        },
+        {
+            "source_id": "32",
+            "target_id": "53",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Al Services Virtual Network",
+            "target_text": "Build Agent Subnet"
+        },
+        {
+            "source_id": "35",
+            "target_id": "40",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Jump box Subnet",
+            "target_text": "Jump Box VM"
+        },
+        {
+            "source_id": "36",
+            "target_id": "41",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "36",
+            "target_id": "42",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "36",
+            "target_id": "43",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "36",
+            "target_id": "44",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "36",
+            "target_id": "45",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "36",
+            "target_id": "46",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Private Endpoints Subnet",
+            "target_text": "Private Endpoint"
+        },
+        {
+            "source_id": "52",
+            "target_id": "73",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment Subnet",
+            "target_text": "Container App Environment"
+        },
+        {
+            "source_id": "53",
+            "target_id": "64",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Build Agent Subnet",
+            "target_text": "Build Agent VM"
+        },
+        {
+            "source_id": "68",
+            "target_id": "75",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_text": "Grounding with Bing"
+        },
+        {
+            "source_id": "68",
+            "target_id": "76",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Enterprise and public knowledge sources",
+            "target_text": "Al Search"
+        },
+        {
+            "source_id": "70",
+            "target_id": "77",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "GenAl app dependencies",
+            "target_text": "Cosmos DB"
+        },
+        {
+            "source_id": "70",
+            "target_id": "78",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "GenAl app dependencies",
+            "target_text": "Key Vault"
+        },
+        {
+            "source_id": "70",
+            "target_id": "79",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "GenAl app dependencies",
+            "target_text": "Storage Account"
+        },
+        {
+            "source_id": "70",
+            "target_id": "80",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "GenAl app dependencies",
+            "target_text": "Container Registry"
+        },
+        {
+            "source_id": "70",
+            "target_id": "81",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "GenAl app dependencies",
+            "target_text": "App Configuration"
+        },
+        {
+            "source_id": "73",
+            "target_id": "82",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "dapr"
+        },
+        {
+            "source_id": "73",
+            "target_id": "83",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "Frontend"
+        },
+        {
+            "source_id": "73",
+            "target_id": "84",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "Orchestrator"
+        },
+        {
+            "source_id": "73",
+            "target_id": "85",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "SK"
+        },
+        {
+            "source_id": "73",
+            "target_id": "86",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "MCP"
+        },
+        {
+            "source_id": "73",
+            "target_id": "87",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Container App Environment",
+            "target_text": "Ingestion"
+        },
+        {
+            "source_id": "90",
+            "target_id": "93",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Security and Governance",
+            "target_text": "Subscription policy assignments"
+        },
+        {
+            "source_id": "90",
+            "target_id": "94",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Security and Governance",
+            "target_text": "Defender for Cloud"
+        },
+        {
+            "source_id": "90",
+            "target_id": "99",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Security and Governance",
+            "target_text": "Entra ID"
+        },
+        {
+            "source_id": "90",
+            "target_id": "100",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Security and Governance",
+            "target_text": "Purview"
+        }
+    ]
+}

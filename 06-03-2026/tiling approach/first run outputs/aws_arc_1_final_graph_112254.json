@@ -1,0 +1,180 @@
+{
+    "connections": [
+        {
+            "source_id": "2",
+            "target_id": "8",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "X-ray machines",
+            "target_text": "AWS Transfer Family"
+        },
+        {
+            "source_id": "3",
+            "target_id": "9",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "cameras",
+            "target_text": "AWS DataSync"
+        },
+        {
+            "source_id": "4",
+            "target_id": "10",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "devices",
+            "target_text": "AWS loT Greengrass"
+        },
+        {
+            "source_id": "5",
+            "target_id": "39",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "MES system",
+            "target_text": "AWS Lambda write back to MES"
+        },
+        {
+            "source_id": "6",
+            "target_id": "7",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "2",
+            "target_text": "Edge tier"
+        },
+        {
+            "source_id": "7",
+            "target_id": "17",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Edge tier",
+            "target_text": "Amazon S3 images dataset"
+        },
+        {
+            "source_id": "17",
+            "target_id": "18",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Amazon S3 images dataset",
+            "target_text": "Amazon Lookout for Vision"
+        },
+        {
+            "source_id": "18",
+            "target_id": "19",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Amazon Lookout for Vision",
+            "target_text": "train model"
+        },
+        {
+            "source_id": "19",
+            "target_id": "20",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "train model",
+            "target_text": "AWS Lambda manage model"
+        },
+        {
+            "source_id": "20",
+            "target_id": "21",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "AWS Lambda manage model",
+            "target_text": "Amazon API Gateway"
+        },
+        {
+            "source_id": "21",
+            "target_id": "22",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Amazon API Gateway",
+            "target_text": "admins, data scientists"
+        },
+        {
+            "source_id": "24",
+            "target_id": "26",
+            "direction": "unidirectional",
+            "line_style": "solid pink",
+            "source_text": "AWS Step Functions workflow",
+            "target_text": "inference function"
+        },
+        {
+            "source_id": "26",
+            "target_id": "27",
+            "direction": "unidirectional",
+            "line_style": "solid pink",
+            "source_text": "inference function",
+            "target_text": "publish to SNS"
+        },
+        {
+            "source_id": "27",
+            "target_id": "28",
+            "direction": "unidirectional",
+            "line_style": "solid pink",
+            "source_text": "publish to SNS",
+            "target_text": "Amazon SNS"
+        },
+        {
+            "source_id": "27",
+            "target_id": "29",
+            "direction": "unidirectional",
+            "line_style": "solid pink",
+            "source_text": "publish to SNS",
+            "target_text": "publish to S3"
+        },
+        {
+            "source_id": "29",
+            "target_id": "31",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "publish to S3",
+            "target_text": "Amazon S3"
+        },
+        {
+            "source_id": "31",
+            "target_id": "32",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Amazon S3",
+            "target_text": "Amazon QuickSight"
+        },
+        {
+            "source_id": "32",
+            "target_id": "33",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "Amazon QuickSight",
+            "target_text": "business users"
+        },
+        {
+            "source_id": "35",
+            "target_id": "36",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "AWS Lambda start state machine, submit batch job",
+            "target_text": "7"
+        },
+        {
+            "source_id": "36",
+            "target_id": "37",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "7",
+            "target_text": "AWS Batch"
+        },
+        {
+            "source_id": "37",
+            "target_id": "38",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "AWS Batch",
+            "target_text": "AWS Fargate"
+        },
+        {
+            "source_id": "38",
+            "target_id": "39",
+            "direction": "unidirectional",
+            "line_style": "solid black",
+            "source_text": "AWS Fargate",
+            "target_text": "AWS Lambda write back to MES"
+        }
+    ]
+}
