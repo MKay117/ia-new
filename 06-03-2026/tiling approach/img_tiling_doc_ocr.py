@@ -87,42 +87,103 @@ def draw_annotations(img_array, elements):
 # ==========================================
 # STAGE 1: PYTHON SPATIAL HIERARCHY
 # ==========================================
-def run_stage1_spatial_hierarchy(elements):
-    print("-> [Stage 1] Shapely: Computing Parent-Child Hierarchies deterministically...")
+# def run_stage1_spatial_hierarchy(elements):
+#     print("-> [Stage 1] Shapely: Computing Parent-Child Hierarchies deterministically...")
     
-    shapely_data = []
-    for el in elements:
-        pts = [(el["polygon"][i], el["polygon"][i+1]) for i in range(0, 8, 2)]
-        poly = Polygon(pts)
-        shapely_data.append({"element": el, "shape": poly, "area": poly.area})
+#     shapely_data = []
+#     for el in elements:
+#         pts = [(el["polygon"][i], el["polygon"][i+1]) for i in range(0, 8, 2)]
+#         poly = Polygon(pts)
+#         shapely_data.append({"element": el, "shape": poly, "area": poly.area})
         
-    # Sort by area (Largest to smallest) to check biggest containers first
-    shapely_data.sort(key=lambda x: x["area"], reverse=True)
+#     # Sort by area (Largest to smallest) to check biggest containers first
+#     shapely_data.sort(key=lambda x: x["area"], reverse=True)
     
-    hierarchy = []
-    for child_item in shapely_data:
-        child = child_item["element"]
-        child_centroid = Point(child["centroid"])
+#     hierarchy = []
+#     for child_item in shapely_data:
+#         child = child_item["element"]
+#         child_centroid = Point(child["centroid"])
         
-        parent_id = None
-        # Reverse iterate to find the SMALLEST polygon that contains the point
-        for possible_parent_item in reversed(shapely_data): 
-            parent = possible_parent_item["element"]
-            if child["id"] == parent["id"]: continue
+#         parent_id = None
+#         # Reverse iterate to find the SMALLEST polygon that contains the point
+#         for possible_parent_item in reversed(shapely_data): 
+#             parent = possible_parent_item["element"]
+#             if child["id"] == parent["id"]: continue
             
-            # If the child's center is inside this parent box, it belongs to it
-            if possible_parent_item["shape"].contains(child_centroid):
-                parent_id = parent["id"]
-                break
+#             # If the child's center is inside this parent box, it belongs to it
+#             if possible_parent_item["shape"].contains(child_centroid):
+#                 parent_id = parent["id"]
+#                 break
                 
-        hierarchy.append({
-            "id": child["id"],
-            "type": child["type"],
-            "content": child["content"],
-            "parent_id": parent_id
-        })
+#         hierarchy.append({
+#             "id": child["id"],
+#             "type": child["type"],
+#             "content": child["content"],
+#             "parent_id": parent_id
+#         })
         
-    return hierarchy
+#     return hierarchy
+
+
+# ==========================================
+# STAGE 1: VLM SPATIAL HIERARCHY
+# ==========================================
+
+def run_stage1_vlm_hierarchy(annotated_img_array, elements):
+    print("-> [Stage 1] VLM: Extracting Parent-Child Hierarchy based on visual boundaries...")
+    client = AzureOpenAI(azure_endpoint=AZURE_OPENAI_ENDPOINT, api_key=AZURE_OPENAI_KEY, api_version=AZURE_OPENAI_VERSION)
+    base64_image = encode_image_base64(annotated_img_array)
+    
+    id_lookup = {el["id"]: el["content"] for el in elements if el["type"] == "text"}
+
+    prompt = f"""
+    You are a Spatial Architecture Analyzer.
+    I have overlaid bounding boxes with ID numbers on this diagram.
+    Lookup Table: {json.dumps(id_lookup)}
+    
+    TASK: Look at the visual boundary boxes (rectangles, dashed borders, colored zones) drawn in the background of the image. 
+    Establish the Parent-Child hierarchy. If an ID is physically enclosed inside a boundary that belongs to another ID, map it.
+    
+    RULES:
+    1. A "Parent" is usually a label for a large box (e.g., a Subscription, VNET, Subnet, or Region).
+    2. A "Child" is an item physically sitting inside that Parent's box.
+    3. If an item is not inside any bounding box, its parent_id should be null.
+    4. Support deep nesting (e.g., Component -> Subnet -> VNET -> Subscription).
+
+    Output JSON format:
+    {{
+      "hierarchy": [
+        {{ "id": "child_id", "parent_id": "parent_id_or_null" }}
+      ]
+    }}
+    """
+    try:
+        response = client.chat.completions.create(
+            model=DEPLOYMENT_NAME, response_format={"type": "json_object"},
+            messages=[{"role": "user", "content": [{"type": "text", "text": prompt}, {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}}]}],
+            temperature=0.0
+        )
+        vlm_hierarchy = json.loads(response.choices[0].message.content).get("hierarchy", [])
+        
+        # Merge the VLM's parent data back into our rich elements array
+        hierarchy_dict = {str(item["id"]): str(item["parent_id"]) if item.get("parent_id") else None for item in vlm_hierarchy}
+        
+        final_hierarchy = []
+        for el in elements:
+            if el["type"] == "text":
+                final_hierarchy.append({
+                    "id": el["id"],
+                    "type": el["type"],
+                    "content": el["content"],
+                    "parent_id": hierarchy_dict.get(el["id"], None),
+                    "bbox": el["bbox"],           # Kept for Stage 3 zooming
+                    "centroid": el["centroid"]    # Kept for Stage 3 zooming
+                })
+        return final_hierarchy
+
+    except Exception as e:
+        print(f"Stage 1 failed: {e}")
+        return elements # Fallback
 
 # ==========================================
 # STAGE 2: MACRO-ROUTING (GLOBAL LLM)
