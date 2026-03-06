@@ -1,0 +1,236 @@
+{
+    "lines": [
+        {
+            "start": [
+                404,
+                4
+            ],
+            "end": [
+                403,
+                825
+            ],
+            "euclidean_length": 821.0006090131724,
+            "path_length": 2765.7989898732235,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                43,
+                41
+            ],
+            "end": [
+                13,
+                42
+            ],
+            "euclidean_length": 30.01666203960727,
+            "path_length": 32.89949493661167,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                242,
+                54
+            ],
+            "end": [
+                381,
+                54
+            ],
+            "euclidean_length": 139.0,
+            "path_length": 139.0,
+            "style": "solid"
+        },
+        {
+            "start": [
+                177,
+                55
+            ],
+            "end": [
+                176,
+                372
+            ],
+            "euclidean_length": 317.00157728314224,
+            "path_length": 317.4142135623731,
+            "style": "solid"
+        },
+        {
+            "start": [
+                386,
+                59
+            ],
+            "end": [
+                386,
+                377
+            ],
+            "euclidean_length": 318.0,
+            "path_length": 318.0,
+            "style": "solid"
+        },
+        {
+            "start": [
+                216,
+                75
+            ],
+            "end": [
+                216,
+                75
+            ],
+            "euclidean_length": 0.0,
+            "path_length": 116.52691193458115,
+            "style": "solid"
+        },
+        {
+            "start": [
+                216,
+                75
+            ],
+            "end": [
+                214,
+                372
+            ],
+            "euclidean_length": 297.00673393039426,
+            "path_length": 297.8284271247462,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                27,
+                145
+            ],
+            "end": [
+                102,
+                689
+            ],
+            "euclidean_length": 549.1457001561607,
+            "path_length": 622.5563491861042,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                176,
+                372
+            ],
+            "end": [
+                208,
+                372
+            ],
+            "euclidean_length": 32.0,
+            "path_length": 32.0,
+            "style": "solid"
+        },
+        {
+            "start": [
+                176,
+                372
+            ],
+            "end": [
+                176,
+                684
+            ],
+            "euclidean_length": 312.0,
+            "path_length": 312.0,
+            "style": "solid"
+        },
+        {
+            "start": [
+                214,
+                372
+            ],
+            "end": [
+                386,
+                377
+            ],
+            "euclidean_length": 172.07265907168403,
+            "path_length": 806.597979746447,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                102,
+                664
+            ],
+            "end": [
+                102,
+                688
+            ],
+            "euclidean_length": 24.0,
+            "path_length": 24.0,
+            "style": "solid"
+        },
+        {
+            "start": [
+                102,
+                688
+            ],
+            "end": [
+                174,
+                688
+            ],
+            "euclidean_length": 72.0,
+            "path_length": 76.14213562373094,
+            "style": "solid"
+        },
+        {
+            "start": [
+                102,
+                689
+            ],
+            "end": [
+                392,
+                777
+            ],
+            "euclidean_length": 303.05775027212223,
+            "path_length": 377.4142135623731,
+            "style": "dashed"
+        }
+    ],
+    "arrowheads": [
+        {
+            "point": [
+                43,
+                41
+            ]
+        },
+        {
+            "point": [
+                13,
+                42
+            ]
+        },
+        {
+            "point": [
+                242,
+                54
+            ]
+        },
+        {
+            "point": [
+                176,
+                372
+            ]
+        },
+        {
+            "point": [
+                216,
+                75
+            ]
+        },
+        {
+            "point": [
+                214,
+                372
+            ]
+        },
+        {
+            "point": [
+                102,
+                689
+            ]
+        },
+        {
+            "point": [
+                102,
+                664
+            ]
+        }
+    ]
+}

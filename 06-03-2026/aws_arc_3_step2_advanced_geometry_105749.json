@@ -1,0 +1,51 @@
+{
+    "lines": [
+        {
+            "start": [
+                25,
+                9
+            ],
+            "end": [
+                1383,
+                11
+            ],
+            "euclidean_length": 1358.0014727532514,
+            "path_length": 1363.7989898732235,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                269,
+                801
+            ],
+            "end": [
+                290,
+                801
+            ],
+            "euclidean_length": 21.0,
+            "path_length": 21.0,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                481,
+                801
+            ],
+            "end": [
+                517,
+                801
+            ],
+            "euclidean_length": 36.0,
+            "path_length": 36.0,
+            "style": "dashed"
+        }
+    ],
+    "arrowheads": [
+        {
+            "point": [
+                25,
+                9
+            ]
+        }
+    ]
+}

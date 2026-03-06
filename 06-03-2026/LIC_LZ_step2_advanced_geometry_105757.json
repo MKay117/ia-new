@@ -1,0 +1,1184 @@
+{
+    "lines": [
+        {
+            "start": [
+                1870,
+                17
+            ],
+            "end": [
+                279,
+                18
+            ],
+            "euclidean_length": 1591.0003142677251,
+            "path_length": 1591.414213562373,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1876,
+                17
+            ],
+            "end": [
+                1884,
+                35
+            ],
+            "euclidean_length": 19.697715603592208,
+            "path_length": 31.07106781186548,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1880,
+                35
+            ],
+            "end": [
+                1879,
+                54
+            ],
+            "euclidean_length": 19.026297590440446,
+            "path_length": 21.899494936611667,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1884,
+                35
+            ],
+            "end": [
+                1885,
+                54
+            ],
+            "euclidean_length": 19.026297590440446,
+            "path_length": 21.899494936611667,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                71
+            ],
+            "end": [
+                1879,
+                89
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                71
+            ],
+            "end": [
+                1885,
+                89
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                106
+            ],
+            "end": [
+                1879,
+                124
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                106
+            ],
+            "end": [
+                1885,
+                124
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                141
+            ],
+            "end": [
+                1879,
+                159
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                141
+            ],
+            "end": [
+                1885,
+                159
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                176
+            ],
+            "end": [
+                1879,
+                194
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                176
+            ],
+            "end": [
+                1885,
+                194
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                211
+            ],
+            "end": [
+                1879,
+                229
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                211
+            ],
+            "end": [
+                1885,
+                229
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                246
+            ],
+            "end": [
+                1879,
+                264
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                246
+            ],
+            "end": [
+                1885,
+                264
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                281
+            ],
+            "end": [
+                1879,
+                299
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                281
+            ],
+            "end": [
+                1885,
+                299
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                316
+            ],
+            "end": [
+                1879,
+                334
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                316
+            ],
+            "end": [
+                1885,
+                334
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                351
+            ],
+            "end": [
+                1879,
+                369
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                351
+            ],
+            "end": [
+                1885,
+                369
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                386
+            ],
+            "end": [
+                1879,
+                404
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                386
+            ],
+            "end": [
+                1885,
+                404
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                421
+            ],
+            "end": [
+                1879,
+                439
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                421
+            ],
+            "end": [
+                1885,
+                439
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                456
+            ],
+            "end": [
+                1879,
+                474
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                456
+            ],
+            "end": [
+                1885,
+                474
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                491
+            ],
+            "end": [
+                1879,
+                509
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                491
+            ],
+            "end": [
+                1885,
+                509
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                526
+            ],
+            "end": [
+                1879,
+                544
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                526
+            ],
+            "end": [
+                1885,
+                544
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                561
+            ],
+            "end": [
+                1879,
+                579
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                561
+            ],
+            "end": [
+                1885,
+                579
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                596
+            ],
+            "end": [
+                1879,
+                614
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                596
+            ],
+            "end": [
+                1885,
+                614
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                631
+            ],
+            "end": [
+                1879,
+                649
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                631
+            ],
+            "end": [
+                1885,
+                649
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                666
+            ],
+            "end": [
+                1879,
+                684
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                666
+            ],
+            "end": [
+                1885,
+                684
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                701
+            ],
+            "end": [
+                1879,
+                719
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                701
+            ],
+            "end": [
+                1885,
+                719
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                736
+            ],
+            "end": [
+                1879,
+                754
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                736
+            ],
+            "end": [
+                1885,
+                754
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                771
+            ],
+            "end": [
+                1879,
+                789
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                771
+            ],
+            "end": [
+                1885,
+                789
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                806
+            ],
+            "end": [
+                1879,
+                824
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                806
+            ],
+            "end": [
+                1885,
+                824
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                841
+            ],
+            "end": [
+                1879,
+                859
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                841
+            ],
+            "end": [
+                1885,
+                859
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                876
+            ],
+            "end": [
+                1879,
+                894
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                876
+            ],
+            "end": [
+                1885,
+                894
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                911
+            ],
+            "end": [
+                1879,
+                929
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                911
+            ],
+            "end": [
+                1885,
+                929
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                946
+            ],
+            "end": [
+                1879,
+                964
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                946
+            ],
+            "end": [
+                1885,
+                964
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                981
+            ],
+            "end": [
+                1879,
+                999
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                981
+            ],
+            "end": [
+                1885,
+                999
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1879,
+                1016
+            ],
+            "end": [
+                1879,
+                1034
+            ],
+            "euclidean_length": 18.0,
+            "path_length": 20.48528137423857,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                1016
+            ],
+            "end": [
+                1885,
+                1034
+            ],
+            "euclidean_length": 18.027756377319946,
+            "path_length": 20.071067811865476,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                1886,
+                1051
+            ],
+            "end": [
+                1875,
+                1066
+            ],
+            "euclidean_length": 18.601075237738275,
+            "path_length": 28.242640687119284,
+            "style": "dashed"
+        },
+        {
+            "start": [
+                280,
+                1059
+            ],
+            "end": [
+                1875,
+                1066
+            ],
+            "euclidean_length": 1595.0153604276043,
+            "path_length": 1602.8284271247462,
+            "style": "dashed"
+        }
+    ],
+    "arrowheads": [
+        {
+            "point": [
+                1870,
+                17
+            ]
+        },
+        {
+            "point": [
+                1884,
+                35
+            ]
+        },
+        {
+            "point": [
+                1879,
+                54
+            ]
+        },
+        {
+            "point": [
+                1879,
+                71
+            ]
+        },
+        {
+            "point": [
+                1879,
+                89
+            ]
+        },
+        {
+            "point": [
+                1879,
+                106
+            ]
+        },
+        {
+            "point": [
+                1879,
+                124
+            ]
+        },
+        {
+            "point": [
+                1879,
+                141
+            ]
+        },
+        {
+            "point": [
+                1879,
+                159
+            ]
+        },
+        {
+            "point": [
+                1879,
+                176
+            ]
+        },
+        {
+            "point": [
+                1879,
+                194
+            ]
+        },
+        {
+            "point": [
+                1879,
+                211
+            ]
+        },
+        {
+            "point": [
+                1879,
+                229
+            ]
+        },
+        {
+            "point": [
+                1879,
+                246
+            ]
+        },
+        {
+            "point": [
+                1879,
+                264
+            ]
+        },
+        {
+            "point": [
+                1879,
+                281
+            ]
+        },
+        {
+            "point": [
+                1879,
+                299
+            ]
+        },
+        {
+            "point": [
+                1879,
+                316
+            ]
+        },
+        {
+            "point": [
+                1879,
+                334
+            ]
+        },
+        {
+            "point": [
+                1879,
+                351
+            ]
+        },
+        {
+            "point": [
+                1879,
+                369
+            ]
+        },
+        {
+            "point": [
+                1879,
+                386
+            ]
+        },
+        {
+            "point": [
+                1879,
+                404
+            ]
+        },
+        {
+            "point": [
+                1879,
+                421
+            ]
+        },
+        {
+            "point": [
+                1879,
+                439
+            ]
+        },
+        {
+            "point": [
+                1879,
+                456
+            ]
+        },
+        {
+            "point": [
+                1879,
+                474
+            ]
+        },
+        {
+            "point": [
+                1879,
+                491
+            ]
+        },
+        {
+            "point": [
+                1879,
+                509
+            ]
+        },
+        {
+            "point": [
+                1879,
+                526
+            ]
+        },
+        {
+            "point": [
+                1879,
+                544
+            ]
+        },
+        {
+            "point": [
+                1879,
+                561
+            ]
+        },
+        {
+            "point": [
+                1879,
+                579
+            ]
+        },
+        {
+            "point": [
+                1879,
+                596
+            ]
+        },
+        {
+            "point": [
+                1879,
+                614
+            ]
+        },
+        {
+            "point": [
+                1879,
+                631
+            ]
+        },
+        {
+            "point": [
+                1879,
+                649
+            ]
+        },
+        {
+            "point": [
+                1879,
+                666
+            ]
+        },
+        {
+            "point": [
+                1879,
+                684
+            ]
+        },
+        {
+            "point": [
+                1879,
+                701
+            ]
+        },
+        {
+            "point": [
+                1879,
+                719
+            ]
+        },
+        {
+            "point": [
+                1879,
+                736
+            ]
+        },
+        {
+            "point": [
+                1879,
+                754
+            ]
+        },
+        {
+            "point": [
+                1879,
+                771
+            ]
+        },
+        {
+            "point": [
+                1879,
+                789
+            ]
+        },
+        {
+            "point": [
+                1879,
+                806
+            ]
+        },
+        {
+            "point": [
+                1879,
+                824
+            ]
+        },
+        {
+            "point": [
+                1879,
+                841
+            ]
+        },
+        {
+            "point": [
+                1879,
+                859
+            ]
+        },
+        {
+            "point": [
+                1879,
+                876
+            ]
+        },
+        {
+            "point": [
+                1879,
+                894
+            ]
+        },
+        {
+            "point": [
+                1879,
+                911
+            ]
+        },
+        {
+            "point": [
+                1879,
+                929
+            ]
+        },
+        {
+            "point": [
+                1879,
+                946
+            ]
+        },
+        {
+            "point": [
+                1879,
+                964
+            ]
+        },
+        {
+            "point": [
+                1879,
+                981
+            ]
+        },
+        {
+            "point": [
+                1879,
+                999
+            ]
+        },
+        {
+            "point": [
+                1879,
+                1016
+            ]
+        },
+        {
+            "point": [
+                1879,
+                1034
+            ]
+        },
+        {
+            "point": [
+                1886,
+                1051
+            ]
+        },
+        {
+            "point": [
+                1875,
+                1066
+            ]
+        },
+        {
+            "point": [
+                280,
+                1059
+            ]
+        }
+    ]
+}
