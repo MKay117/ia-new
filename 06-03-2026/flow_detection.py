@@ -184,3 +184,145 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import cv2
+# import numpy as np
+# import math
+# from skimage.morphology import skeletonize
+# from skan import Skeleton, summarize
+
+# def extract_architecture_lines(image_path, spatial_data, debug_dir=None):
+#     """
+#     Extracts orthogonal lines, dashed lines, and arrowheads from diagrams.
+#     """
+#     img = cv2.imread(str(image_path))
+#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    
+#     # ==========================================
+#     # 1. MORPHOLOGICAL BLACKHAT (The Secret Weapon)
+#     # Highlights dark, thin lines against light backgrounds
+#     # ==========================================
+#     kernel_bh = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
+#     blackhat = cv2.morphologyEx(gray, cv2.MORPH_BLACKHAT, kernel_bh)
+    
+#     # Binarize the highlighted lines
+#     _, thresh = cv2.threshold(blackhat, 30, 255, cv2.THRESH_BINARY)
+    
+#     # ==========================================
+#     # 2. EXCLUSION MASKING
+#     # Erase text and icons by drawing black (0) over the threshold image
+#     # ==========================================
+#     for item in spatial_data.get("spatial_text", []) + spatial_data.get("icons", []):
+#         pts = np.array(item["polygon"], np.int32).reshape((-1, 1, 2))
+#         if len(pts) > 0:
+#             # We expand the polygon slightly to ensure we erase the borders of boxes
+#             rect = cv2.boundingRect(pts)
+#             x, y, w, h = rect
+#             cv2.rectangle(thresh, (x-2, y-2), (x+w+2, y+h+2), 0, -1)
+
+#     # Optional: Save the debug image to see the isolated lines
+#     if debug_dir:
+#         cv2.imwrite(str(debug_dir / f"debug_isolated_lines_{Path(image_path).stem}.png"), thresh)
+
+#     # ==========================================
+#     # 3. DIRECTIONAL BRIDGING (Solves Dashed Lines)
+#     # ==========================================
+#     # Close horizontal dashes (15px wide, 1px tall)
+#     kernel_h = cv2.getStructuringElement(cv2.MORPH_RECT, (20, 1))
+#     closed_h = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel_h)
+    
+#     # Close vertical dashes (1px wide, 15px tall)
+#     kernel_v = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 20))
+#     closed_v = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel_v)
+    
+#     # Combine them
+#     bridged_lines = cv2.bitwise_or(closed_h, closed_v)
+    
+#     # ==========================================
+#     # 4. SKELETONIZE & TRACE (Solves Orthogonal Bends)
+#     # ==========================================
+#     bool_skeleton = skeletonize(bridged_lines > 0)
+    
+#     try:
+#         branch_data = summarize(Skeleton(bool_skeleton))
+#     except Exception as e:
+#         # Failsafe if image is completely empty
+#         return {"lines": [], "arrowheads": []}
+        
+#     extracted_lines = []
+#     endpoints = []
+    
+#     for _, row in branch_data.iterrows():
+#         # Ignore micro-noise (e.g. artifacts less than 20 pixels long)
+#         if row['branch-distance'] < 20:
+#             continue
+            
+#         y1, x1 = int(row['image-coord-src-0']), int(row['image-coord-src-1'])
+#         y2, x2 = int(row['image-coord-dst-0']), int(row['image-coord-dst-1'])
+        
+#         # Determine if line is dashed by checking the original un-bridged threshold
+#         # If the original line has lots of black gaps, it's dashed.
+#         line_mask = np.zeros_like(thresh)
+#         cv2.line(line_mask, (x1, y1), (x2, y2), 255, 1)
+#         pixels_on_line = cv2.bitwise_and(thresh, line_mask)
+#         coverage = np.count_nonzero(pixels_on_line) / max(1, row['euclidean-distance'])
+#         line_style = "dashed" if coverage < 0.6 else "solid"
+
+#         extracted_lines.append({
+#             "start": [x1, y1],
+#             "end": [x2, y2],
+#             "euclidean_length": float(row['euclidean-distance']),
+#             "path_length": float(row['branch-distance']),
+#             "style": line_style
+#         })
+        
+#         endpoints.extend([[x1, y1], [x2, y2]])
+
+#     # ==========================================
+#     # 5. PIXEL DENSITY ARROWHEAD DETECTION
+#     # ==========================================
+#     # An arrowhead is essentially a thick cluster of pixels at the end of a line.
+#     arrowheads = []
+#     search_radius = 12
+    
+#     for ex, ey in endpoints:
+#         # Create a circular mask around the endpoint
+#         y_min, y_max = max(0, ey - search_radius), min(thresh.shape[0], ey + search_radius)
+#         x_min, x_max = max(0, ex - search_radius), min(thresh.shape[1], ex + search_radius)
+        
+#         # Crop the original thresholded image
+#         patch = thresh[y_min:y_max, x_min:x_max]
+        
+#         # A standard 1px line traversing a radius of 12px creates ~24 white pixels.
+#         # An arrowhead (like a triangle or >) creates significantly more white mass (> 60 pixels).
+#         pixel_mass = np.count_nonzero(patch)
+        
+#         if pixel_mass > 60: 
+#             # Check to ensure we haven't already counted this arrowhead
+#             is_duplicate = any(math.hypot(ex - ax, ey - ay) < 15 for ax, ay in arrowheads)
+#             if not is_duplicate:
+#                 arrowheads.append([int(ex), int(ey)])
+
+#     return {
+#         "lines": extracted_lines,
+#         "arrowheads": [{"point": pt} for pt in arrowheads]
+#     }
+
+# # Example integration block:
+# # geometry = extract_architecture_lines(img_path, minified_spatial, debug_dir=OUTPUT_DIR)
