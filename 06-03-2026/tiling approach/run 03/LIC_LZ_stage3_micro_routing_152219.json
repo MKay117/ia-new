@@ -1,0 +1,32 @@
+[
+    {
+        "source_id": "8",
+        "target_id": "27",
+        "flow": "One-way",
+        "style_and_meaning": "solid orange line"
+    },
+    {
+        "source_id": "12",
+        "target_id": "131",
+        "flow": "One-way",
+        "style_and_meaning": "blue solid line"
+    },
+    {
+        "source_id": "13",
+        "target_id": "271",
+        "flow": "One-way",
+        "style_and_meaning": "solid line"
+    },
+    {
+        "source_id": "69",
+        "target_id": "871",
+        "flow": "One-way",
+        "style_and_meaning": "solid orange line"
+    },
+    {
+        "source_id": "6",
+        "target_id": "111",
+        "flow": "One-way",
+        "style_and_meaning": "blue solid line"
+    }
+]
