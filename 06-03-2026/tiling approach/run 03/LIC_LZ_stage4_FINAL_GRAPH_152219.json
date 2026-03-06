@@ -1,0 +1,245 @@
+{
+    "architectural_hierarchy": [],
+    "external_and_unbound_entities": [
+        "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+        "Enterprise and public knowledge sources",
+        "Al Foundry Agent Service standard setup",
+        "Al Foundry Agent Service dependencies",
+        "VPN/ExpressRoute Gateways",
+        "Al Landing Zone Prod Subscription",
+        "Azure DNS Private Resolver",
+        "Container App Environment",
+        "Azure Al Landing Zone",
+        "Al Services Virtual Network",
+        "On-premises network",
+        "Azure Al Foundry Services",
+        "GenAl app microservices",
+        "GenAl app dependencies",
+        "Security and Governance",
+        "Al App Resource Group",
+        "Corporate Subscription",
+        "Container App Environment Subnet",
+        "DMZ Subscription",
+        "Subscription policy assignments",
+        "Azure AD P2",
+        "Inspection VNET",
+        "AI Foundry Agent Subhet",
+        "Corporate VNET",
+        "API Management Subnet",
+        "Workload policy assignments",
+        "Ingress Traffic",
+        "Azure DevOps",
+        "Application Gateway Subnet",
+        "Egress Traffic",
+        "Proxy Firewall",
+        "Foundry Agent Service",
+        "ExpressRoute",
+        "Azure Firewall",
+        "Azure Firewall",
+        "Egress VNET",
+        "Azure Bastion",
+        "Log Analytics Workspace",
+        "Ingress VNET",
+        "App Configuration",
+        "Role assignments",
+        "Private Endpoints Subnet",
+        "Azure DDOS",
+        "Azure DDOS",
+        "Application Insights",
+        "Prometheus",
+        "Diagnostics Settings",
+        "Application Gateway",
+        "Al Services endpoints",
+        "Redis Cache",
+        "Grounding with Bing",
+        "Container Registry",
+        "Al Foundry Project",
+        "Defender for Cloud",
+        "Build Agent Subnet",
+        "Managed Identities",
+        "Managed Identities",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Private Endpoint",
+        "Jump box Subnet",
+        "Network Watcher",
+        "Storage Account",
+        "API Management",
+        "Storage Account",
+        "Foundry Models",
+        "Build Agent VM",
+        "Jump Box VM",
+        "Orchestrator",
+        "Connections",
+        "Cosmos DB",
+        "Cosmos DB",
+        "Al Search",
+        "Key Vault",
+        "Key Vault",
+        "dapr",
+        "Frontend",
+        "Ingestion",
+        "Al Search",
+        "Entra ID",
+        "Purview",
+        "Monitor",
+        "Internet",
+        "Stack",
+        "DNS",
+        "Tags",
+        "MCP",
+        "WAF",
+        "User",
+        "SK"
+    ],
+    "end_to_end_flows": [
+        {
+            "source": "Azure Al Landing Zone",
+            "target": "DMZ Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "DMZ Subscription",
+            "target": "Al Landing Zone Prod Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Al Landing Zone Prod Subscription",
+            "target": "Al Services Virtual Network",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Al Landing Zone Prod Subscription",
+            "target": "Inspection VNET",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Al Landing Zone Prod Subscription",
+            "target": "Ingress VNET",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Ext Systems Payment GW Moengage UIDAI NSDL NPCHI NSEIT",
+            "target": "Internet",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Internet",
+            "target": "Ingress VNET",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Ingress VNET",
+            "target": "Application Gateway",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Application Gateway",
+            "target": "WAF",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "On-premises network",
+            "target": "ExpressRoute",
+            "flow": "Bi-directional",
+            "style_and_meaning": "solid green (network connection)"
+        },
+        {
+            "source": "ExpressRoute",
+            "target": "Corporate Subscription",
+            "flow": "Bi-directional",
+            "style_and_meaning": "solid green (network connection)"
+        },
+        {
+            "source": "Corporate Subscription",
+            "target": "Corporate VNET",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure DNS Private Resolver",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "VPN/ExpressRoute Gateways",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure Firewall",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure Bastion",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Corporate VNET",
+            "target": "Azure DDOS",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Enterprise and public knowledge sources",
+            "target": "GenAl app dependencies",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "GenAl app dependencies",
+            "target": "Container App Environment",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Container App Environment",
+            "target": "Al Services Virtual Network",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Security and Governance",
+            "target": "Al Landing Zone Prod Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Security and Governance",
+            "target": "Corporate Subscription",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange (data flow)"
+        },
+        {
+            "source": "Al Foundry Agent Service standard setup",
+            "target": "Foundry Agent Service",
+            "flow": "One-way",
+            "style_and_meaning": "solid orange line"
+        }
+    ]
+}
