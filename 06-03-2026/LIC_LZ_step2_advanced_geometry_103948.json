@@ -1,0 +1,65 @@
+{
+    "lines": [
+        {
+            "start": [
+                279,
+                17
+            ],
+            "end": [
+                279,
+                1055
+            ],
+            "euclidean_length": 1038.0,
+            "path_length": 4276.24264068712
+        },
+        {
+            "start": [
+                11,
+                19
+            ],
+            "end": [
+                269,
+                19
+            ],
+            "euclidean_length": 258.0,
+            "path_length": 264.4852813742386
+        },
+        {
+            "start": [
+                1866,
+                30
+            ],
+            "end": [
+                1866,
+                1055
+            ],
+            "euclidean_length": 1025.0,
+            "path_length": 1090.1198410471457
+        },
+        {
+            "start": [
+                294,
+                1055
+            ],
+            "end": [
+                582,
+                1055
+            ],
+            "euclidean_length": 288.0,
+            "path_length": 288.0
+        },
+        {
+            "start": [
+                599,
+                1055
+            ],
+            "end": [
+                1866,
+                1055
+            ],
+            "euclidean_length": 1267.0,
+            "path_length": 1267.0
+        }
+    ],
+    "arrowheads": []
+}
